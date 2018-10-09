@@ -1,0 +1,20 @@
+v=ir
+p=vi
+i=c(dv/dt)
+v=l(di/dt)
+=KCL & KVL
+-node voltage analysis
+-mesh current analysis
+-Analog subsystems: modulators, oscillitators, RF amps, power supplies
+-Digital subsystems: combinational logic, clocked digital abstraction, 
+Embedded utilizes the analog and digital subsystems. 
+
+A DC analysis will determine the voltage of every node in the circuit
+at time t equals0 and the currents through the various components
+Voltage values are often relative to a reference node called the "ground" node
+When you change the location of the reference node. The total voltage across 
+the circuit will be the same, however the relative values of the voltages
+have now changed in respect to the intermediate node (current stays the same)
+
+I just wanted to commit something lol 
+
