@@ -1,5 +1,7 @@
 v=ir
 p=vi
+p = i ^2 * r 
+p = v^2 / r 
 i=c(dv/dt)
 v=l(di/dt)
 =KCL & KVL
@@ -16,5 +18,13 @@ When you change the location of the reference node. The total voltage across
 the circuit will be the same, however the relative values of the voltages
 have now changed in respect to the intermediate node (current stays the same)
 
-I just wanted to commit something lol 
-
+30V is considered dangerous voltage. 
+electrically common points have zero voltage drop is a valuable
+troubleshooting principle. If i measure the voltage between points
+in a circuit that are supposed to be in common to each other. I should
+read zero. If i read a vltage then they must not be connected
+to each other 
+Diode: a 1 way electric valve for electric current. Provides unimpeded
+flow for current in 1 direction ( little or no resistence) but prevents
+flow from the other direction (infinite resistence). Diode either
+permits current or blocks current. 
