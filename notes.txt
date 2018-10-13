@@ -27,4 +27,13 @@ to each other
 Diode: a 1 way electric valve for electric current. Provides unimpeded
 flow for current in 1 direction ( little or no resistence) but prevents
 flow from the other direction (infinite resistence). Diode either
-permits current or blocks current. 
+permits current or blocks current.
+
+Analog signal is signal that is continously variable as opposed to 
+having a limited number of steps along its range (digital). 
+DC voltage can be used as an analog signal to relay information from one location to another 
+
+Seebeck effect: production of small voltage across the length of a wire due to a difference in temperature along the wire. This effect is most easily observred and applied with a junction of two dissimilar metals in contact, each metal producing a different Seebeck voltage along its length, which translates to a voltage between the two (unjoined) wire ends. 
+
+Seeback voltages are linear and quite small. When a pair of dissimilar metals are joined together for the purpose of measuring temperature, this is a thermocouple. 
+Thermocouples made for instrumental use metals of high purity for an accurate temperature / voltage relationships. 
