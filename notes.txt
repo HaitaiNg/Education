@@ -37,3 +37,6 @@ Seebeck effect: production of small voltage across the length of a wire due to a
 
 Seeback voltages are linear and quite small. When a pair of dissimilar metals are joined together for the purpose of measuring temperature, this is a thermocouple. 
 Thermocouples made for instrumental use metals of high purity for an accurate temperature / voltage relationships. 
+
+chapter 10:: DC 
+ionic bonds are molecular unions formed when an electron deficient atom (positive ion) joins with an electron-excessive atom (negative ion). 
