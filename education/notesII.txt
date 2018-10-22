@@ -1,0 +1,57 @@
+Properties of Binary Trees
+Total # number of nodes: h+1 <= n <= 2^(n+1) + 1
+Height of tree: log(n+1)-1 <= h <= n-1
+# of edges: e : n-1
+
+Tree Traversals:
+Pre-order: root->left->right
+In-order: left->root->right
+Post-order: left->right->root
+Average internal length T(n) of the binary search tree with n nodes
+is O(nLog(n))
+
+Average time complexity of a BST Operation to find or insert is T(N)/n = O(log(n))
+
+Recursive Fibonacci Algorithm:
+int fib(int n)
+{
+  if(n <= 0)
+    return 0;
+  else if (n == 1)
+    return 1;
+  else
+    recursive, fib(n-1)+fib(n-2)
+}
+
+Stack: LIFO, Queue: FIFO,
+
+Look up linkedlist, array, queue, stack, Heap sort, priority que
+
+Heap sort
+O(n(ln(n)))
+Taking items out of a heap: O(ln(n))
+Lead terms: [ln(n)-1]n
+nln(n) > ln(n!)
+In place heapifications
+Left child: 2k + 1
+Right child: 2k + 2
+Parent: (k+1)/2 - 1
+worst case: 2^k * (h-k ) swaps
+maximum of 2n or O(n) comparisons
+Heapfication is O(n) time
+popping n items from a heap is O(nln(n))
+no worst cast for heap sort
+degree from the heap will always require the same number of operations
+regardless of the distribution of values in heap
+
+worst case: O(nln(n))
+Average: O(nln(n))
+Best: O(n)
+Merge sort requires: O(n) additional memory
+Quicksort requires O(ln(n)) additional memory
+
+Search algorithms:
+Linear search: work through the list from big -> end checking each element O(n)
+Binary search: assume items are sorted. look at middle items
+if v < first half elements
+else look at the second elements
