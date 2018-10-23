@@ -28,16 +28,35 @@ Estimated Cost
 Optional: Medical Tape: $2.70
 Total: $48.85+
 
-Assembly
+Tools for Assembly
+-Drill
+-Measuring Tape 
+-Phillips screwdriver 
 
+Assembly
+1.) Drill four holes in one of the EMT conduit pipes (2 holes in the top,
+2 holes below it). The 2 holes at the top and bottom must align with each 
+other such that the Steel eye bolts can pierce completely thru the EMT conduit 
+and you can install the washer on the opposite end. There should be a 
+34.8inch+ distance (max limit is 3ft) between the top 2 holes and the bottom 2 holes.
+2.) Insert the Steel eye bolts and washer. 
+3.) Attach the Stainless Steel Spring lake to top eye bolt and bottom eye bolt. 
+3.) Attach the Electric Metallic Set Screw to the opposite side of the top. This will
+serve as the connector to additional EMT conduit pipes. I designed this flag
+with feasibility and the ability to easily extend and reduce the length of the flag pole.
+If you want to make the flag taller, add EMT conduit and attach more Eletrical Metallic screws.
+4.) Optional: Add medical tape the flag, and bungie cable. These are for cosmetic appeal. 
 
 Most flags have a hole located at the top left, and bottom left. The
 Stainless Steel Spring Lake will serve as the connection between the
 Zinc-Plated Steel eye bolts and the flag.
 
 Substitutions and Tips
--The Stainless Steel Spring Lake can be replaced by any carabiner that can
-fit thru the holes near the top left and bottom left of the flag.
+-I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
+medical tape, so when I bump into shit I have a lower probability of scratching
+or denting it. 
+-The Stainless Steel Spring Lake can be replaced by any standard carabiner that can
+fit thru the holes of the flag.
 -If you are unable to find a drill & drill bit to pierce the EMT conduit pipe,
 you can try purchasing bungie cable and wrap the flag around the EMT
 conduit pipe. When I originally built this I had less than 24 hours to find
@@ -48,3 +67,6 @@ hardware, lumber, plumbing, and Electrical stores in search of someone who would
 do a quick  drill job. If you do not have a drill you have two options: rent a
 drill from Home Depot, or find a handyman that will do this service for a small
 service fee.
+
+Best of luck,
+Haitai Ng 
