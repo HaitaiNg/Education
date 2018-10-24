@@ -1,6 +1,6 @@
 
 
-GoRuck Flag.
+Markup: #GoRuck Flag.#
 
 This American flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18.
 This flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in
@@ -11,7 +11,7 @@ a great conductor for electrical current so you can use these rods for other pro
 <img src="Photos/flag10ft.jpg" width="376" height="894">
 <img src="Photos/flag5ft.jpg" width=“376” height="894">
 
-List of Materials
+Markup: ####List of Materials ####
 - 3ft. x 5ft. American Flag
 - 1/4in. x 2-3/8in. Stainless Steel Spring Link
 - 3/4in. x 5ft Electrical Metallic Tubing (EMT) Steel
