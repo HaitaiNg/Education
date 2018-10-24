@@ -8,7 +8,8 @@ or extended to greater heights. Constructed using EMT Steel conduit, this flag i
 yet lightweight. EMT conduit is one of the lightest form of steel conduit and it is
 a great conductor for electrical current so you can use these rods for other projects.
 
-![10FtFlag](education/GoRuck/Photos/flag_10ft.jpg){:height="50%" width="50%"}
+![what is this image](Photos/flag_10ft.jpg)
+![10FtFlag](Photos/flag_10ft.jpg){:height="50%" width="50%"}
 
 
 List of Materials
