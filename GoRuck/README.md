@@ -8,8 +8,8 @@ or extended to greater heights. Constructed using EMT Steel conduit, this flag i
 yet lightweight. EMT conduit is one of the lightest form of steel conduit and it is
 a great conductor for electrical current so you can use these rods for other projects.
 
-<img src="Photos/flag10ft.jpg" width="557" height="958">
-
+<img src="Photos/flag10ft.jpg" width="376" height="894">
+<img src="Photos/flag5ft.jpg" width="531" hieght="869">
 List of Materials
 - 3ft. x 5ft. American Flag
 - 1/4in. x 2-3/8in. Stainless Steel Spring Link
