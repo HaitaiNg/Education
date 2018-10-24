@@ -4,11 +4,11 @@
 
 This American flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18.
 This flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in. Constructed using EMT Steel conduit, this flag is strong
-and lightweight. EMT conduit is one of the lightest form of steel conduit and it is
-a great conductor for electrical current so you can use these rods for other projects.
+and lightweight. EMT conduit is one of the lightest form of steel conduit and isused to protect and route electrical wiring in houses and commecial buildings.
 
 <img src="Photos/flag10ft.jpg" width="376" height="894">
 <img src="Photos/flag5ft.jpg" width=“376” height="894">
+<img src="Photos/pier44.jpg" width="376" height="894">
 
 #### List of Materials 
 - 3ft. x 5ft. American Flag
