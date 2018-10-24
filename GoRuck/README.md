@@ -8,8 +8,7 @@ or extended to greater heights. Constructed using EMT Steel conduit, this flag i
 yet lightweight. EMT conduit is one of the lightest form of steel conduit and it is
 a great conductor for electrical current so you can use these rods for other projects.
 
-<img src="Photos/flag10ft.jpg" width="376" height="894">
-<img src="Photos/flag5ft.jpg" width="531" hieght="869">
+<img src="Photos/flag10ft.jpg" width="376" height="894"> <img src="Photos/flag5ft.jpg" width=“376” height="869">
 List of Materials
 - 3ft. x 5ft. American Flag
 - 1/4in. x 2-3/8in. Stainless Steel Spring Link
@@ -40,13 +39,27 @@ Assembly
 other such that the Steel eye bolts can pierce completely thru the EMT conduit 
 and you can install the washer on the opposite end. There should be a 
 34.8inch+ distance (max limit is 3ft) between the top 2 holes and the bottom 2 holes.
+
+<img src="Photos/pole2.jpg" width=“376” height="869">
+
 2.) Insert the Steel eye bolts and washer. 
+
+<img src="Photos/pole1.jpg" width=“376” height="869">
+
 3.) Attach the Stainless Steel Spring lake to top eye bolt and bottom eye bolt. 
 3.) Attach the Electric Metallic Set Screw to the opposite side of the top. This will
 serve as the connector to additional EMT conduit pipes. I designed this flag
 with feasibility and the ability to easily extend and reduce the length of the pole.
 If you want to make the flag taller, add EMT conduit and attach more Electrical Metallic screws.
-4.) Optional: Add medical tape the flag, and bungie cable. These are for cosmetic appeal. 
+
+<img src="Photos/poleEndZoom.jpg" width=“376” height="869">
+
+
+4.) Attach the flag. 
+
+<img src="Photos/flagAssembly.jpg" width=“376” height="869">
+
+5.) Optional: Add medical tape the flag, and bungie cable. These are for cosmetic appeal. 
 
 Most flags have a hole located at the top left, and bottom left. The
 Stainless Steel Spring Lake will serve as the connection between the
@@ -68,6 +81,8 @@ hardware, lumber, plumbing, and Electrical stores in search of someone who would
 do a quick  drill job. If you do not have a drill you have two options: rent a
 drill from Home Depot, or find a handyman that will do this service for a small
 service fee.
+
+<img src="Photos/flagWTC.jpg" width=“376” height="869">
 
 Best of luck,
 Haitai Ng 
