@@ -1,6 +1,6 @@
 
 
- #GoRuck Flag.#
+ #GoRuck Flag.
 
 This American flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18.
 This flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in
