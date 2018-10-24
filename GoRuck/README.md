@@ -11,7 +11,7 @@ a great conductor for electrical current so you can use these rods for other pro
 <img src="Photos/flag10ft.jpg" width="376" height="894">
 <img src="Photos/flag5ft.jpg" width=“376” height="894">
 
- #### List of Materials 
+#### List of Materials 
 - 3ft. x 5ft. American Flag
 - 1/4in. x 2-3/8in. Stainless Steel Spring Link
 - 3/4in. x 5ft Electrical Metallic Tubing (EMT) Steel
@@ -20,7 +20,7 @@ a great conductor for electrical current so you can use these rods for other pro
 - 3/16in Milwaukee Thunderbolt Cobalt Drill Bit
 - (Optional): Medical Tape
 
-Estimated Cost
+#### Estimated Cost
 - 1 x American Flag: $19.92
 - 2 x Stainless Steel Spring Lake: $9.88 ($4.94 each)
 - 2 X (3/4in. x 5ft Electrical Metallic Tubing (EMT) Steel): $8.40 ($4.20 each)
@@ -30,26 +30,22 @@ Estimated Cost
 - Optional: Medical Tape: $2.70
 - Total: $48.85+
 
-#### Tools for Assembly
--Drill
--Measuring Tape 
--Phillips screwdriver 
+#### Tools for Assembly: Drill; Measuring Tape; Phillips screwdriver 
 
 #### Assembly
-1.) Drill four holes in one of the EMT conduit pipes (2 holes in the top,
-2 holes below it). The 2 holes at the top and bottom must align with each 
+1. Drill four holes in one of the EMT conduit pipes (2 holes in the top,  holes below it). The 2 holes at the top and bottom must align with each 
 other such that the Steel eye bolts can pierce completely thru the EMT conduit 
 and you can install the washer on the opposite end. There should be a 
 34.8inch+ distance (max limit is 3ft) between the top 2 holes and the bottom 2 holes.
 
 <img src="Photos/pole2.jpg" width=“376” height="869">
 
-2.) Insert the Steel eye bolts and washer. 
+2. Insert the Steel eye bolts and washer. 
 
 <img src="Photos/pole1.jpg" width=“376” height="869">
 
-3.) Attach the Stainless Steel Spring lake to top eye bolt and bottom eye bolt. 
-4.) Attach the Electric Metallic Set Screw to the opposite side of the top. This will
+3. Attach the Stainless Steel Spring lake to top eye bolt and bottom eye bolt. 
+4. Attach the Electric Metallic Set Screw to the opposite side of the top. This will
 serve as the connector to additional EMT conduit pipes. I designed this flag
 with feasibility and the ability to easily extend and reduce the length of the pole.
 If you want to make the flag taller, add EMT conduit and attach more Electrical Metallic screws.
@@ -57,25 +53,25 @@ If you want to make the flag taller, add EMT conduit and attach more Electrical 
 <img src="Photos/poleEndZoom.jpg" width=“376” height="869">
 
 
-4.) Attach the flag. 
+5. Attach the flag. 
 
 <img src="Photos/flagAssembly.jpg" width=“376” height="869">
 
-5.) Optional: Add medical tape the flag, and bungie cable. These are for cosmetic appeal. 
+6. Optional: Add medical tape the flag, and bungie cable. These are for cosmetic appeal. 
 
 #### Substitutions and Tips
--I designed this flag such that the length can be easily extended or reduced. To 
+- I designed this flag such that the length can be easily extended or reduced. To 
 add length, attach EMT conduit pipes and use the Electric Metallic Set screws. 
--I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
+- I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
 medical tape, so when I bump into shit I have a lower probability of scratching
 or denting it. 
--The Stainless Steel Spring Lake can be replaced by any standard carabiner that can
+- The Stainless Steel Spring Lake can be replaced by any standard carabiner that can
 fit thru the holes of the flag.
--If you are unable to find a drill & drill bit to pierce the EMT conduit pipe,
+- If you are unable to find a drill & drill bit to pierce the EMT conduit pipe,
 you can try purchasing bungie cable and wrap the flag around the EMT
 conduit pipe. When I originally built this I had less than 24 hours to find
 a drill. This was my back up plan if I was unable to find a drill.
--For those living in lower Manhattan, I visited and or contacted multiple
+- For those living in lower Manhattan, I visited and or contacted multiple
 hardware, lumber, plumbing, and Electrical stores in search of someone who would
 do a quick  drill job. If you do not have a drill you have two options: rent a
 drill from Home Depot, or find a handyman that will do this service for a small
@@ -84,5 +80,6 @@ service fee.
 <img src="Photos/flagWTC.jpg" width=“376” height="869">
 
 Best of luck,
+
 Haitai Ng 
 
