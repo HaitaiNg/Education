@@ -4,9 +4,9 @@ GoRuck Flag.
 
 This American flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18.
 This flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in
-or extended to greater heights.Constructed using EMT Steel conduit, this flag is strong
-yet lightweight. EMT conduit is one of the  lightest form of steel conduit and it is
-a great conductor for electrical current so you can use these poles for other projects.
+or extended to greater heights. Constructed using EMT Steel conduit, this flag is strong
+yet lightweight. EMT conduit is one of the lightest form of steel conduit and it is
+a great conductor for electrical current so you can use these rods for other projects.
 
 List of Materials
 - 3ft. x 5ft. American Flag
@@ -16,7 +16,6 @@ List of Materials
 - 3/16in. x 3in Zinc-Plated Steel Eye Bolts with Nuts (2-pack)
 - 3/16in Milwaukee Thunderbolt Cobalt Drill Bit
 - (Optional): Medical Tape
-
 
 Estimated Cost
 1 x American Flag: $19.92
@@ -43,8 +42,8 @@ and you can install the washer on the opposite end. There should be a
 3.) Attach the Stainless Steel Spring lake to top eye bolt and bottom eye bolt. 
 3.) Attach the Electric Metallic Set Screw to the opposite side of the top. This will
 serve as the connector to additional EMT conduit pipes. I designed this flag
-with feasibility and the ability to easily extend and reduce the length of the flag pole.
-If you want to make the flag taller, add EMT conduit and attach more Eletrical Metallic screws.
+with feasibility and the ability to easily extend and reduce the length of the pole.
+If you want to make the flag taller, add EMT conduit and attach more Electrical Metallic screws.
 4.) Optional: Add medical tape the flag, and bungie cable. These are for cosmetic appeal. 
 
 Most flags have a hole located at the top left, and bottom left. The
@@ -70,3 +69,5 @@ service fee.
 
 Best of luck,
 Haitai Ng 
+
+
