@@ -9,7 +9,7 @@ yet lightweight. EMT conduit is one of the lightest form of steel conduit and it
 a great conductor for electrical current so you can use these rods for other projects.
 
 ![10FtFlag](Photos/flag10ft.jpg?raw=true "10FtFlag")<!-- .element height ="50%" width="50%" -->
-
+<img src="Photos/flag10ft.jpg" style="width: 50%; height: 50%"/>
 
 List of Materials
 - 3ft. x 5ft. American Flag
