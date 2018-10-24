@@ -2,9 +2,7 @@
 
 # GoRuck Flag.
 
-This American flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18.
-This flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in. Constructed using EMT Steel conduit, this flag is strong
-and lightweight. EMT conduit is one of the lightest form of steel conduit and isused to protect and route electrical wiring in houses and commecial buildings.
+This flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18. Constructed using EMT Steel conduit, this flag at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in.
 
 <img src="Photos/flag10ft.jpg" width="376" height="894">
 <img src="Photos/flag5ft.jpg" width=“376” height="894">
@@ -54,23 +52,23 @@ serve as the connector to additional EMT conduit pipes.
 6. Optional: Add medical tape and bungie cable. 
 
 #### Substitutions and Tips
+- EMT conduit is one of the lightest forms of steel conduit and is used to protect and route electrical wiring in houses and commercial buildings. You can substitute the EMT conduit with PVC or copper pipes.
 - I designed this flag such that the length can be easily extended or reduced. To 
-add length, attach EMT conduit pipes using a Philips screwdriver. 
+add length, attach EMT additional conduit pipes.
 - I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
 medical tape, so when I bump into shit I have a lower probability of scratching
-or denting it. 
+or denting whatever hits this pole. 
 - The Stainless Steel Spring Lake can be replaced by any standard carabiner that can
 fit thru the holes of the flag. Most flags have the two holes on the left side of the flag,
-thus making it easy to swap out Flags if needed. 
+thus making it easy to swap out flags if needed. 
 - If you are unable to find a drill & drill bit to pierce the EMT conduit pipe,
-you can try purchasing bungie cable and wrap the flag around the EMT
-conduit pipe. When I originally built this I had less than 24 hours to find
+you can try using bungie cable and wrap the flag around the EMT
+conduit pipe. When I originally built this I had less than 36 hours to find
 a drill. This was my back up plan if I was unable to find a drill and commit to my original design.
 - For those living in lower Manhattan, I visited and or contacted multiple
 hardware, lumber, plumbing, and Electrical stores in search of someone who would
 do a quick  drill job. If you do not have a drill you have two options: rent a
-drill from Home Depot, or find a handyman that will do this service for a small
-service fee.
+drill from Home Depot, or find a serviceman.
 
 <img src="Photos/flagWTC.jpg" width=“376” height="869">
 
