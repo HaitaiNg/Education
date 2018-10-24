@@ -8,7 +8,7 @@ and lightweight. EMT conduit is one of the lightest form of steel conduit and is
 
 <img src="Photos/flag10ft.jpg" width="376" height="894">
 <img src="Photos/flag5ft.jpg" width=“376” height="894">
-<img src="Photos/pier44.jpg" width="376" height="894">
+<img src="Photos/pier44.jpg" width="268" height="357">
 
 #### List of Materials 
 - 3ft. x 5ft. American Flag
