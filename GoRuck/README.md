@@ -11,7 +11,7 @@ a great conductor for electrical current so you can use these rods for other pro
 <img src="Photos/flag10ft.jpg" width="376" height="894">
 <img src="Photos/flag5ft.jpg" width=“376” height="894">
 
- ####List of Materials ####
+ #### List of Materials 
 - 3ft. x 5ft. American Flag
 - 1/4in. x 2-3/8in. Stainless Steel Spring Link
 - 3/4in. x 5ft Electrical Metallic Tubing (EMT) Steel
@@ -30,12 +30,12 @@ Estimated Cost
 - Optional: Medical Tape: $2.70
 - Total: $48.85+
 
-Tools for Assembly
+#### Tools for Assembly
 -Drill
 -Measuring Tape 
 -Phillips screwdriver 
 
-Assembly
+#### Assembly
 1.) Drill four holes in one of the EMT conduit pipes (2 holes in the top,
 2 holes below it). The 2 holes at the top and bottom must align with each 
 other such that the Steel eye bolts can pierce completely thru the EMT conduit 
@@ -63,7 +63,7 @@ If you want to make the flag taller, add EMT conduit and attach more Electrical 
 
 5.) Optional: Add medical tape the flag, and bungie cable. These are for cosmetic appeal. 
 
-Substitutions and Tips
+#### Substitutions and Tips
 -I designed this flag such that the length can be easily extended or reduced. To 
 add length, attach EMT conduit pipes and use the Electric Metallic Set screws. 
 -I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
@@ -75,8 +75,7 @@ fit thru the holes of the flag.
 you can try purchasing bungie cable and wrap the flag around the EMT
 conduit pipe. When I originally built this I had less than 24 hours to find
 a drill. This was my back up plan if I was unable to find a drill.
-
-*For those living in lower Manhattan, I visited and or contacted multiple
+-For those living in lower Manhattan, I visited and or contacted multiple
 hardware, lumber, plumbing, and Electrical stores in search of someone who would
 do a quick  drill job. If you do not have a drill you have two options: rent a
 drill from Home Depot, or find a handyman that will do this service for a small
