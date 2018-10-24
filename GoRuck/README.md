@@ -2,7 +2,7 @@
 
 # GoRuck Flag.
 
-This flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18. Constructed using EMT Steel conduit, this flag at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in.
+This flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18. Constructed using EMT Steel conduit, this flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in.
 
 <img src="Photos/flag10ft.jpg" width="376" height="894">
 <img src="Photos/flag5ft.jpg" width=“376” height="894">
@@ -30,17 +30,17 @@ This flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18. Con
 
 #### Assembly
 1. Drill four holes in one of the EMT conduit pipes (2 holes in the top, 2 holes below it). The holes at the top and bottom must directly  align with each 
-other such that the Steel eye bolts can pierce completely thru the EMT conduit 
+other such that the steel eye bolts can pierce completely thru the EMT conduit 
 and you can install the washer on the opposite end. There should be a 
-34.8inch+ distance (max limit is 3ft) between the top 2 holes and the bottom 2 holes. See picture below for clarification. 
+34.8inch+ distance (max limit is 3ft (36inches)) between the top 2 holes and the bottom 2 holes.
 
 <img src="Photos/pole2.jpg" width=“376” height="869">
 
-2. Insert the Steel eye bolts and washer. Attach the Stainless Steel Spring Lake to the top eye bolt and bottom eye bolt. 
+2. Insert the steel eye bolts and washer. Attach the stainless steel spring lake to the top eye bolt and bottom eye bolt. 
 
 <img src="Photos/pole1.jpg" width=“376” height="869">
 
-3. Attach the Electric Metallic Set Screw to the opposite side of the top. This will
+3. Attach the electric metallic set screw to the opposite side of the top. This will
 serve as the connector to additional EMT conduit pipes.
 
 <img src="Photos/poleEndZoom.jpg" width=“376” height="869">
