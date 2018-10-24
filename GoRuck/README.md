@@ -5,7 +5,7 @@ GoRuck Flag.
 This American flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18.
 This flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in
 or extended to greater heights. Constructed using EMT Steel conduit, this flag is strong
-yet lightweight. EMT conduit is one of the lightest form of steel conduit and it is
+and lightweight. EMT conduit is one of the lightest form of steel conduit and it is
 a great conductor for electrical current so you can use these rods for other projects.
 
 <img src="Photos/flag10ft.jpg" width="376" height="894">
@@ -21,14 +21,14 @@ List of Materials
 - (Optional): Medical Tape
 
 Estimated Cost
-1 x American Flag: $19.92
-2 x Stainless Steel Spring Lake: $9.88 ($4.94 each)
-2 X (3/4in. x 5ft Electrical Metallic Tubing (EMT) Steel): $8.40 ($4.20 each)
-1 x (3/4in. Electric Metallic Tube (EMT) Set Screw (5-pack)): $2.50
-1 x (3/16in. x 3in Zinc-Plated Steel Eye Bolts with Nuts (2-pack)): $1.18
-1 x (3/16in. Milwaukee Thunderbolt Cobalt Drill Bit: $4.27
-Optional: Medical Tape: $2.70
-Total: $48.85+
+- 1 x American Flag: $19.92
+- 2 x Stainless Steel Spring Lake: $9.88 ($4.94 each)
+- 2 X (3/4in. x 5ft Electrical Metallic Tubing (EMT) Steel): $8.40 ($4.20 each)
+- 1 x (3/4in. Electric Metallic Tube (EMT) Set Screw (5-pack)): $2.50
+- 1 x (3/16in. x 3in Zinc-Plated Steel Eye Bolts with Nuts (2-pack)): $1.18
+- 1 x (3/16in. Milwaukee Thunderbolt Cobalt Drill Bit: $4.27
+- Optional: Medical Tape: $2.70
+- Total: $48.85+
 
 Tools for Assembly
 -Drill
@@ -49,7 +49,7 @@ and you can install the washer on the opposite end. There should be a
 <img src="Photos/pole1.jpg" width=“376” height="869">
 
 3.) Attach the Stainless Steel Spring lake to top eye bolt and bottom eye bolt. 
-3.) Attach the Electric Metallic Set Screw to the opposite side of the top. This will
+4.) Attach the Electric Metallic Set Screw to the opposite side of the top. This will
 serve as the connector to additional EMT conduit pipes. I designed this flag
 with feasibility and the ability to easily extend and reduce the length of the pole.
 If you want to make the flag taller, add EMT conduit and attach more Electrical Metallic screws.
@@ -63,11 +63,9 @@ If you want to make the flag taller, add EMT conduit and attach more Electrical 
 
 5.) Optional: Add medical tape the flag, and bungie cable. These are for cosmetic appeal. 
 
-Most flags have a hole located at the top left, and bottom left. The
-Stainless Steel Spring Lake will serve as the connection between the
-Zinc-Plated Steel eye bolts and the flag.
-
 Substitutions and Tips
+-I designed this flag such that the length can be easily extended or reduced. To 
+add length, attach EMT conduit pipes and use the Electric Metallic Set screws. 
 -I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
 medical tape, so when I bump into shit I have a lower probability of scratching
 or denting it. 
@@ -88,5 +86,4 @@ service fee.
 
 Best of luck,
 Haitai Ng 
-
 
