@@ -65,10 +65,7 @@ thus making it easy to swap out flags if needed.
 you can try using bungie cable and wrap the flag around the EMT
 conduit pipe. When I originally built this I had less than 36 hours to find
 a drill. This was my back up plan if I was unable to find a drill and commit to my original design.
-- For those living in lower Manhattan, I visited and or contacted multiple
-hardware, lumber, plumbing, and Electrical stores in search of someone who would
-do a quick  drill job. If you do not have a drill you have two options: rent a
-drill from Home Depot, or find a serviceman.
+-  I visited and contacted multiple hardware, lumber, plumbing, and Electrical stores in lower Manhattan in search of a drill.
 
 <img src="Photos/flagWTC.jpg" width=“376” height="869">
 
