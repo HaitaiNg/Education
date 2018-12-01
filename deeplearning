@@ -1,0 +1,101 @@
+What are the weights and bias for the AND perceptron? 
+Weight1 = 0.6, Weight2 = 0.6, bias = -1 
+What are two ways to go from an AND perceptron to an OR perceptron? 
+Increase the weights || Decrease the magnitude of the bias 
+
+http://toritris.weebly.com/perceptron-2-logical-operations.html
+
+Not Operator: Weight1 = 0.0, Weight2 = -1.0, Bias = 0 
+Perceptron Algorithm 
+Start with random weights: w1,...2nb
+For every misclassified point (x1, …. xn):
+	2.1 If prediction = 0:
+		-For i = 1 ...n 
+			-change w1 + alpha x1 
+		-change b to b + alpha
+	2.2 if prediction = 1:
+	-For i = 1 ...n 
+		-Change w1 - alphaX1
+	-change b to b - a
+
+	for i in range(len(X)):
+    	y_hat = prediction(X[i],W,b)
+    	if y[i]-y_hat == 1:
+        	W[0] += X[i][0]*learn_rate
+        	W[1] += X[i][1]*learn_rate
+        	b += learn_rate
+    	elif y[i]-y_hat == -1:
+        	W[0] -= X[i][0]*learn_rate
+        	W[1] -= X[i][1]*learn_rate
+        	b -= learn_rate
+
+
+In order to apply the gradient descent: the error function should be differentiable and the error function should be continuous
+ Dsicrete function: step function
+Continuous: sigmoid function 
+
+
+Softmax function 
+https://machinelearningmastery.com/implement-perceptron-algorithm-scratch-python/
+Cross Entropy
+Low entropy = good
+High entropy = bad 
+If i have a bunch of events and probabilities, what the probability of an event occuring. 
+-ln(probability)
+
+Cross entropy formula:
+-ln (product)
+-ln(a1) -ln(a2)...-ln(an)
+
+def cross_entropy(Y, P):
+	Y = np.float_(Y)
+	P = np.float_(P)
+	return -np.sum(Y * np.log(P) + (1 - Y) * np.log(1 - P)
+
+Multi-Cross Entropy: 
+P = 0.7 * 0,3 * 0.4 = 0.084
+CE = -ln(0.7)-ln(0.3)-ln(0.4) = 2.34
+ 
+A higher cross entropy implies a lower probability of an event
+Cross entropy is inversely proportional to the total probability of an outcome. 
+
+Logistic Regression:
+Take your data
+Pick a random model
+Calculate the error
+Minimize the error, and obtain a better model
+
+The gradient is actually a scalar times the coordinates of the point! 
+If a point is well classified, we will get a small gradient. If it is poorly classified the gradient will be large
+
+Machine learning notes for udacity
+
+
+A small gradient means we'll change our coordinates by a little bit, and large gradient means we'll change our coordinates by a lot. 
+
+Apply the sigmoid function by adding the probabilities of two linear models to scale a value from [0,1] 
+We calculate the probability, add them then apply sigmoid function 
+
+Feedforward is the process neural networks use to turn the input into an output 
+Backpropagation 
+Doing a feedforward operation
+Comparing the output of the model with the desired output
+Calculating the error
+Running the feedforward operation backwords (backpropagation) to spread the error to each of the weights.
+Use this to update the weights, and get a better model
+Continue this until we have a model that is good 
+
+Number 26: notebook gradient 
+Overfitting vs underfitting
+Underfitting  : high bias
+over fitting: high variance 
+
+Underfitting: training error: big, testing error: big 
+Just right: training error: small, testing error: small
+Overfitting: training error: tiny, testing error: large 
+
+Regularzation 
+
+Dropout: running the training and backpropagation but preventing some epochs from functioning during the training 
+
+
