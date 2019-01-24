@@ -77,13 +77,12 @@ Data Jujitsu: The Art of Turning Data into Product
 The Exorcist (DNF)
 V For Vendetta 
 A Train Near Magdeburg — The Holocaust, The survivors, and the American (DNF)
-A programmer’s guide to data mining: the ancient art of the numerati
+A Programmer’s Guide To Data Mining: The Ancient Art Of The Numerati
 AWOL on the Appalachian Trail
 Autobiography of Gucci mane
-Code: The hidden language of hardware and software 
+Code: The Hidden Language Of Hardware And Software 
 American Born Chinese 
 Guide2DataMining
-
 
 Anthony Kiedis: Scar Tissue 
 Autobiography of Gucci Mane 
@@ -105,6 +104,7 @@ Introducing Logic: A Graphic Guide
 Introducing Artificial Intelligence: A Graphic Guide  
 God of War 2018 (Novelization) 
 Introducing Emotional Intelligence: A Practical Guide 
+
 What I wish I knew When I was 20: A Crash Course On Making Your Own In The World
 Getting Started In Electronics: Forest M.Mims III
 Data Analysis Made Accessible : 2018 Edition 
@@ -117,4 +117,5 @@ Statistics A Graphic Guide
 Marxism A Graphic Guide 
 Summary Of Can't Hurt Me 
 Neural Network Math: A Visual Introduction For Beginners 
-
+Applied Artificial Intelligence: A Handbook For Business Leaders 
+Numsense! Data Science For The Layman (No Math Added) 
