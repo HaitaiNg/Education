@@ -44,6 +44,10 @@ Analysis And Design Of Linear Circuits
 Object Oriented Modeling And Design With UML 
 C++ Primer
 Discrete Mathematics And Its Applications 
+The Practice Of Computing Using Python
+Design Patterns Elements Of Reusable Object - Oriented Software
+Operating Systems Internals And Design Principles
+Database Systems
 Advanced Engineering Mathematics 
 Analog Circuits 
 Data Structures and Algorithm Analysis in C++ 
