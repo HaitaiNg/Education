@@ -98,4 +98,530 @@ Regularzation
 
 Dropout: running the training and backpropagation but preventing some epochs from functioning during the training 
 
+People are expected to do what it takes to get the job done, but they don’t have to go at it alone. Not getting the job done, though is never an option - Jamie Dimon 
+
+“ We all have a short period of time on this earth. We probably only have the opportunity to do a few things really great and do them well. None of us has any idea how long we’re going to be here, nor do I, but my feeling is I’ve got to accomplish a lot of things while I’m young. “ — Steve Jobs
+
+This role is aligned with where I want to grow in my career and whaxt i’ve been working towards, and given my skills and experiences. I feel I can make a significant contribution to both this team and company, as as part of the overall team help drive the the company the next level. 
+
+Why are you looking to leave your current position? 
+My previous role was very rewarding and enabled me to make a contribution to the company and its partners and customers, however i feel i am ready to take on a larger role and set of responsibilities and my current company is not at a stage where they can offer me this opportunity
+
+If you have a long gap between your last role / position
+After being let go from my previous company, I took some time off to reflect on what is important to me in my career and to ensure i had time to update my skills and perspective ahead of moving into my next role. I took some off due to family, travel, recharge and fresh skills 
+
+Work environment: i like to be surrounded by colleagues who are passionate and energized about what they do. This fuels my energy levels and helps me perform at work
+
+Why should we hire you? 
+My experience working in a variety of roles and across the entire organization has provided me with a strong ability to apply my skills to your team and contribute to the success of the team and company. 
+
+
+-----------------------------------
+
+n!≫cn ≫n3 ≫n2 ≫n1+ε ≫nlogn≫n≫√n≫ log2 n ≫ logn ≫ logn/loglogn ≫ loglogn ≫ α(n) ≫ 1
+
+y = wx + b
+weight = m (slope, weight vectors)
+b = bias
+How to determine if you have good data?
+Loss shows how well the line predicts a given example
+ rate: where gradient descent reaches the minimum point 
+
+Steps: total number of training iterations. One step calculates the loss from one batch and uses that value to modify the model’s weights once
+
+total number of trained examples = batch size * steps
+
+Generalization refers to the model’s ability to adapt properly to new previously unseen data, drawn from the same distribution as the one used to create the model.
+
+A test set is a data set used to evaluate the model developed from a training set.
+
+The larger we make our training set, the better model we’re going to be able to learn
+The larger we make our test set, the better we’ll be able to have confidence in our evaluation metrics, we’ll have tighter confidence intervals
+
+Use the validation set to evaluate results from the training set. Then use the test set to double-check your evaluation after the model has “passed” the validation set.
+
+Train model on training set -> evaluate model on validation set -> tweak model according to results on validation set -> (repeat) or pick model that does best on validation set -> confirm results on test set
+
+Test sets and validation sets “wear out” with repeated use. The more you use the same data to make decisions about hyper parameter settings or other model improvements, the less confidence you’ll have that these results actually generalize to new, unseen data. Validation sets typically wear our more slowly then test sets.
+
+It’s a good idea to collect more data to refresh the test set and validation set
+
+Accuracy = number of correct predictions / total number of predictions
+
+Accuracy = TP + TN / (TP + TN + FP + FN)
+
+TP = true positives, TN = true negatives, FP = false positive, FN = false negative
+A model that produces no false positives has a precision of 1.0
+Prediction bias is a quantity that measures how far apart those two averages are:
+prediction bias = average of predictions - average of labels in data set
+
+A set of weights representing the connections between each neural network layer and the layer beneath it. The layer beneath may be another neural network layer, or some other kind of layer.
+A set of biases, one for each node.
+An activation function that transforms the output of each node in a layer. Different layers may have different activation functions.
+
+.
+
+———————————
+No
+Algorithm Design Manual
+How can we efficiently search for a particular key in a heap?
+We cannot. Binary search does not work because a heap is not a binary search tree
+
+Finding the largest element in a set under insertion and deletion is
+exactly what a priority queue is good for
+Recursive algorithms reduce large problems into smaller ones.
+A recursive approach to sorting involves partitioning the elements
+into two groups, sorting each of the smaller problems recursively, and Then
+interleaving the two sorted lists to totally order the elements.
+
+“Quicksort runs in Θ(nlogn) time, with high probability, if you give me randomly ordered data to sort.”
+
+“Randomized quicksort runs in Θ(nlog(n)) time on any input, with high probability.”
+Sorting can be used to illustrate most algorithm designs
+paradigms. Data structure techniques, divide-and-conquer, randomization,
+and incremental construction all lead to efficient sorting algorithms
+
+Graphs can be used to model a wide variety of structures
+and relationships. Graph-theoretic terminology gives us a language
+to talk about them
+
+Adjacency lists are the right data structure for most application of Graphs
+
+Breadth-First and depth-first searches provide mechanisms to visit each edge
+and vertex of the graph. They prove the basis of most simple, efficient graph
+algorithms
+
+DFS organizes vertices by entry / exit times, and edges into tree and back edges
+This organization is what gives DFS its real power
+
+Do I really understand the problem?
+  what exactly does the input consist of?
+  what exactly are the desired results or output?
+  Can I construct an input example small enough to solve by hand?
+  What happens  when I try to solve it?
+  How large is a typical instance of my problem?
+  How important is speed in my application?
+  How much time and effort can i spend on my implementation?
+  Am I trying to solve a numerical / graph algorithm/ geometric/ string/ set problem?
+  Which formulation seems easiest?
+
+Will brute force solve my problem correctly by searching through all subsets
+or arrangements and picking the best one?
+How do I measure the quality of a solution once I construct it?
+Does this simple, slow solution run in polynomial or exponential
+time? Is my problem small enough that this brute-force solution will suffice?
+Am I certain that my problem is sufficiently well defined to actually have a
+correct solution?
+Can I solve my problem by repeatedly trying some simple rule, like
+picking the biggest item first? Smallest item first?
+A random item first?
+What is known about this problem?
+Is there an implementation available that I can use?
+Did l look in the right place for my problem?
+Did I browse through all pictures?
+Are there any relevant resources available on the World Wide web?
+Are there special cases of the problem that I know how to solve?
+(a) Can I solve the problem efficiently when I ignore some of the input parameters?
+(b) Does the problem become easier to solve when I set some of the input parameters to trivial values, such as 0 or 1?
+(c) Can I simplify the problem to the point where I can solve it efficiently?
+(d) Why can’t this special-case algorithm be generalized to a wider class of
+inputs?
+(e) Is my problem a special case of a more general problem in the catalog?
+5. Which of the standard algorithm design paradigms are most relevant to my problem?
+(a) Is there a set of items that can be sorted by size or some key? Does this sorted order make it easier to find the answer?
+(b) Is there a way to split the problem in two smaller problems, perhaps by doing a binary search? How about partitioning the elements into big and small, or left and right? Does this suggest a divide-and-conquer algorithm?
+(c) Do the input objects or desired solution have a natural left-to-right order, such as characters in a string, elements of a permutation, or leaves of a tree? Can I use dynamic programming to exploit this order?
+(d) Are there certain operations being done repeatedly, such as searching, or finding the largest/smallest element? Can I use a data structure to speed up these queries? What about a dictionary/hash table or a heap/priority queue?
+(e) Can I use random sampling to select which object to pick next? What about constructing many random configurations and picking the best one? Can I use some kind of directed randomness like simulated anneal- ing to zoom in on the best solution?
+(f) Can I formulate my problem as a linear program? How about an integer program?
+
+Problem-solving is not a science, but part art and part skill. It is one of the skills most worth developing
+
+—————————— ——————
+
+Python Data Science
+
+————————
+50 Years Of Data Science
+
+Data scientist means a professional who uses scientific methods to liberate and create meaning form raw data. Statistics means the practice of science of collecting and analyzing numerical data in large quantities. Hadoop a variant of Map/ Reduce for use with datasets distributed across a cluster of computers
+
+A successful data scientist needs to be able to become one with the data by exploring it
+and applying it rigorous statistical analysis. But good data scientists also understand what it takes
+to deploy production systems and are ready to get their hands dirty by writing code that cleans
+the data or performs some core functionality... Gaining all these skills take time [on the job]
+
+Would be data scientists may face years of further skills development
+post masters degree before they can add value to their employer's organization.
+
+"In data science should be judged by the extent to which they enable the
+analyst to learn from data. Tools that are used by the data analyst are of directed
+benefit. Theories that serve as a basis for developing tools are of indirect benefit
+
+Statistics start with data. Think of the data as being generated by a black box in which a vectors of input variables: x (independent variables) go in one side, and on the other side the response variables
+y come out. Inside the black box, nature functions to associate the predictor variables with response variables
+
+There are two goals in analyzing the data:
+Prediction: To be able to predict what the responses are going to be to future input variables
+Inference: To infer how nature is associating the response variable to the input variables
+
+The Combination of predictive modeling culture together with
+CTF is the secret sauce of machine learning
+CTF = Common Task Framework is the single idea from machine Learning and data science that is most lacking attention in today's statistical training
+
+CTF imposes numerous demands on workers in the field:
+Workers must deliever models which can be evaluated by the CTF scoring procedure
+Workers might even need to implement custom made CTF for their problem
+so they must develop an information technology discipline for evaluation of scoring Rules
+
+Machine learning is a rapidly growing field at the interaction of computer Science and Statistics concerned with finding patterns in data. It is responsible for tremendous advances in technology from personalized
+product recommendation to speech recognition in cell phones
+
+Data exploration and preparation:
+-- sanity check data and its basic properties, expose unexpected Features
+--preparation: check for anomalies and artifacts. (Data cleaning)
+Data Representation and transformation
+-- modern databases (SQL to noSQL databases, distributed databases, live data streams)
+-- mathematical representations (acoustic, image, sensor, network data)
+
+———————————————————
+
+What does the "static" mean in main's signature?
+The keyword static, when applied to a method or a member variable, simply means that this method (or member variable) is defined for the class, but not for particular objects in the class. Thus, main is a general method. There is no "calling object" inside main. If you want to call instance methods from main, you must create objects and then call the instance methods on those objects. You can, however, call other static methods directly
+
+A class is a type of data. Class is like a factory and the object is what comes out of the factory.
+An object is one such piece of data 
+
+Overloading methods — two copies of constructors. One with parameter, one with without. Uses can vary.
+Example is below. Both these functions should be in the same file. Overloading methods is just various types of functions with the same name. Overloaded methods can have different return types  
+
+public SimpleCoordinates()
+{
+	 lat = 100;
+	 log = 500; 
+}
+
+public SimpleCoordinates(int latitude, int longitude)
+{
+	mLat = latitude;
+	mLog = longitude
+}
+
+When can you overload? The two parts of a method signature are the method name and the parameter list (number, type, and order of parameters). As long as the parameter list differs, Java allows you to overload the method, and even change the return type because the return type is not part of the method signature (it is ignored).
+
+----------------------------------- ----------------- ---------------------------------------------
+Pragmatic Programmer
+early adopter / fast adapter
+critical thinker 
+inquisitive
+realistic
+jack of all trades
+
+Provide options, don’t make lame excuses
+Do not leave broken windows (bad designs, wrong decisions, or poor code) unprepared
+Be a catalyst for change
+Remember the Big Picture
+Make Quality a Requirements issue 
+Your knowledge and experience are your most important professional assets 
+Invest regularly in your knowledge portfolio 
+Critically analyze what you read and hear 
+It’s both what you say and the way you say it 
+
+A pragmatic programmer takes charge of his or her own career, and isn’t afraid to admit ignorance or error. Deliveries can be late, unforeseen technical problems can come up 
+Entropy: amount of disorder in a system. Neglect accelerates the rot faster than any other factor 
+The soldiers act as a catalyst, bringing the village together so they can jointly produce something that they couldn’t have done by themselves—a synergistic result. Eventually everyone wins. 
+
+In some ways, programming is like painting. You start with a blank canvas and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them. You sketch out an overall shape, paint the underlying environment, then fill in the details. You constantly step back with a critical eye to view what you’ve done. Every now and then you’ll throw a canvas away and start again. 
+
+Good goals to set 
+-learn at least one new language every year
+-read a technical book each quarter
+-read nontechnical books too 
+-take classes
+-participate in local user groups
+-experiment with different environments
+-stay current 
+-get wired (Newgroup) 
+
+Communication:
+Is this a good time to talk about …?
+The Wisdom acrostic — understanding an audience
+What do you want them to learn
+What is their INTEREST in what you’ve go to say?
+How SOPHISTICATED are they?
+How much DETAIL do they want?
+Whom do you to OWN the information?
+How can you MOTIVATE them to listen to you?
+
+Chapter 2  :: Communication 
+
+Duplication is bad
+Do not repeat yourself
+Imposed duplication
+Inadvertent duplication
+Impatient duplication
+Interdeveloper duplication 
+make code easy to reuse 
+
+Chapter 3  :: Orthogonality 
+
+Orthogonality :: critical concept to produce systems that are easy to design, build, test, and extend. 
+Orthogonality: if changes in one do not affect any of the others. In a well designed system, the database code will be orthogonal to the user interface: you can change the interface without affecting the database, and swap databases without changing the interface 
+Nonorthogonal systems are inherently more complex to change and control.
+Eliminate effects between unrelated things
+we want to design components that are self contained: independent, and with a single, well defined-purpose (cohesion), when components are isolated from one another, you know that you can change one without having to worry about the rest.
+
+it is easier to write small self-contained components than a large single block of code. Simple components can be designed, coded, unit tested, and then forgotten — there is no need to keep changing existing code as you add new code. 
+If I drastically change the requirements behind a particular function, how many modules are affected? 
+
+Keep your code decoupled 
+Avoid global data
+Avoid similar functions
+Get into the habit of being critical of your code. Look for any opportunities to reorganize it to improve its structure and orthogonality. This process is called factoring, and its important that we’ve dedicated a section to it
+
+An orthogonally designed and implemented system is easier to test. Because the interactions between the system’s components are formalized and limited, more of the system testing can be performed at the individual module level. 
+
+Bug fixing is a good time to assess the orthogonality of the system as the whole. When you encounter a problem, assess how localized the fix is. Do you change just one module or are the changes scattered throughout the entire system. 
+
+ Orthogonality is related to the DRY principle
+With DRY you’re looking to minimize duplication within a system, whereas with orthogonality you reduce the interdependency among the system’s components. 
+
+“Nothing is more dangerous than an idea if its the only one you have”  - Emil- Auguste Chartier, Propos sur la religion 1938 
+
+Flexible Architecture: while many people try to keep their code flexible, you also need to think about maintaining flexibly in the areas of architecture, deployment, and vendor integration. 
+No one knows what the future may hold, especially not us! So enable your code to rock-n-roll; to “rock on” when it can, to roll with the punches when it must 
+
+Prototypes and Post-It Notes 
+Prototype to learn 
+-correctness
+-completeness
+-robustness 
+-style h
+
+Time estimates 
+Duration 
+1–15 days 3–8 weeks 8–30 weeks 30+ weeks 
+Quote estimate in 
+days
+weeks
+months
+think hard before giving an estimate 
+
+So, if after doing all the necessary work, you decide that a project will take 125 working days (25 weeks), you might want to deliver an estimate of “about six months.” 
+
+Where do estimates come from? Ask someone who’s already done it. 
+
+Sometimes when you are debugging, you need to interview the user who reported the bug in order to gather more data than you were initially given
+
+Inheritance: subclasses must be usable through the base class interface without the need for the user to know the difference 
+
+Metaprogramming ( 144) 
+
+Metadata is data about data. Common example is probably a database schema or data dictionary. A schema contains data that describes fields (columns) in terms of names, storage lengths, and other attributes. Metadata is any data that describes the application - how it should run, what resources it should use and so on. Metadata is accessed and used at run time not at compile time 
+
+
+Model View Controller Architecture
+Model: data itself, with common operations to manipulate it.
+Views - display the data in different ways: as a spreadsheet, a graph, or a totals box. 
+Each of these views has its own controller. The graph view may have a controller that allows you to zoom in or out or pan around the data 
+
+Model. The abstract data model representing the target object. The model has no direct knowledge of any views or controllers. 
+View. A way to interpret the model. It subscribes to changes in the model and logical events from the controller. 
+Controller. A way to control the view and provide the model with new data. It publishes events to both the model and the view. 
+
+We should avoid programming by coincidence - relying on luck and accidental successes - in favor of programming deliberately 
+
+When should you refactor?
+Duplication
+Non-orthogonal design 
+Outdated knowledge
+Performance
+
+Refactor early, refactor often. If you cannot refactor something immediately, make sure that it gets placed on the schedule. Make sure the users of the affected code know that it is scheduled to be refactored and how this might affect them 
+
+Refactoring is redesign. Anything that you or others on your team designed can be redesigned in light of new facts, deeper understandings, changing requirements, and etc. 
+
+Do not refactor and try to add functionality at the same time
+Make sure you have good tests before you begin refactoring. Run the tests as often as possible. 
+Take short deliberate steps: move a field from one class to another, fuse two similar methods into a superclass. Refactoring often involves making many localized changes that result in a larger scale change. 
+
+Many complex integrated chips have a full Built In Self Test feature that runs some base level diagnostics internally or a Test Access mechanism (TAM) that provides a test harness that allows the external environment to provide stimuli and collect responses from a chip. 
+
+Perfection is achieved, not when there is nothing left to add, but when there is nothing left to take away 
+
+Project:: Requirements rarely lie on the surface. Normally they are buried deep beneath layers of assumptions, microceptions and politics. Don’t gather requirements, dig for them 
+
+Good requirements include the following:
+An employee record may be viewed only by a nominated group of people. 
+The cylinder-head temperature must not exceed the critical value, which varies by engine. 
+The editor will highlight keywords, which will be selected depending on the type of file being edited. 
+
+It’s important to discover the underlying reason why users do a particular thing, rather than just the way they currently do it. At the end of the day, your development has to solve their business problem, not just meet their stated requirements 
+
+There’s a simple technique for getting inside your users’ requirements that isn’t used often enough: become a user. Are you writing a system 
+for the help desk? Spend a couple of days monitoring the phones with an experienced support person. Are you automating a manual stock control system? Work in the warehouse for a week.1 As well as giving you insight into how the system will really be used, you’d be amazed at how the request “May I sit in for a week while you do your job?” helps build trust and establishes a basis for communication with your users. Just remember not to get in the way! 
+
+Work with a user to think like a user
+Does a week sound like a long time? It really isn’t, particularly when you’re looking at processes in which management and workers occupy different worlds. Management will give you one view of how things operate, but when you get down on the floor, you’ll find a very different reality—one that will take time to assimilate. 
+
+Good requirements should remain abstract 
+Many projects failures are blamed on an increase in scope—also known as feature bloat, creeping featurism, or requirements creep 
+
+Is there an easier way?
+Are you trying to solve the right problem, or have you been distracted by a peripheral technicality?
+Why is this thing a problem? What is it that’s making it so hard to solve? Does it have to be done this way? Does it have to be done at all? 
+
+The single most important factor in making project-level activities work consistently and reliably is to automate your procedures. The only thing that developers dislike more than testing is documentation. Whether you have technical writers helping you or are doing it on your own, 
+
+Pragmatic Teams
+No Broken Windows - teams should not tolerate broken code. Team must take responsibility for the quality of the product, supporting developers who understand the no broken windows
+Boiled Frogs - People assume that someone else is handling the issue, or that the team leader must have OK’d a change that your user is requesting. 
+Communicate - Communicate clearly with the rest of the world. Great project teams have a distinct personality. People look forward to meetings with them, because they know that they’ll see a well-prepared performance that makes everyone feel good. Documentation is crisp, accurate, and consistent. The team speaks with one voice. 
+Do not repeat yourself -  eliminate duplicate work between members of a team 
+Orthogonality - It is a mistake to think that the activities of a project - analysis, design, coding, and testing can happen in isolation. Organize around functionality, not job functions. Let the teams organize themselves internally, building on individual strengths as they can. Each team has responsibilities to others in the project, as defined by their agreed-upon commitments. 
+Automation : a good way to ensure consistency and accuracy is automate team activities. Makefiles, shell scripts, editor templates, utility programs. 
+
+Do not use manual procedures 
+
+How to test software
+-regression testing : regression test compares the output of the current test with previous (or known) values. We can ensure that bugs we fixed today didn’t break things that were working yesterday. This is an important safety net, and it cuts down on unpleasant surprises. 
+
+Treat English as Just Another Programming Language 
+Two kinds of documentation produced for a project: internal and external. Internal documentation includes source code comments, design and test documents, and so on. External documentation is anything shipped or published to the outside world, such as user manuals. But regardless of the intended audience, or the role of the writer (developer or technical writer), all documentation is a mirror of the code. If there’s a discrepancy, the code is what matters—for better or worse. 
+
+In an abstract sense, an application is successful if it correctly implements its specifications. Unfortunately, this pays only abstract bills. In reality, the success of a project is measured by how well it meets the expectations of its users. A project that falls below their expectations is deemed a failure, no matter how good the deliverable is in absolute terms. 
+
+Pragmatic Programmers don’t shirk from responsibility. Instead, we rejoice in accepting challenges and in making our expertise well known. If we are responsible for a design, or a piece of code, we do a job we can be proud of. 
+
+Project teams are still made up of people, however, and this rule can cause trouble. On some projects, the idea of code ownership can cause cooperation problems. People may become territorial, or unwilling to work on common foundation elements. The project may end up like a bunch of insular little fiefdoms. You become prejudiced in favor of your code and against your coworkers. 
+
+------------------------------------------
+
+Orthogonality :: critical concept to produce systems that are easy to design, build, test, and extend. 
+Orthogonality: if changes in one do not affect any of the others. In a well designed system, the database code will be orthogonal to the user interface: you can change the interface without affecting the database, and swap databases without changing the interface 
+Nonorthogonal systems are inherently more complex to change and control.
+Eliminate effects between unrelated things
+we want to design components that are self contained: independent, and with a single, well defined-purpose (cohesion)
+when components are isolated from one another, you know that you can change one without having to worry about the rest.
+
+An orthogonally designed and implemented system is easier to test. Because the interactions between the system’s components are formalized and limited, more of the system testing can be performed at the individual module level. 
+
+Where do estimates come from? Ask someone who’s already done it. 
+sometimes when you are debugging, you need to interview the user who reported the bug in order to gather more data than you were initially given
+
+Model View Controller Architecture
+Model: data itself, with common operations to manipulate it.
+Views - display the data in different ways: as a spreadsheet, a graph, or a totals box. 
+Each of these views has its own controller. The graph view may have a controller that allows you to zoom in or out or pan around the data 
+
+A good pragmatic team
+No Broken Windows - teams should not tolerate broken code. Team must take responsibility for the quality of the product, supporting developers who understand the no broken windows
+Boiled Frogs - People assume that someone else is handling the issue, or that the team leader must have OK’d a change that your user is requesting. 
+Communicate - Communicate clearly with the rest of the world. Great project teams have a distinct personality. People look forward to meetings with them, because they know that they’ll see a well-prepared performance that makes everyone feel good. Documentation is crisp, accurate, and consistent. The team speaks with one voice. 
+Do not repeat yourself -  eliminate duplicate work between members of a team 
+Orthogonality - It is a mistake to think that the activities of a project - analysis, design, coding, and testing can happen in isolation. Organize around functionality, not job functions. Let the teams organize themselves internally, building on individual strengths as they can. Each team has responsibilities to others in the project, as defined by their agreed-upon commitments. 
+Automation : a good way to ensure consistency and accuracy is automate team activities. Makefiles, shell scripts, editor templates, utility programs. 
+
+----------------------------- --------------------- ------------------------- 
+Practices Of An Agile Developer 
+
+You want to tackle small problems while they are still small explore the unknown before you invest too much in it, and be prepared to admit you got it all wrong as soon as you discover the truth. You need to retool your thinking, your coding practices, and your teamwork. 
+Always tackle the most difficult problems first, and leave the simple ones toward the end 
+Blame doesn’t fix bugs. Instead of pointing fingers, point to possible solutions. IT’s the positive outcome that counts 
+Don’t fall for the quick hack. Invest the energy to keep code clean and out in the open 
+
+Years ago on my first day on the job as a system administrator, a senior admin and I were working on installing some software. I accidentally pushed a button bringing down the server. Within seconds, several frustrated users were knocking on the door. My mentor earned my trust and respect when  — instead of pointing fingers — he said “sorry we’re trying to find what went wrong. The system should be up in a few minutes .”
+
+You do not have to be great to get started, but you have to get started to be great
+Set a deadline; Argue the opposite; Use a mediator; Support the decision 
+
+Criticize ideas, not people. Take pride in arriving at a solution rather than proving whose idea is better. It feels comfortable when the team discusses the genuine merits and possible drawbacks of several candidate solutions. You can reject solutions that have to many drawbacks without hurt feelings, and imperfect (but still better_ solutions can be adopted without guilt
+
+Do what is right. Be honest, and have the courage to communicate the truth. It may be difficult at times, that is why it takes courage
+
+Keep up with changing technology. You do not have to become an expert at everything, but stay aware of where the industry is headed, and plan your career and projects accordingly 
+
+Raise the bar for you and your team. use brown-bag sessions to increase everyone’s knowledge and skills and help bring people together. Get the team excited about technologies or techniques that will benefit your project.
+
+Is everyone better than you? Good! Legendary jazz guitarist Pat offers this advice “always be the worst guy in every band you’re in. If you’re the best guy there you need to be in a different band”
+If you are the best on your team, you have little incentive to continue to invest in yourself. But if everyone around you is better than you are. you’ll be keenly motivated to catch up. 
+
+Learn the new; unlearn the old. When learning a new technology unlearn any old habits that might hold you back. After all there is much more to a car than just a horseless carriage 
+
+Let your customers decide. Developers, managers or business analysts shouldn’t make business critical decisions. Present details to business owners in a language they can understand, and let them make the decision.
+
+Tackle tasks before they bunch up. It’s easier to tackle common recurring tasks when you maintain steady, repeatable intervals between events 
+A good design is a vape; let it evolve. Design points you in the right direction. It’s not the territory itself
+Keep your project release a value at all times. Ensure that the project is always compilable, runnable, test, and ready to deploy at a moment’s notice
+
+Integrate early, integrate often. Code integration is a major source of risk. To mitigate that risk, start integration early and continue to do it regularly
+Develop in increments. Release your product within minimal yet usable chunks of functionality. Within the development of each increment, use an iterative cycle of one to four weeks or so. A short iteration feels sharply focused and productive. You have a solid well defined goal in sight, and you meet it 
+
+Unit testing provides instant feedback
+Unit testing makes your code robust
+Unit testing can be a helpful design tool
+Unit testing is a confidence booster
+Unit testing can act as probes when solving problems
+Use automated unit tests. Good unit tests warn you about problems immediately. Don’t make any design or code change without solid tests in place
+Run unit tests on each supported platform and environment combination, using continuous integration tools. Actively find problems before they find you 
+
+Measure how much work is left. Don’t kid yourself or your team with irrelevant metrics. Measure the backlog of what you do every complaint holds a truth. find the truth and fix the real problem 
+Write code to be clear, not clever. Express your intentions clearly to the reader of the code. Unreadable code isn’t clear
+Comment to communicate. Document code using well chosen, meaningful names. Use comments to describe its purpose and constraints. Don’t use commenting as a substitute for good code 
+Actively evaluate trade offs. Consider performance, convenience, productivity, cost, and time to market. If performance is adequate, then focus on improving the other factors. Don’t complicate the design for the sake of perceived performance or elegance. 
+Write code in short edit / build / test cycles. It’s better than coding for an extended period of time. You’ll create code that is clearer, simpler, and easier to maintain 
+Elegant code is immediately obvious in the utility and clarity. But the solution isn’t something you would have thought of easily. That is, elegance is easy to understand and recognize but much harder to create 
+Develop the simplest solutions that works. Incorporate patterns, principles and technology only if you have a compelling reason to use them. 
+Keep classes focused and components small. Avoid the temptation to build large classes or components or miscellaneous catchall classes. 
+Tell don’t task. Don’t take on another object’s or component’s job. Tell it what to do, stick to your own job. 
+Extend systems by substituting code. Add and enhance features by substituting classes that honor the interface contract. Delegation is almost always preferable to inheritance. 
+
+Maintain a log of problems and their solutions. Part of fixing a problem is retaining details of the solution so you can find and apply it later
+Treat warnings as errors. Checking in code with warnings is just as bad as checking in code with errors or code that fails its tests. No checked-in code should produce any warnings from the build tools.
+
+Attack a problem in isolation. Separate a problem area from its surroundings when working on it, especially in a larger application 
+Handle or propagate all exceptions. Don’t suppress them, even temporarily. Write your code with the exceptions that things will fall. 
+If the code writes a running debug log, issue a log message when an exception is caught or thrown; this will make tracking them down much easier.
+Present useful error messages. Provide an easy way to find the details of the error. Present as much supporting detail as you can about a problem when it occurs, but don’t bury the user with it
+
+Distinguishing types of errors
+Program defects: These are genuine bugs, such as NullPointerException, missing key, values, etc. There’s nothing the system administrator can do
+Environmental problems: This category includes failure to connect to a database or a remote web service, a full disk, insufficient permissions and that sort of thing. The programmer cannot do anything about it, but the user might be able to get around it, and the system administrator certainly should be able to fix it. If you give them sufficiently detailed information.
+
+User error: No need to bother the programmer or the system, administrators about this. The user just needs to try again, after you tell them what they did wrong. 
+Error messages feel useful and helpful. When a problem arises, you can hone in on the precise details of what went wrong, where. 
+Reversibility: No decision you make should be cast in stone, instead consider each major decision about as permanent as a sandcastle at the beach and explicitly plan ahead for change
+Good design evolves from active programmers. Real insight comes from active coding. Do not use architects who don’t code — they cannot design without knowing the realities of your system. 
+Architecture, design, coding, and testing feel like different facets of the same activity — development. They should not feel like separate activities. 
+Emphasize collective ownership of code. Rotate developers across different modules and tasks in different areas of the system. 
+Be a mentor. There is fun in sharing what you know — you gain as you give. You motivate others to achieve better results. You improve the overall competence of your team 
+You are helping them learn how to approach the problem. 
+They get to learn more than just the answer.
+They won’t keep coming to you with similar questions again and again.
+You are helping them function when you are not available to answer questions.
+They may come back with solutions or ideas you didn’t consider. This is the fun part — you learn something new as well.
+
+If the person comes back empty-handed, you can always supply more hints (or even the answer). If the person returns with some ideas, you can help evaluate the pros and cons of each idea. If the person returns with a better answer or solution than what you had thought of, you can learn from experience and share your thoughts 
+As a mentor, you lead others toward solutions, motivating them to solve problems and giving them an opportunity to think and learn problem solving 
+Give others a chance to solve problems. Point them to the right direction instead of handing them solutions. Everyone can learn something in this process. It feels like you are being helpful without spoon feeding. You’re not cryptic or cagey, but you can lead people to find their own answers
+
+Safe but not checked in. If you need to transfer, or save source code that isn’t quite done, don’t yet you have a couple of options.L
+
+Share code only when ready. Never check in code that not ready for others. Deliberately checking in code that  doesn’t compile or pass its unit tests should be considered an act of criminal projects negligence. Review all code. Code reviews are invaluable in improving the quality of the code and keeping the error rate low. If done correctly, reviews can be practical and effective. Review code after each task, using different developers. Code reviews happen in small chunks, continuously. It feels like an ongoing part of a project, not a big scary event. 
+
+Keep others informed. Publish your status, ideas, and the neat things you’re looking at. Don’t wait for others to ask you the status of your work .
+
+Inheritance is one of the most abused concepts in OO modeling and programming. If you violate the substitution principle, your inheritance hierarchy may still provide some code reusability but will not help with extensibility.. When using inheritance ask yourself whether your derived class is a substitutable in place of the base class. If the answer is no, then ask yourself why are you using inheritance. If the answer is to reuse code in the base class, then you could probably use composition instead. Composition is where an object of your class contains and uses an object of another class, delegating responsibilities to the contained object 
+
+When should you use inheritance vs delegation?
+If your new class can be used in place of the existing class and the relationship between them can be described as is-a then use inheritance 
+If your new class needs to simply use the existing class and the relationship can be described as has-a or use-a then use delegation 
+
+You may argue that in the case of deletion, you have to write lots of tiny methods that route method class to the contained object. In inheritance you do not need those, because of public methods of the base class are readily available in the derived class By itself, that’s not good enough to use inheritance. 
+Extend systems by substituting code. Add and enhance features by substituting classes that honor the interface contract. Delegation is almost always preferable to inheritance. 
+Delegation is usually more flexible and adaptable than inheritance. 
+
+
+
+
 
