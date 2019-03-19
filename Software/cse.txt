@@ -1,3 +1,108 @@
+Properties of Binary Trees
+Total # number of nodes: h+1 <= n <= 2^(n+1) + 1
+Height of tree: log(n+1)-1 <= h <= n-1
+# of edges: e : n-1
+
+Pre-order: root->left->right
+In-order: left->root->right
+Post-order: left->right->root
+Average internal length T(n) of the binary search tree with n nodes
+is O(nLog(n))
+
+Average time complexity of a BST Operation to find or insert is T(N)/n = O(log(n))
+
+Recursive Fibonacci Algorithm:
+int fib(int n)
+{
+  if(n <= 0)
+    return 0;
+  else if (n == 1)
+    return 1;
+  else
+    recursive, fib(n-1)+fib(n-2)
+}
+
+Stack: LIFO, Queue: FIFO,
+
+Look up linkedlist, array, queue, stack, Heap sort, priority que
+
+Heap sort
+O(n(ln(n)))
+Taking items out of a heap: O(ln(n))
+Lead terms: [ln(n)-1]n
+nln(n) > ln(n!)
+In place heapifications
+Left child: 2k + 1
+Right child: 2k + 2
+Parent: (k+1)/2 - 1
+worst case: 2^k * (h-k ) swaps
+maximum of 2n or O(n) comparisons
+Heapfication is O(n) time
+popping n items from a heap is O(nln(n))
+no worst cast for heap sort
+degree from the heap will always require the same number of operations
+regardless of the distribution of values in heap
+
+worst case: O(nln(n))
+Average: O(nln(n))
+Best: O(n)
+Merge sort requires: O(n) additional memory
+Quicksort requires O(ln(n)) additional memory
+
+Search algorithms:
+Linear search: work through the list from big -> end checking each element O(n)
+Binary search: assume items are sorted. look at middle items
+if v < first half elements
+else look at the second elements
+
+
+Inheritance* sharing of attributes and operations
+Used to factor out common features
+Among classes based on hierarchical structure. Can reduce repetition within programs. Ability to form new classes that extend capabilities of existing classes
+Polymorphism some operation may behave differently for different classes
+Ability of one type to appear and be used as another type
+Encapsulation have something that is not visible to the user. Separating an interface from an implementation hiding details that may change
+Attributes single items of information
+
+Rules for class design
+Attributes are single items for information
+If there are multiples or something it probably is a class
+If you have a subset of attributes of a class represents a thing onto itself, those attributes should become a class itself
+Avoid having something stored in more than one place. If we put something in a class we have pointers to the one object instead of having duplicate e data hanging around
+Plurals imply two classes one for the class one for the collection
+
+Abstraction reducing or factoring out details so we can focus on concepts /objects are abstraction of things
+Constructors responsible for getting the object I to a valid internal organization
+No return types  nor can they return visits
+
+Upcall extends a virtual functions
+Pure virtual function can only be used in derived classes /(abstract) every derived class must have an implementation of that function.
+
+Abstract == base class
+Ways to make an abstract class
+Declare a member function to be virtual
+Declare a constructor to be protected
+Inherit a pure virtual function without overriding
+
+Visitor pattern
+Aggregation: is one part of another? Operation on one apply to it's parts?
+Is one subordinate to the other?
+
+Composition: part can be associated with at most one assembly
+If 1 class is the object connected to it destroyed?
+Intermediate class a class that connects two or more things where the connection has information associated to with it
+Forward references is preferred over include header files
+Forward references decrease dependencies in project and help avoid include cycles
+If you are going to Instantiate the object as a member variable or use Any function on the object you will need to include header files
+
+Single responsibility principle every context class, function, variable, etc should have a single responsibility and that responsibility should be entirely encapsulated by the context
+
+Machine learning overlaps with statistical mathematical optimization
+Polymorphism: some operation may behave differently for different classes
+Abstraction: isolate aspects that are important for some purpose and suppress aspects that are not important. We care what you do, not how you do it.
+Encapsulation: we have something that is visible to the user
+Inheritance: ability to form new classes that extend capabilities of existing classes
+
 What are the weights and bias for the AND perceptron? 
 Weight1 = 0.6, Weight2 = 0.6, bias = -1 
 What are two ways to go from an AND perceptron to an OR perceptron? 
@@ -622,6 +727,50 @@ Extend systems by substituting code. Add and enhance features by substituting cl
 Delegation is usually more flexible and adaptable than inheritance. 
 
 
+---------------------------------------------------------
+Competitive Programming C++ 
+
+1.) Type Code faster 
+2.) Quickly Identify Problem Types 
+3.) Do Algorithm Analysis : Brainstorm many possible algorithms - then pick the simplest that works ( fast enough to pass the time and memory limit, and produce the correct answer). Analyze the complexity of your algorithm with the given input bound and stated time / memory limit and you can do a better judgement whether you should try coding your algorithm or attempt to improve your algorithm first or switch to other problems in the problem set. 
+
+Refrain from coding until you are sure that your algorithm is fast and correct
+
+Problems with nested loops of depth k running about n iterations each has O(n^k) complexity
+
+IF your problem is recursive with b recursive calls per level and has L levels, the program has roughly O(b^l) complexity. This is the upper bound. The actual complexity depends on what actions done per level and whether pruning is possible 
+
+Dynamic programming algorithms with fill a 2-D matrix is O(k) per cell is in O(k x N^2) 
+
+Most of the time O(nlog2(n)) is the ideal run time efficiency 
+
+4.) Master programming languages ( java & C++ ) 
+Java is useful for BigInteger, String Processing and GregorianCalendar API 
 
 
+// calculate 25! 
 
+Import java.util.*;
+Import java.math.*; 
+
+Class Main {
+	public static void main(String[] args) 
+	{
+		BigInteger fac = new BigInteger.valueOf(1) ; 
+		for(int i = 2; I < 25; I++)
+		{
+		fac = fac.multiply(BigInteger.valueOf(I)); 
+		}
+		System.out.println(fac); 
+	}} 
+
+Man C++ programmers force themselves to use can / cut all the time, but it is not as flexible as scans / printf. Scanf / printF is also faster 
+
+5.) Master the art of testing code 
+
+Linear data structures
+Static Array in C++ / C & Java : Commonly used data structure in programming contests whenever there is a collection of sequential data to be stored and later accessed using their indices/
+Typical operations are accessing certain indices, sorting the array, linearly scanning or binary searching the array
+
+Resizeable array: vector C++ STL <vector> (Java arrayList)
+Stack C++ <stack> (Java Stack) : 
