@@ -1,4 +1,4 @@
-Properties of Binary Trees
+      Properties of Binary Trees
 Total # number of nodes: h+1 <= n <= 2^(n+1) + 1
 Height of tree: log(n+1)-1 <= h <= n-1
 # of edges: e : n-1
