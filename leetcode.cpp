@@ -1,3 +1,4 @@
+:q!
 //REVERSE AN INTEGER
 class Solution {
  public :
