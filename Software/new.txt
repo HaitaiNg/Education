@@ -1,0 +1,94 @@
+
+Class :: some member variables are private 
+Struct: We intend to have all member variables public
+The only difference between using class and struct is the default access level 
+
+Encapsulation: user code cannot inadvertently corrupt the state of an encapsulated object; the implementation of an encapsulated class can change over time without requiring changes in the user level code
+
+By defining the member variables as private, the class author is free to make changes to the data. If the implementation changes only the class code needs to be examined to see what effect the change may have. User code needs to change only when the interface changes. If the data are public, then any code that used the old data members might be broken. It would be necessary to locate and rewrite any code that relied on the old representation before the program could be used again. 
+
+Another advantage of making data members private is that data are protected from mistakes that users might introduce. If there is a bug that corrupts an object’s state the places to look for the bug are localized. Only code that is part of the implementation could be responsible for the error. 
+
+Although user code need not change when a class definition changes, the source files that use a class must be recompiled any time the class changes 
+
+We say that a member is associated with a class by adding the keyword static to its declaration. Like any other class member, static members can be public or private. The type of a static data member can be const, reference, array, class type, and so forth 
+The static members of a class exist outside any class
+Objects do not contain data associated with static data members
+Even though static members are not part of the objects of its class, we can use an object, reference, or pointer of the class type to access a static member 
+
+Data abstraction: programming technique that focuses on the interface to a type. Data abstraction lets programmers ignore the details of how a type is represented and think instead about the operations that the type can perform. Data abstraction is fundamental in object oriented and generic programming 
+
+Encapsulation: separation of implementation from interface; hides the implementation details of a type. 
+
+Cout << “hi” << Lendl; // writes hi and adds a new line, and flushes the buffer
+Cout << “hi” << flash; // writes hi then flushes the buffer, does not add data
+Cout << “hi” << ends; // writes hi and a null then flushes the buffer 
+
+
+Polymorphism means many form. We speak of types related to inheritance as polymorphic types because we can use the many forms of these types while ignoring the differences between them. 
+
+When we call a function defined in a base class through a reference or pointer to the base class, we do not know the type of object on which that member is executed. If the function is virtual, then the decision as to which function to run is delayed until run time.
+
+A function that is virtual in a base class is implicitly virtual in its derived classes. When a derived class overrides a virtual, the parameters in the base and derived classes must match exactly. 
+
+Refactoring means redesigning a class hierarchy to move operations and/or data from one class to another. Refactoring Is common in object-oriented applications 
+
+Abstract base class: class that has one or more pure virtual functions. We cannot create objects of an abstract base-class type
+Class derivation list: list of base classes, each of which may have an optional access level. 
+
+Dynamic binding: delaying until run time the selection of which function to run. In C++ dynamic binding refers to the runtime choice of which virtual function to run based on the underlying type of the object to which a reference or pointer is bound. 
+
+A template is a blueprint or formula for creating classes or functions. When we use a generic type, we supply the information needed to transform that blueprint into a specific class or function 
+
+A class template is a blue print for generating classes. Class templates differ from function templates in that the compiler cannot deduce the template parameter types(s) for a class template 
+
+
+C++ Sequential Container Types
+Vector: flexible sized array. Supports fast random access. Inserting or deleting elements other than at the back may be slow
+Deque: double-ended queue. Supports fast random access. Fast insert / delete at front or back 
+List: doubly linked list. Supports only bidirectional sequential access. Fast insert / delete at any point in the list
+Foward_List: singly linked list. Supports only sequential access in one direction. Fast insert / delete at any point in the list
+Array: fixed size array. Supports fast random access. Cannot add or remove elements
+
+The list and forward-list containers are designed to make it fast to add or remove an element anywhere in the container. These types do not support random access. Therefore you have to iterate through the container. 
+
+Deque: adding or removing an element in the middle can be expensive. However adding to the beginning or end is quick 
+
+Most of the time a vector a good container to use 
+If your program has a lot of small elements and space overhead matters, don’t use list or forward_list. 
+If the program requires random access to elements, use vector or a deque 
+If the program needs to insert or delete elements in the middle of the container, use a list or foward_list.
+If the program needs to insert or delete elements at the front and the back, but not in the middle use a deque 
+If the program needs to insert elements in the middle of the container only while reading input, and subsequently needs random access to the elements 
+
+If you’re unsure of what container to use, write your code so that it uses only common operations that are common to both vector and list. Using iterators not subscripts, and avoid random access to elements. 
+
+Associative and sequential contains differ from one another in a fundamental way. Elements in an associative container are stored and retrieved by a key. Elements in a sequential container are stored and accessed sequentially by their position in the container. 
+
+Associative containers support efficient lookup and retrieval by a key. (Map, set) 
+
+Smart pointer acts like a regular pointer with the important exception that it automatically deletes the object to which it points. 
+Programs tend to use dynamic memory for  three purpose:
+- You do not know how many objects you may need
+- You do not know the precise type of the object you need
+- You want to share data between several objects
+
+One common reason to use dynamic memory is to allow multiple objects to share the same state 
+
+Caution: Managing Dynamic Memory Is Error-Prone 
+There are three common problems with using new and delete to manage dynamic memory: 
+1. Forgetting to delete memory. Neglecting to delete dynamic memory is known as a “memory leak,” because the memory is never returned to the free store. Testing for memory leaks is difficult because they usually cannot be detected until the application is run for a long enough time to actually exhaust memory. 
+2. Using an object after it has been deleted. This error can sometimes be detected by making the pointer null after the delete. 
+3. Deleting the same memory twice. This error can happen when two pointers address the same dynamically allocated object. If delete is applied to one of the pointers, then the object’s memory is returned to the free store. If we subsequently delete the second pointer, then the free store may be corrupted. 
+
+Most applications should use a library container rather dynamically allocated array. Using a container is easier, less likely to contain memory management bugs, and is likely to give better performance
+
+Dangling pointer: a pointer that refers to memory that once had an object but no longer does. Program errors due to dangling pointers are notoriously difficult to debug 
+Destructor: special member function that cleans up an object when the object is out of scope or delete 
+Dynamically allocated: object that is allocated on the free store. Objects allocated on the free store exist until they are explicitly deleted or the program terminates 
+Heap: synonym for free store 
+Shared_PTR: smart pointer that provides shared ownership. The object is deleted when the last shared_ptr point to that object is destroyed 
+Smart_PTR: library types that acts like a pointer but can be checked to see whether it is safe to use. The type takes care of deleting memory hen appropriate
+Unique_PTR: smart pointer that provides single ownership. The object is deleted when the unique_ptr to that object is destroyed 
+
+ 
