@@ -134,3 +134,6 @@ Ullman Database Systems The Complete Book
 Competitive Coding By Steven & Felix 
 Korean From Zero 
 Welcome To Machine Learning - LeetCode 
+Make Electronics 
+Getting Started With Electronics 
+
