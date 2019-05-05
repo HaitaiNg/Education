@@ -1,6 +1,32 @@
 
 Important life goals: learn a new language every year; read nontechnical & technical books; take classes; participate in local user groups; stay current 
-------------------------------------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------------------
+Algorithm Design Manual 
+---------------------------------------------------------------------------------------------------
+
+n!≫cn ≫n3 ≫n2 ≫n1+ε ≫nlogn≫n≫√n≫ log2 n ≫ logn ≫ logn/loglogn ≫ loglogn ≫ α(n) ≫ 1
+
+Questions to ask when solving problems: Do I understand the problem? What exactly does the input consist of? What exactly are the desired results or output? Can I construct an input example small enough to solve by hand? How important is speed in the application? Am I trying to solve a numerical / graph algorithm/ geometric / string / set problem? Will brute force solve my problem correctly by searching through all subsets or arrangements? Is there a way to split the problem in two smaller problems, perhaps by doing a binary search? How about partitioning the elements into big and small, or left and right? Does this suggest a divide-and-conquer algorithm? Do the input objects or desired solution have a natural left-to-right order, such as characters in a string, elements of a permutation, or leaves of a tree? Can I use dynamic programming to exploit this order? Are there certain operations being done repeatedly, such as searching, or finding the largest/smallest element? Can I use a data structure to speed up these queries? What about a dictionary/hash table or a heap/priority queue? Can I use random sampling to select which object to pick next? What about constructing many random configurations and picking the best one? Can I use some kind of directed randomness like simulated anneal- ing to zoom in on the best solution? Can I formulate my problem as a linear program? How about an integer program?
+
+---------------------------------------------------------------------------------------------------
+Competitive Programming C++ 
+---------------------------------------------------------------------------------------------------
+Algorithm Analysis: pick the simplest algorithm that works (fast enough to pass the time, memory, and produce the correct output). Analyze the complexity of the algorithm with the given input bound and stated time / memory limit and you can do a better judgement whether you should try coding your algorithm or attempt to improve your first or switch to other problems in the problem set. 
+
+If your problem is recursive with b recursive calls per level and has L levels, the program has roughly O(b^l) complexity. This is the upper bound. The actual complexity depends on what actions done per level and whether pruning is possible 
+
+O(nlog2(n)) is the ideal run time efficiency
+
+Master programming languages ( java & C++ ). Java is useful for BigInteger, String Processing and GregorianCalendar API 
+
+Static Array in C++ / C & Java : Commonly used data structure in programming contests whenever there is a collection of sequential data to be stored and later accessed using their indices/
+Typical operations are accessing certain indices, sorting the array, linearly scanning or binary searching the array
+
+
+---------------------------------------------------------------------------------------------------
+C++ Primer & Software Design & Algorithms 
+---------------------------------------------------------------------------------------------------
 
 Class :: some member variables are private 
 Struct: We intend to have all member variables public
@@ -112,7 +138,6 @@ int fib(int n )
 What does the "static" mean in main's signature?
 The keyword static, when applied to a method or a member variable, simply means that this method (or member variable) is defined for the class, but not for particular objects in the class. Thus, main is a general method. There is no "calling object" inside main. If you want to call instance methods from main, you must create objects and then call the instance methods on those objects. You can, however, call other static methods directly
 
-
 Overloading methods — two copies of constructors. One with parameter, one with without. Uses can vary.
 Example is below. Both these functions should be in the same file. Overloading methods is just various types of functions with the same name. Overloaded methods can have different return types  
 
@@ -134,6 +159,8 @@ public SimpleCoordinates(int latitude, int longitude)
 Binary search assumes that the items are sorted. We first look at the middle item (median) and check if the v < first half of elements or else we look at the second half of elements
 Inheritance: sharing of attributes and operations (factors out common features, reduces repetition within programs, ability to form new classes that extend capabilities of existing classes). Polymorphism: Some classes may behave differently for different classes. The ability of one type to appear and be used as another type. Encapsulation hides something that is not visible to the user. Separating the interface from an implementation, hiding detail that may change. 
 
+Inheritance is one of the most abused concepts in OO modeling and programming. If you violate the substitution principle, your inheritance hierarchy may still provide some code reusability but will not help with extensibility.. When using inheritance ask yourself whether your derived class is a substitutable in place of the base class. If the answer is no, then ask yourself why are you using inheritance. If the answer is to reuse code in the base class, then you could probably use composition instead. Composition is where an object of your class contains and uses an object of another class, delegating responsibilities to the contained object 
+
 Rules For Class Design: Attributes are single items for information; if there are multiples of something then it should be a class; if you have a subset of attributes of a class represent a thing onto itself, those attributes should become a class itself. 
 
 Abstraction: reducing or factoring out details so we can focus on concepts / objects. Isolate aspects that are important for some purposes and suppress aspects that are not important.  
@@ -141,20 +168,65 @@ Constructor is used to instantiate an object
 Pure virtual functions can only be used in derived classes (abstract). Every derived class must have an implementation of that function. (Abstract = base class). 
 
 Aggregation: Is one part of another? Is one subordinate to the other?
-Composition: One class owns another class 
+Composition: One class owns another class. Composition is where an object of your class contains and uses an object of another class, delegating responsibilities to the contained object 
+
 Intermediate class: a class that connects two or more things where the connection has information associated to with it. 
+
+When should you use inheritance vs delegation?
+If your new class can be used in place of the existing class and the relationship between them can be described as is-a then use inheritance 
+If your new class needs to simply use the existing class and the relationship can be described as has-a or use-a then use delegation 
+
 
 Single responsibility principle: every context class, function, variable should have a single responsibility and that responsibility should be encapsulated by the context. 
  
 ---------------------------------------------------------------------------------------------------
-Pragmatic Programmer: early adopter; critical thinker; inquisitive; realistic; jack of all trades
+Pragmatic Programmer
+---------------------------------------------------------------------------------------------------
+Early adopter; critical thinker; inquisitive; realistic; jack of all trades
 Do not leave broken windows (bad designs, wrong decisions, poor code). Be a catalyst for change. Your knowledge and experience are your most important professional assets. Invest regularly in your knowledge portfolio, and critically analyze what you read and hear. 
 
 Programming is like painting. You start with a blank canvas, and certain basic raw materials. You use a combination of science, art, and craft to determine what to do with them. You sketch out an overall shape, paint the underlying environment, then fill in the details. 
 
+Orthogonality :: concept to produce systems that are easy to design, build, test and extend. In a well designed system, the database code will be orthogonal to the user interface; you can change the interface without affecting the database, and swap databases without changing the interface. Ideally, systems are self contained, independent; with a single well defined-purpose (cohesion), when components are isolated from one another. If I drastically change the requirements behind a particular function, how many modules are affected? Bug fixing and refactoring is a good time to assess the orthogonality of the system. Orthogonality is related to the DRY principle. DRY means you are trying to minimize code duplication within a system, whereas the orthogonality you reduce the interdependency among the system's components. Orthogonality - It is a mistake to think that the activities of a project - analysis, design, coding, and testing can happen in isolation. Organize around functionality, not job functions. Let the teams organize themselves internally, building on individual strengths as they can. Each team has responsibilities to others in the project, as defined by their agreed-upon commitments. 
 
+No one knows what the future may hold, especially not us! So enable your code to rock-n-roll; to “rock on” when it can, to roll with the punches when it must.
 
+Estimates to complete tasks: ask someone who has already completed it
 
+Sometimes when you are debugging, you may need to interview the user who reported the bug in order to gather more data. 
 
+Metadata is data about data (data dictionary / data schema). A schema provides data that describes the fields (columns) in terms of names, storage lengths, and other attributes. Metadata is any data that describes the application - how it should run, what resources it should use and so on. 
 
+Do not refactor and try to add functionality at the same time. Have good tests before you begin refactoring. 
+Project requirements rarely lie on the surface. Normally they are buried deep beneath layers of assumptions, and politics. 
+
+There’s a simple technique for getting inside your users’ requirements that isn’t used often enough: become a user. Are you writing a system for the help desk? Spend a couple of days monitoring the phones with an experienced support person. Are you automating a manual stock control system? Work in the warehouse for a week.1 As well as giving you insight into how the system will really be used, you’d be amazed at how the request “May I sit in for a week while you do your job?” helps build trust and establishes a basis for communication with your users. Just remember not to get in the way! 
+
+Pragmatic Teams: no broken windows: Teams should not tolerate broken. Teams must take responsibility for the quality of the product, supporting developers who understand the no broken windows. 
+
+Communicate Clearly with others. Great teams have a distinct personality. People look forward to meeting with them, because they know that they will see a well prepared performance that makes everyone feel good. Documentation is crisp, accurate, and consistent. 
+
+---------------------------------------------------------------------------------------------------
+Practices Of An Agile Developer 
+---------------------------------------------------------------------------------------------------
+
+Tackle small problems first, and make mistakes early. Do not do the quick hack, invest the energy to keep code clean and out in the open. 
+
+Years ago on my first day on the job as a system administrator, a senior admin and I were working on installing some software. I accidentally pushed a button bringing down the server. Within seconds, several frustrated users were knocking on the door. My mentor earned my trust and respect when  — instead of pointing fingers — he said “sorry we’re trying to find what went wrong. The system should be up in a few minutes .”
+
+Criticize ideas not people. Take pride in arriving at a solution rather than proving whose idea is better. It feels comfortable when the team discusses the genuine merits and possible drawbacks of several candidate solutions. You can reject solutions that have many drawbacks without hurt feelings. 
+
+Is everyone better than you? Good. If you are the best on the team, you have little incentive to continue to invest in yourself. If everyone is better around you, you will be motivated to catch up. 
+
+Keep your project release a value at all times. Ensure that the project is always compilable, runnable, test, and ready to deploy at a moment’s notice. Integrate early, and often. Code integration is a major source of risk. TO mitigate the risk, start integration early and continue to do it regularly. Develop in increments, and release your product with minimal yet usable chunks of functionality.
+
+Unit testing: provides instant feedback; code robust; helpful design tool; confidence booster; acts as probes when solving problems. Use automated unit tests. Good unit tests warn you about problems immediately. Do not make any design or code changes without solid tests in place. Run unit tests on each supported platform and environment combination, using continuous integration tools. Actively find problems before they find you. 
+
+Keep classes focused and components small. Avoid the temptation to build large classes or components or miscellaneous catchall classes. Treat warnings as errors. Checking in code with warnings is just as bad as checking in code with errors or code that fails its tests. No checked-in code should produce any warnings from the build tools.
+
+Share code only when ready. Never check in code that not ready for others. Deliberately checking in code that  doesn’t compile or pass its unit tests should be considered an act of criminal projects negligence. Review all code. Code reviews are invaluable in improving the quality of the code and keeping the error rate low. If done correctly, reviews can be practical and effective. Review code after each task, using different developers. Code reviews happen in small chunks, continuously.
+
+Distinguishing types of errors: Program defects vs environmental problems. Program defects include genuine bugs, NullPointerException, missing key, values. Environmental problems include: failure to connect to a database, remote web service, full disk, insufficient permissions. The programmer cannot do anything about it.
+
+Be a mentor. There is fun in sharing what you know - you gain as you give. You can motivate others to achieve better, and help others approach problems. 
 
