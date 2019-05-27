@@ -115,4 +115,11 @@ This is impractical because any one node outage would cause the whole system to 
 In practice, if you enable syn‐ chronous replication on a database, it usually means that one of the followers is syn‐ chronous, and the others are asynchronous. If the synchronous follower becomes unavailable or slow, one of the asynchronous followers is made synchronous. This guarantees that you have an up-to-date copy of the data on at least two nodes: theleader and one synchronous follower. This configuration is sometimes also called semi-synchronous
 
 
+failover can happen. An automatic failover process usually looks like this:
+Determining that the leader has failed. Most systems simply use timeout: nodes frequently bounce messaes back and forth between each other, and if a node does not respond for some period of time (30 seconds) it assumed dead.
+Choosing a new leader. (A new leader can be appointed by an election process. The best candidate for leadership is usually the replica with the most up to date data changes from the old leader (to minimize any data loss). 
+Reconfiguring the system to use the new leader. 
 
+If an asychronous replication is used, the new leader may not have received all the writes from the old leader before it failed. Discarding writes is dangerous if other storae systems outside of the database need to be coordinated with the database contents. 
+
+Split brain. This is when two nodes become leaders. If both leaders accept writes, ther is no process for resolving conflicts, data is likely to be lost or corrupted. Some systems have a mechanism to shut down one node if two leaders detected. 
