@@ -138,3 +138,4 @@ Make Electronics
 Getting Started With Electronics 
 The Hitchhiker's Guide To Programming Contests 
 Designing Data Intensive Applications
+People's Style At Work And Beyond Second Edition 
