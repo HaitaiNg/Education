@@ -83,7 +83,7 @@ V For Vendetta
 A Train Near Magdeburg — The Holocaust, The survivors, and the American (DNF)
 A Programmer’s Guide To Data Mining: The Ancient Art Of The Numerati
 AWOL on the Appalachian Trail
-Autobiography of Gucci mane
+Autobiography of Gucci Mane
 Code: The Hidden Language Of Hardware And Software 
 American Born Chinese 
 Guide2DataMining
@@ -108,7 +108,7 @@ Introducing Logic: A Graphic Guide
 Introducing Artificial Intelligence: A Graphic Guide  
 God of War 2018 (Novelization) 
 Introducing Emotional Intelligence: A Practical Guide 
-
+Star Wars Darth Plagueis 
 What I wish I knew When I was 20: A Crash Course On Making Your Own In The World
 Getting Started In Electronics: Forest M.Mims III
 Data Analysis Made Accessible : 2018 Edition 
@@ -143,3 +143,4 @@ The Road To Avengers End Game
 Rap Tees XL Dj Ross One
 Gears Of War Omnibus Volume One
 American Sniper 
+MatLab Introduction To Machine Learning 

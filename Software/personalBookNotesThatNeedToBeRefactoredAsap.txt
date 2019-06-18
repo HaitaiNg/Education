@@ -1,0 +1,68 @@
+Finance/ Risk warehouse: connect data, correct format, and validate it. This is to ensure that all risk calculation have all the dat to cover all risk acknowledgements. 
+Fitnesse: a fully standalone integrated wiki and acceptance testing framework. 
+
+Neural network elements:
+A Node is where computation happens, loses patterned on a neuron in the human brain, which fires when it encounters stimuli. As a neural network learns it adjusts weights so that it can map signals to meaning correctly. The relationship between network error and each of those weights is a derivative. (DE / DW that measures the degree to which is a slight change in weight causes a slight change in error. Artificial neural network: optimizes and minimizes error. 
+Machine learning is a subset of artificial intelligence. . Machine learning systems can adapt themselves once exposed to more data. It is dynamic and does not require human interaction / involvement. 
+
+Quants practice quantitative finance. The subject is an interdisciplinary mix of physics inspired models, mathematical techniques, computer science, all aimed at the validation of financial securities. Best quantitative finance brings real insights into the relation between value and uncertainty. Physicists on Wall Street build models, models to determine the value of securities. Stocks are commonplace securities. An option is a bet that the stock price will rise. An option is a special case of a general derivative security, a contract whose value is derived from the value of some other simpler underlying security on which it rests. 
+
+Traders spend a majority o the day watching screens, assimilating economic information, page frantically through spreadsheets, run programs written by quants, enter trades, talk to salespeople, brokers, and punch keys. 
+
+“Graduate education is a extended adolescence during which highly intelligence young people see their world shrink to fit the dimensions of their advisors’ laboratory… with their identities bound to the outcome of their thesis project. Graduate students are socialized to view other other types of work (teaching industry) even changing to another type of work together with contempt. Watching a descent wage and meaningful l work that occupies only 50 hours per week is considered selling out. 
+
+Victor Frankl: man search for meaning; Rudolf Steiner: knowledge of higher worlds. 
+
+I am proud of the struggle - preserving as much as mathematics has stood me in good read on wall street as well as academia. (7 years to complete a PhD when trying to discover something new in any field, one has to spend many years thinking, making false starts, wandering down blind alleys, and stumbling down into ditches, only to emerge again and keep going). 
+
+Postdoctural life = priest hood. 
+Blissful apothesosis of a life dedicated to knowledge. Top universities: no mundane obligations such as teaching, administrating, fixed hours. 
+Find something worthwhile and work on it. Everyone worked to achieve something great, and was willing to spend a lifetime doing it. Some professors would stop doing work once they reach “tenure status” “publish or perish”
+
+Physics -> engineering, chemistry, medicine 
+
+Layoffs are always more convenient for a firm than firings; it is easier to let go of someone because of adverse conditions than some in adequacy that might be challenged in court. 
+
+Relational database: shared memory, single operating system, database proprietary, self management.
+1 major drawback:  single point of failure. 
+
+MPP: masive parallel processing - Hadoop stores structure and unstructrd data, tag and value, HDFS, HBASE, HIVE, AVRO, pARQUe. Each clustered servers have their own memory, disc, and operating system. 
+
+Statistics: discipline concerned with the collection, analysis, description, visualization, and drawing of interferences from data. Statistics is not considered part of AI but many statistical techniques form the foundation for more advanced machine learning techniques.
+
+Descriptive statistics: visualizes the basic features of the data being studied.
+
+Inferential statistics: drawing conclusions on a smaller subset of the population. 
+
+Data mining: automation / exploratory statistical analysis on a large scale databases. The goal is to extract patterns, and knowledge from large-scale datasets so that they can be reshaped into a more understandable structure for later analysis. 
+
+Machine learning: enables  computers to learn without being explicitly programmed. It builds on statistical computations and data mining.
+
+Non-technical companies see technology as a second priority and leave software projects to be siloed into business units. This leads to technical sprawl, which manifests when different business units implement their own initiatives without consulting each other; build conflicting / incompatible solutions; compromise security; overload IT who are to manage and monitor this 
+
+Data science Team manager
+-how to deploy and manage his team; should have sufficient technical knowledge; communication / leadership skills; though a person hired for a junior role might organically fill this leadership position’ teams that do no have a designated / experienced managers are unproductive.
+
+Machine learning (ML engineers)
+Build machine learning solutions to solve businesses, and customer problems. Deploy models, manage infrastructure, and run operations related to machine learning operations, often collaborate with data scientist / engineers to manage databases and build data infrastructure to support products and services used by customers. 
+
+Data science: collect data, clean it, look for patterns in the data and build predictive models. They often have degrees in statistics, data science, or a related discipline. Many have programming experience, and hold degrees in computer science, math, and physics
+
+Researchers are more focused on driving scientific discovery, and less concerned with pursuing industrial applications.
+
+Applied research and applied research engineers: identifying and implementing workable solutions to a specific problem..
+
+Data engineers / distributed systems engineers: due to scalability issues and massive amounts of data. Infrastructure engineers can resolve challenges associated with large data sets allowing researchers and data scientists to focus on their models rather than on data issues.
+
+Mathematical aptitude: a background in mathematics and statistics is far more valued in machine learning than in traditional software engineering. Training ML models requires a sufficient background to understand which algorithms to apply and how to interpret and improve upon the results. For cutting edge AI - research positions, advanced mathematical intuition is a requisite in order to design and develop novel methodologies. 
+
+Supervised machine learning produces the most business value.
+
+Technical debt: the amount of additional rework that will be needed in the future when you opt for quick and hacky fixes early on. 
+
+Existing models can deteriorate as environmental conditions change over time. 
+
+Successful machine learning systems:
+Algorithm agnostic, reusable, simple, centralized knowledge, flexible, reliable / scalable, intuitive user interface. 
+
+If you have complaints send an email. Emails have documentation therefore it can be referenced in the future. 
