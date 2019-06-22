@@ -66,3 +66,9 @@ Successful machine learning systems:
 Algorithm agnostic, reusable, simple, centralized knowledge, flexible, reliable / scalable, intuitive user interface. 
 
 If you have complaints send an email. Emails have documentation therefore it can be referenced in the future. 
+
+Wall streets behavior is manic depressive. Fast or famine style of hiring and firing, expanding and contracting, larges raises follow by large cuts -- all mirrored in the waxing and waving of the food supply. 
+
+Abstraction: hiding implementation. Objects hide their data behind abstractions and expose functions that operate on that data.
+Compiler: transforms code written in a high level programming language to machine level.
+Interpreter: converts high level code into machine code. This includes source code, pre-compiled code, and scripts. Both compiler and interpreters do the same job which is converting higher level programming language to machine code. Interpretors convert code into machine code which is then executed. 
