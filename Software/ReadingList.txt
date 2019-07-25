@@ -144,3 +144,6 @@ Rap Tees XL Dj Ross One
 Gears Of War Omnibus Volume One
 American Sniper 
 MatLab Introduction To Machine Learning 
+Programming Embedded Systems in C and C++
+Effective Modern C++
+Fight Club II 
