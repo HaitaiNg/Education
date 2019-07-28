@@ -176,7 +176,6 @@ When should you use inheritance vs delegation?
 If your new class can be used in place of the existing class and the relationship between them can be described as is-a then use inheritance 
 If your new class needs to simply use the existing class and the relationship can be described as has-a or use-a then use delegation 
 
-
 Single responsibility principle: every context class, function, variable should have a single responsibility and that responsibility should be encapsulated by the context. 
  
 ---------------------------------------------------------------------------------------------------

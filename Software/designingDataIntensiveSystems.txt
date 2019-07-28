@@ -5,15 +5,13 @@ Apache AVRO is a data serialization project that provides schemas with rich data
 
 How do the most common Hadoop File Formats stack up?
 -Formats to avoid: any format that is not splittable should generally be avoided. The use of XML and JSON file formats is a common mistake. 
--Text / CSV files. Csv files are common and often used for exchanging data between Hadoop and external systems. They are readable and parsable. However they do not support block compression, thus compressing a CSV file in Hadoop often comes at a significant read performance cost. No Meta data should be stored with in the CSV. CSV files have limited support for schema evolution 
+-Text / CSV files. Csv files are common and often used for exchanging data between Hadoop and external systems. They are readable and parsable. However they do not support block compression, thus compressing a CSV file in Hadoop often comes at a significant read performance cost. No metadata should be stored with in the CSV. CSV files have limited support for schema evolution 
 
 AVRO files are the best multi-purpose storage format within Hadoop. Avro files can store metadata with the data but also allow independent schema for reading the file Avro files are splittable, support block compression, and enjoy broad, relatively mature, tool support within the Hadoop ecosystem. 
 
-Parquet Files
-
 Parquet Files are yet another columnar file format that originated from Hadoop creator Doug Cutting’s Trevni project. Like RC and ORC, Parquet enjoys compression and query performance benefits, and is generally slower to write than non-columnar file formats. However, unlike RC and ORC files Parquet series support limited schema evolution. In Parquet, new columns can be added at the end of the structure. At present, Hive and Impala are able to query newly added columns, but other tools in the ecosystem such as Hadoop Pig may face challenges. Parquet is supported by Cloudera and optimized for Cloudera Impala. Native Parquet support is rapidly being added for the rest of the Hadoop ecosystem.
  
-One note on Parquet file support with Hive... It is very important that Parquet column names are lowercase. If your Parquet file contains mixed case column names, Hive will not be able to read the column and will return queries on the column with null values and not log any errors. Unlike Hive, Impala handles mixed case column names. A truly perplexing problem when you encounter it!
+One note on Parquet file support with Hive. It is very important that Parquet column names are lowercase. If your Parquet file contains mixed case column names, Hive will not be able to read the column and will return queries on the column with null values and not log any errors. Unlike Hive, Impala handles mixed case column names. A truly perplexing problem when you encounter it!
 
 A data warehouse is a separate database that analysts can query to their hearts content without OLTP operation. Data warehouse contains a read-only copy of the data in all the various OLTP systems. Data is extracted from OLTP databases , transformed into an analysis friendly schema, cleansed up, and then loaded into a data warehouse. The process of getting loaded into the warehouse is ETL (extract, transform, load) 
 
@@ -25,10 +23,9 @@ The idea behind column-oriented storage is simple: don’t store all the value f
 
 Column storage is easiest to understand in a relational data model, but it applies equally to non relational data 
 
-
 For data warehouse queries that need to scan over millions of rows, a big bottleneck is the bandwidth for getting data from disk into memory. Developers of analytical databases also worry about efficiently using the bandwidth from main memory into the CPU cache, avoiding branch mis-predictions and bubbles in the CPU instruction processing pipeline, and making use of single-instruction multi data instructions in modern CPUS 
 
-The compression effect is strongest on the first sort key. The second and third sort keys will be more jumbled up, and thus not have such long runs of repeated values. Columns further down the sorting priority appear in essentially random order, so they probably won’t compress as well. 
+The compression effect is strongest on the first sort key. The second and third sort keys will be more jumbled up, and thus not have such long runs off repeated values. Columns further down the sorting priority appear in essentially random order, so they probably won’t compress as well. 
 
 Column oriented storage. Compression, and sorting all helps to make those read queries faster. Column oriented storage is commonly used in data warehousing. Data warehouse queries often involves aggregate functions (count, sum, avg, min, or max in SQL). If the same aggregates are used by many different queries, it can be wasteful to crunch through the raw data every time. Why not cache some of the counts or sums that queries use most often? 
 
@@ -66,8 +63,7 @@ JSON and XML have good support for Unicode character strings (human readable tex
 CSV does not have any schema so it is up to the application to define the meaning of each row and column. IF an application change adds a new row or column you have to handle that change manually.
 
 
-With avrò, when an application wants to encode some data (to write to a file or database, it send it over the network, it encodes the data using whatever version of the schema it knows about (WRITERS SCHEMA). 
-When an application wants to decode some data (read it from a file or database, receive it from the network), it is expecting the data to be in some schema (READERS schema). 
+With avrò, when an application wants to encode some data (to write to a file or database, it send it over the network, it encodes the data using whatever version of the schema it knows about (WRITERS SCHEMA). When an application wants to decode some data (read it from a file or database, receive it from the network), it is expecting the data to be in some schema (READERS schema). 
 
 Reading schema and writing schema do not have to be the same - they just have to be compatible. When data is decoded (read) the Avro library resolves the differences by looking at the writer’s schema and the reader’s schema side by side and translating the data from the writer’s schema into the reader’s schema. 
 
@@ -106,17 +102,16 @@ Each node that stores a copy of the database is a replica. Every write to the da
 One of the replicas is master. Master pings all followers that there was a change and that  it needs to apply that change. When a client wants to read from the database it can query either the leader any of the followers. However writes can only be accepted by the leader. 
 
 Asynchronous vs synchronous replication
-Synchronous replication: major benefit is that the followers are guaranteed to have an up to date copy of the data that is consistent with the leader. The sychronous checks and waits for a response before proceeding forward. If the synchronous follower does not respond, the write cannot be processed. The leader must block all writes and wait until the synchronous replica is available again. 
+Synchronous replication: major benefit is that the followers are guaranteed to have an up to date copy of the data that is consistent with the leader. The synchronous checks and waits for a response before proceeding forward. If the synchronous follower does not respond, the write cannot be processed. The leader must block all writes and wait until the synchronous replica is available again. 
 
 This is impractical because any one node outage would cause the whole system to be halted. In practice: 
 In practice, if you enable synchronous replication on a database, it usually means that one of the followers is synchronous, and the others are asynchronous. If the synchronous follower becomes unavailable or slow, one of the asynchronous followers is made synchronous. This guarantees that you have an up-to-date copy of the data on at least two nodes: the leader and one synchronous follower. This configuration is sometimes also called semi-synchronous
 
-
-failover can happen. An automatic failover process usually looks like this:
-Determining that the leader has failed. Most systems simply use timeout: nodes frequently bounce messaes back and forth between each other, and if a node does not respond for some period of time (30 seconds) it assumed dead.
+Failover can happen. An automatic failover process usually looks like this:
+Determining that the leader has failed. Most systems simply use timeout: nodes frequently bounce messages back and forth between each other, and if a node does not respond for some period of time (30 seconds) it assumed dead.
 Choosing a new leader. (A new leader can be appointed by an election process. The best candidate for leadership is usually the replica with the most up to date data changes from the old leader (to minimize any data loss). 
 Reconfiguring the system to use the new leader. 
 
-If an asynchronous replication is used, the new leader may not have received all the writes from the old leader before it failed. Discarding writes is dangerous if other storae systems outside of the database need to be coordinated with the database contents. 
+If an asynchronous replication is used, the new leader may not have received all the writes from the old leader before it failed. Discarding writes is dangerous if other storage systems outside of the database need to be coordinated with the database contents. 
 
-Split brain. This is when two nodes become leaders. If both leaders accept writes, ther is no process for resolving conflicts, data is likely to be lost or corrupted. Some systems have a mechanism to shut down one node if two leaders detected. 
+Split brain. This is when two nodes become leaders. If both leaders accept writes, there is no process for resolving conflicts, data is likely to be lost or corrupted. Some systems have a mechanism to shut down one node if two leaders detected. 

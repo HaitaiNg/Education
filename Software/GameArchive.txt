@@ -65,7 +65,6 @@ X-Men: Reign Of Apocalypse
 Yoshi’s Story
 Yugioh: Eternal Duelist Soul
 
-
 Sony - Playstation || Playstation II || Playstation IV
 007 Agent Under Fire
 007 Everything or Nothing
@@ -89,6 +88,7 @@ Guitar Hero 2
 God Of War PS4
 Jak 3
 Kingdom Hearts II
+Kingdom Hearts III
 Lord Of The Rings Return of the King
 Lord Of The Rings Two Towers
 Max Payne
@@ -147,8 +147,6 @@ Tom Clancy’s The Division
 Tomb Raider
 Rise Of The Tomb Raider 
 Red Dead Redemption II 
-
-
 
 PC
 HearthStone
