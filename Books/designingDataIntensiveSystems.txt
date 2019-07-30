@@ -1,0 +1,117 @@
+HDFS : Hadoop’s data storage is different from relational databases in that it does not impose any data format or schema 
+Schemas change frequently. Someone refactors the code generating the JSON and moves fields around, perhaps renaming a few fields. The DBA adds new columns to a MySQL table and this reflects in the CSVs dumped from the table. 
+
+Apache AVRO is a data serialization project that provides schemas with rich data structures, compressible file formats, and simple integration with many programming languages. 
+
+How do the most common Hadoop File Formats stack up?
+-Formats to avoid: any format that is not splittable should generally be avoided. The use of XML and JSON file formats is a common mistake. 
+-Text / CSV files. Csv files are common and often used for exchanging data between Hadoop and external systems. They are readable and parsable. However they do not support block compression, thus compressing a CSV file in Hadoop often comes at a significant read performance cost. No metadata should be stored with in the CSV. CSV files have limited support for schema evolution 
+
+AVRO files are the best multi-purpose storage format within Hadoop. Avro files can store metadata with the data but also allow independent schema for reading the file Avro files are splittable, support block compression, and enjoy broad, relatively mature, tool support within the Hadoop ecosystem. 
+
+Parquet Files are yet another columnar file format that originated from Hadoop creator Doug Cutting’s Trevni project. Like RC and ORC, Parquet enjoys compression and query performance benefits, and is generally slower to write than non-columnar file formats. However, unlike RC and ORC files Parquet series support limited schema evolution. In Parquet, new columns can be added at the end of the structure. At present, Hive and Impala are able to query newly added columns, but other tools in the ecosystem such as Hadoop Pig may face challenges. Parquet is supported by Cloudera and optimized for Cloudera Impala. Native Parquet support is rapidly being added for the rest of the Hadoop ecosystem.
+ 
+One note on Parquet file support with Hive. It is very important that Parquet column names are lowercase. If your Parquet file contains mixed case column names, Hive will not be able to read the column and will return queries on the column with null values and not log any errors. Unlike Hive, Impala handles mixed case column names. A truly perplexing problem when you encounter it!
+
+A data warehouse is a separate database that analysts can query to their hearts content without OLTP operation. Data warehouse contains a read-only copy of the data in all the various OLTP systems. Data is extracted from OLTP databases , transformed into an analysis friendly schema, cleansed up, and then loaded into a data warehouse. The process of getting loaded into the warehouse is ETL (extract, transform, load) 
+
+A big advantage of using a separate data warehouse rather than querying OLTP systems directly for analytics, is that the data warehouse can be optimized for analytic access patterns. 
+
+In most OLTP databases, storage is laid out in a row-oriented fashion : all the values from one row of a table are stored next to each other. Document databases are similar; an entire document is typically stored as contiguous sequence of bytes.
+
+The idea behind column-oriented storage is simple: don’t store all the value from one row together, but store all the values from each column together instead. If each column is stored in a separate file. A query only needs to read and parse those columns that are used in that query, which can save a lot of work. 
+
+Column storage is easiest to understand in a relational data model, but it applies equally to non relational data 
+
+For data warehouse queries that need to scan over millions of rows, a big bottleneck is the bandwidth for getting data from disk into memory. Developers of analytical databases also worry about efficiently using the bandwidth from main memory into the CPU cache, avoiding branch mis-predictions and bubbles in the CPU instruction processing pipeline, and making use of single-instruction multi data instructions in modern CPUS 
+
+The compression effect is strongest on the first sort key. The second and third sort keys will be more jumbled up, and thus not have such long runs off repeated values. Columns further down the sorting priority appear in essentially random order, so they probably won’t compress as well. 
+
+Column oriented storage. Compression, and sorting all helps to make those read queries faster. Column oriented storage is commonly used in data warehousing. Data warehouse queries often involves aggregate functions (count, sum, avg, min, or max in SQL). If the same aggregates are used by many different queries, it can be wasteful to crunch through the raw data every time. Why not cache some of the counts or sums that queries use most often? 
+
+Standard (virtual view): a table like object whose contents are the results of some query. 
+The materialized view is an actual copy of the query results, written to disk, whereas a virtual view is just a shortcut for writing queries. When you read from a virtual view, the SQL engine expands it into the view’s underlying query on the fly and then processes the expanded query. 
+
+When the underlying data changes, a materialized view needs to be updated. This can be expensive, which is why materialized views are not often used in OLTP databases. In a read-heavy data warehouse they can make more sense.
+
+A common special case of a materialized view is known as a data cube or OLAP cube. It is a grid of aggregates grouped together by different dimensions. 
+
+Materialized data cube (major advantage) is that certain queries can become very fast because why have effectively been precomputed. Disadvantage is the data cube does not have the same flexibility as querying the raw data. Most data warehouses therefore try to keep as much raw data as possible and use aggregates such as data cubes only as a performance boost for certain queries. 
+
+On a high level, we saw that storage engines fall into two broad categories: those optimized for transaction processing (OLTP), and those optimized for analytics (OLAP). There are big differences between the access patterns in those use cases: 
+* OLTP systems are typically user-facing, which means that they may see a huge volume of requests. In order to handle the load, applications usually only touch a small number of records in each query. The application requests records using some kind of key, and the storage engine uses an index to find the data for the requested key. Disk seek time is often the bottleneck here.  
+* Data warehouses and similar analytic systems are less well known, because they are primarily used by business analysts, not by end users. They handle a much lower volume of queries than OLTP systems, but each query is typically very demanding, requiring many millions of records to be scanned in a short time. Disk bandwidth (not seek time) is often the bottleneck here, and column- oriented storage is an increasingly popular solution for this kind of workload.  
+As an application developer, if you’re armed with this knowledge about the internals of storage engines, you are in a much better position to know which tool is best suited for your particular application. If you need to adjust a database’s tuning parameters, this understanding allows you to imagine what effect a higher or a lower value may have. 
+
+A change to an application’s feature also requires a change to data that it stores.
+Relational databases generally assume that all data in the database conforms to one schema; although that schema can be changed
+
+When a data format or schema changes, a corresponding change to application code often needs to happen
+With server side applications you may want to perform a rolling upgrade (staged rollout), deploying the new version to a few nodes at a time, checking whether the new version is running smoothly, and gradually working your way through all the nodes. This allows all new versions to be deployed without service downtown, and thus encourages more frequent releases and better evolvability. 
+
+Backward compatibility: newer code can read data that was written by older code. 
+Forward compatibility: older code can read data that was written by newer code. 
+
+Formats for encoding data: In memory: data is kept In objects, structs, lists, arrays hash tables, trees and so on. These data structures are optimized for efficient access and manipulation by the CPU.
+When you want to write data to a file or send it over the network, you have to encode it as some kind of self-contained sequence of bytes (ex: JSON document).
+
+The translation from the in-memory representation to a byte sequence is  called encoding (serialization or marshaling) and the reverse is called decoding (parsing, deserialization). 
+
+XML is often criticized for being to verbose and unnecessarily complicated. JSON’s popularity is mainly due to its built-in support in web browsers. 
+
+JSON and XML have good support for Unicode character strings (human readable text) but they do not support binary strings (sequence of bytes without a character encoding). 
+CSV does not have any schema so it is up to the application to define the meaning of each row and column. IF an application change adds a new row or column you have to handle that change manually.
+
+
+With avrò, when an application wants to encode some data (to write to a file or database, it send it over the network, it encodes the data using whatever version of the schema it knows about (WRITERS SCHEMA). When an application wants to decode some data (read it from a file or database, receive it from the network), it is expecting the data to be in some schema (READERS schema). 
+
+Reading schema and writing schema do not have to be the same - they just have to be compatible. When data is decoded (read) the Avro library resolves the differences by looking at the writer’s schema and the reader’s schema side by side and translating the data from the writer’s schema into the reader’s schema. 
+
+It's no problem if the writer’s schema and the reader’s schema have their fields in different order, because the schema resolution matches up the fields by field name. If the coding reading the data encounters a field that appears in the writer’s schema but not in the readers schema, it is ignored. If the code reading the data expects some field, bu the writer’s schema does not contain a field of that name, it is filled in with a default value declared in the reader’s schema. 
+
+To maintain compatibility, you may add or remove field that has a default value. For example, say you add a field with a default value, so this new field exists in the new schema but not the old one. When a reader using the new schema reads a record written with the old schema, the default value is filled in father missing value. 
+
+A database of schema versions is useful thing to have in any case, since it acts as documentation and gives you a chance to check schema compatibility. 
+
+Schemas describe a binary encoding format. 
+Keeping a database of schemas allows you to check forward and backward compatibility of schema changes before anything is deployed. 
+
+A key design goal of a service-oriented / micro services architecture is to make the application easier to change and maintain by making services independently deployable and evolvable. Each service should be owned by one team, and that team should be able to release new versions of the service frequently without having to coordinate with other teams. 
+
+A data-intensive application is built from standard building blocks that provide:
+Store data so that they, or another application can find it again later (databases)
+Remember the result of an expensive operation, to speed up reads (caches)
+Allow users to search data by keyword or filter it in various ways 
+(Search indexes)
+Send a message to another process, to be handled asynchronously (stream processing)
+Periodically crunch a large amount of accumulated data (batch processing) 
+
+A fault is usually defined as one component of the system deviating from its spec, whereas a failure is when the system as a whole stops providing the required service to the user. 
+It is best to design fault tolerance mechanisms that prevent faults from causing failures. 
+
+Shared-nothing architectures ( horizontal scaling or scaling out) have gained a lot of popularity. Each machine or virtual machine running the database software is called a node. Each node uses its CPUs, RAM, and disks independently. Any coordination between nodes is don’t at the software level. 
+
+DISTRIBUTED DATA SYSTEMS
+
+Replications, partitioning ( splitting a big database into smaller subsets so that different partitions can be assigned to different nodes). 
+
+There are three different types fo replication : single-leader, multi-leader, and leaderless replication 
+
+Each node that stores a copy of the database is a replica. Every write to the database needs to be processed by ever replica. (Leader-based replication or active / passive or master - slave replication 
+
+One of the replicas is master. Master pings all followers that there was a change and that  it needs to apply that change. When a client wants to read from the database it can query either the leader any of the followers. However writes can only be accepted by the leader. 
+
+Asynchronous vs synchronous replication
+Synchronous replication: major benefit is that the followers are guaranteed to have an up to date copy of the data that is consistent with the leader. The synchronous checks and waits for a response before proceeding forward. If the synchronous follower does not respond, the write cannot be processed. The leader must block all writes and wait until the synchronous replica is available again. 
+
+This is impractical because any one node outage would cause the whole system to be halted. In practice: 
+In practice, if you enable synchronous replication on a database, it usually means that one of the followers is synchronous, and the others are asynchronous. If the synchronous follower becomes unavailable or slow, one of the asynchronous followers is made synchronous. This guarantees that you have an up-to-date copy of the data on at least two nodes: the leader and one synchronous follower. This configuration is sometimes also called semi-synchronous
+
+Failover can happen. An automatic failover process usually looks like this:
+Determining that the leader has failed. Most systems simply use timeout: nodes frequently bounce messages back and forth between each other, and if a node does not respond for some period of time (30 seconds) it assumed dead.
+Choosing a new leader. (A new leader can be appointed by an election process. The best candidate for leadership is usually the replica with the most up to date data changes from the old leader (to minimize any data loss). 
+Reconfiguring the system to use the new leader. 
+
+If an asynchronous replication is used, the new leader may not have received all the writes from the old leader before it failed. Discarding writes is dangerous if other storage systems outside of the database need to be coordinated with the database contents. 
+
+Split brain. This is when two nodes become leaders. If both leaders accept writes, there is no process for resolving conflicts, data is likely to be lost or corrupted. Some systems have a mechanism to shut down one node if two leaders detected. 
