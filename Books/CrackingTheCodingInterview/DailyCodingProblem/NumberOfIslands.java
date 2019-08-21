@@ -9,6 +9,7 @@ Keep a 2d Boolean array called Visisted and everytime you
 visit a land which is not visisted, you increment the count of islands
 and mark all neighbors visited.
 
+Time complexity is O(n^2) 
 */
 
 public class NumberOfIslands
@@ -46,7 +47,7 @@ public class NumberOfIslands
       markNeighbors(grid, visited, x+1, y);
       markNeighbors(grid, visited, x-1, y);
       markNeighbors(grid, visited, x, y+1);
-      markNeighbors(grid, visited, x, y-1); 
+      markNeighbors(grid, visited, x, y-1);
   }
 
 
