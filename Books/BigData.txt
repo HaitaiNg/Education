@@ -19,3 +19,20 @@ resides in HDFS, because it does not use valuable cluster bandwidth (data locali
 Filesystems that manage the storage across a network of machines are distributed filesystems
 Node failure without suffering data loss. 
 HDFS: write once, read many times. 
+HDFS cluster has two types of nodes 
+Namenode: master (manages the filesystem namespace). Maintains the filesystem tree and metadata for all the files and directories in the tree. 
+DataNodes: workers. They store and retriee blocks when they are told to by 
+the name node, and they report back to the namenode periodically
+with lists of blocks that they are storing. 
+
+If the nameode is obliterated, the filesystem cannot be used. 
+All files on the filesystem would be lost since there would 
+be no way of knowing how to reconstruct the files from the blocks
+on the datanodes. 
+Hadoop has two mechanisms to prevent namenode failure
+1.) backup files that make up the persistent state of the filesystem metadata
+Keep a secondary name node. It keeps a copy of the merged 
+namespace image, and is run on a separate physical machine. 
+
+Job scheudulers ( MapReduce, Spark, and other frameworks) 
+
