@@ -150,3 +150,5 @@ Fight Club II
 Man's Search For Meaning
 HTML and CSS - Design And Build Websites
 How To Know Higher Worlds 
+How To Win Friends And Influence People 
+Clean Architecture

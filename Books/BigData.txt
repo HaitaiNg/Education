@@ -1,0 +1,21 @@
+MapReduce provides a programming model that abstracts the problem from disk
+reads and writes, transforming it into a computation over sets 
+of keys and values. 
+Hadoop provides a reliable, scalable, platform for storage analysis 
+HBase: a key-value store that uses HDFS for its underlying storage.
+HBase provides both online read/write access of individual rows and batch 
+operations for reading and writing data in bulk. 
+
+YARN : Yet another resource negotiator. YARN is a cluster resource management system
+which allows any distributed program (not just Hadoop) to run on a Hadoop cluster.
+
+Relational database management system vs MapReduce 
+Hadoop works well on unstructured or semi-structured data because it
+is designed to interpret the data at processing time (schema on read) 
+A mapreduce job: input data, mapreduce program, configruation information 
+Hadoop does its best to run the map task on a node where the input data 
+resides in HDFS, because it does not use valuable cluster bandwidth (data locality optimization)
+
+Filesystems that manage the storage across a network of machines are distributed filesystems
+Node failure without suffering data loss. 
+HDFS: write once, read many times. 
