@@ -36,3 +36,10 @@ namespace image, and is run on a separate physical machine.
 
 Job scheudulers ( MapReduce, Spark, and other frameworks) 
 
+How do we get the data into the system for processing? 
+Scoop : tool to get data from relational databases into Hadoop (push in, push out).
+
+Extract, transform, load (ETL)
+FLUME (massively distribute framework, streaming data for HDFS)
+:wq
+
