@@ -1,0 +1,135 @@
+Good are tangible items: what, iron ore, tables, oranges, etc.
+Service are intangible
+An economy's output is measured by GDP (gross domestic product):
+The total value of all final goods and services produced in an economy in a
+specified time period
+
+Nominal GDP is the value of the relevant output obtained by using the prices
+of the time period for which GDP is being found. GDP in current dollars
+Real GDP is the output in GDP valued with the prices of a time period called
+the base period.
+
+Gross national product: A country's GDP measures only output produced within
+the country GNP measures the output produced by a country's factors of
+production, no matter where those factors are located. (Factors of production,
+refer to inputs such as human labor, machinery, land, entrepreneurial skills
+used in production of goods and services)
+
+Consumer price index: CPI measures the price level of a basket of goods
+and services purchased by a typical consumer
+
+Producer price index: (aka wholesale price index): measures the average
+price received by producers of goods and services (The price of these
+will generally differ from what consumers pay because goods, for example,
+usually go through immediate dealers before reaching the consumer)
+
+A fixed set of commodities and services is priced at regular intervals
+to obtain the PPI index
+
+Inflation is a rise in the average price level. Inflation rate is measured
+by the percentage change in price index. Rising inflation can quickly become a
+problem for people as rising prices increase the cost of living.
+
+Every country has a central bank, that is responsible for management of the money
+supply and the regulation of the banking system. US: Federal Reserve, UK: Bank of England
+
+Fiscal policy: government spending and taxes
+Bond: a bond is analogous to a loan made by the person by the person buying
+the bond to the issuer of the bond.
+
+A bond is therefore a certificate of indebtedness issued to a lender by
+a borrower to indicate a sum of money has been borrowed.
+Face Value: amount to be repaid by the borrower
+Maturity date: date when repayment has to be made
+Interest rate (coupon interest rate): the borrower has to pay the lender each year
+for the privilege of using the lender's funds
+Bonds (fixed income securities). One reason people buy bonds is to earn income
+from the interest paid by the issuer of the bonds
+If interest rates rise/fall, the price of existing bonds will fall/rise
+
+The price at which a bond sells in the secondary market is the current price
+of the bond. The current yield of the bond in percent is the annual coupon
+interest payment divided by the current price of the bond and multiplied
+by 100 to get it as a percentage:
+
+% current yield = (coupon interest payment) x 100 / current price of bond
+Bond exercise:
+
+you bought a bond issued by the IBM corporation for $1000 in 2016. You are
+to be paid $150 in interest each year and the bond matures in ten years.
+par value of the bond = $1000
+coupon interest rate = (150/1000) * 100 = 15%
+date of maturity: 2016
+stream of payment you will receive from IBM: $150 each year from 2007 to 2015,
+then $150 plus the par value of $1000 in 2016
+
+you have a bond with a par value of $1000 that earns a coupon interest of
+$100 each year. Bonds of $1000 par value are currently being issued with
+a coupon interest of 6%. Would you sell your bond to me for a $1000, for
+less than $1000, or for more than $1000? Explain.
+Suppose a year from now bonds are being issued with a 15% coupon interest.
+Do you think I will pay $1000 for your bond then? Explain.
+
+Answer: Your bond with a par value of $1000 earns you $100 a year. Currently
+issued bonds will only give you 6% ($60). Your $1000 bond therefore
+earns more than currently issued $1000 bonds, so you should ask for
+more than $1000 for it.
+
+If a year from now bonds are being issued at 15% coupon interest
+( = $150 coupon payment on a $1000 par value), I would want to pay
+less than $1000 for your bond because it only has a $100 interest payment.
+
+Credit risk, default risk, risk of principal
+Interest rate risk: risk of the price of bond declining as interest rates rise
+inflation risk: risk of the decline in the purchasing power of the value of
+bond if inflation occurs. If inflation is rising, issuers of bonds will have
+to offer higher interest rates to compensate
+potential bondholders for the inflation risk
+
+A stock represents ownership of a company. When a company issues bonds it is
+borrowing which means it incurs debt it is obligated to repay later
+The bondholders have no ownership of the company, they are only creditors
+who have lent to the company. When a company issues stock the holders
+of the stock become owners of the company. However if a firm goes
+bankrupt its bondholders have "seniority" meaning they are legally
+entitled to be paid before stockholders
+
+yld% lists the dividend expressed as a percentage of the current price
+of the stock - $1.36/$43.35 X 100 = 3%
+
+"PE" lists the price to earnings ratio of the stock - the current price
+of the stock dividend by the company's earnings per share over the
+last four quarters.
+
+Types of stocks
+Blue chip stock: blue chips have the highest values. Internationally
+recognized, well established companies in excellent financial condition.
+Defensive stock: stocks of companies that are likely to continue to do well
+even if the overall economy is in recession. Companies selling food, soft
+drinks, tobacco, candy, and providing essential services such as gas
+and electricity are likely to be defensive.
+
+Growth stock: the stock of a company that has earnings and market share
+growth greater than its industry and the economy-wide aversive
+
+Cyclical stock: stock of companies whose earnings depend heavily on
+how well the economy is doing. Cyclical stocks do well when the company
+is experiencing good growth and do poorly when the economy is
+contracting.
+
+Income stocks: stocks of companies that pay high dividends and are therefore
+attractive to people (retirees) who want to rely on these
+dividends as a source of income.
+
+DOW Jones industrial average is an index of the prices of 30 blue chip stocks
+of US companies that are leaders in diverse industries such as financial services,
+technology, retail, entertainment, and consumer goods.
+
+NASDAQ Composite index measure the price of all domestic and international
+based common type stocks listed on the nasdaq stock market. it includes
+over 3000 companies and is one of the most widely followed stock market
+indexes.
+
+The S&P 500 index covers 500 stocks chosen for market size, liquidity and industry
+grouping. The stocks in this index are determined by an S&P index committee
+comprising of a team of analysts and economists from S&Ps company.
