@@ -133,3 +133,19 @@ indexes.
 The S&P 500 index covers 500 stocks chosen for market size, liquidity and industry
 grouping. The stocks in this index are determined by an S&P index committee
 comprising of a team of analysts and economists from S&Ps company.
+
+Effective Tax Rate: Average tax resulting from reported profits
+Marginal Tax Rate: tax rate applied to the next dollar of earnings
+Earnings per share: net income per common / ordinary share
+Diluted earnings per share: eps adjusted for the effect of contractually obligated future share issues
+
+Enterprise value: represents the market value of the net operational assets the company controls.
+=Equity value (including dilution) + preference shares+ non-controlling interest+ leases+ total debt- cash -
+liquid investments 
+
+Total EV: equity value + options + preference shares + non-controlling interest + leases + total debt - cash
+
+Equity value: represents the market value of the shareholder’s investment in the business and include dilution
+
+Lease: A capitalized lease is accounted for as thought the company purchased the asset using a loan.
+The depreciation of the asset and the interest expense on the loan is recorded on the income statement.
