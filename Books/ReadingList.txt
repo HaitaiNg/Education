@@ -1,156 +1,155 @@
-Reading List
-The REAL ACT Prep Guide: The Only Official Prep Guide From The Makers Of ACT
-Push
-AP Calculus AB / BC
+“Why Should I Trust You” Explaining The Predictions of Any Classifier
+15 mInutes To A Better Interview: What I Wish Every Job Candidate Knew
 1984
-Cracking the ACT
-Boss of Bosses : The Fall Of The Godfather : FBI & Paul Castellano
-The Need To Question: An Introduction To Philosophy
-Great Books Of The Western World
-American Thought From Puritanism To Pragmatism and Beyond
-Isaac Newton
-Fight Club
-Confucius: His Life And Time
-The Life And Death Of Martin Luther King Jr.
-Bruce Lee : The Celebrated Life Of the Golden Dragon
-The Autobiography of Malcolm X
-Tao Of Jeet Kune Do
-Invisible Monsters
-Survivor
-Choke
-The GodFather
-The Sicilian
-The Joy Of Finding X : A Guided Tour Of Math From One To Infinity
-Fermat’s Enigma (Fermat’s Last Theorem)
-The Universe in a nutshell
 2Pac Legacy
 52 Small Changes: One Year To A Happier, Healthier You
+A Programmer’s Guide To Data Mining: The Ancient Art Of The Numerati
 A Spy’s Guide To Thinking
-15 mInutes to a better interview: what i wish every job candidate knew
-machine learning with random forests and decision trees: a visual guide for beginners
-Code of the extraordinary mind: 10 unconventional laws to redefine yourself
+A Spy’s Guide TO Thinking
+A Train Near Magdeburg — The Holocaust, The survivors, and the American (DNF)
+Advanced Engineering Mathematics
+American Born Chinese
+American Sniper
+American Thought From Puritanism To Pragmatism and Beyond
+Analog Circuits
+Analysis And Design Of Linear Circuits
 Animal Farm
+Anthony Kiedis: Scar Tissue
+AP Calculus AB / BC
+Applied Artificial Intelligence: A Handbook For Business Leaders
+Art of powerful questions: catalyzing, insight, innovation, and action
+Assassin's Creed The Complete Visual History
+Autobiography of Gucci Mane
+Autobiography of Gucci Mane
+AWOL on the Appalachian Trail
+Bad Friends Ancco
+Boss of Bosses : The Fall Of The Godfather : FBI & Paul Castellano
+Bruce Lee : The Celebrated Life Of the Golden Dragon
+Business Brilliance: Suprising Lessons From The Greatest Self-Made Business Icons
+C++ Primer
+Can't Hurt Me By David Goggins
+Choke
+Clean Architecture
+Clean Code: A Handbook of Agile Software Craftsmanship
+Code of the extraordinary mind: 10 unconventional laws to redefine yourself
+Code: The Hidden Language Of Hardware And Software
+Competitive Coding By Steven & Felix
+Computer Networking A Top Down Approach
+Confucius: His Life And Time
+Cracking the ACT
+Cracking The Coding Interview 6th Edition
+Create or Hate :: Successful People Make Things
+Data Analysis Made Accessible : 2018 Edition
+Data Jujitsu: The Art of Turning Data into Product
+Data Science Handbook: Advice and Insights from 25 Amazing Data Scientists
+Data Structures and Algorithm Analysis in C++
+Database Systems
+Decisions Life and Death on Wall Street
+Design Patterns Elements Of Reusable Object - Oriented Software
+Design Patterns Elements Of Reusable Object Oriented Software
+Designing Data Intensive Applications
+Discrete Mathematics And Its Applications
+Effective Modern C++
+Environmental Ethics: An Introduction to Environmental Philosophy
+Fermat’s Enigma (Fermat’s Last Theorem)
+Fight Club
+Fight Club II
+Gears of War : The Slab
+Gears Of War Omnibus Volume One
+Getting Started In Electronics: Forest M.Mims III
+Getting Started with Apache Spark
+Getting Started With Electronics
+God of War 2018 (Novelization)
+Great Books Of The Western World
+Guide2DataMining
+Hadoop In Action
+Hadoop: The Definitive Guide
+How I Became A Quant Insights From 25 Of Wall Street's Elite
+How To Know Higher Worlds
+How To learn & Memorize Math, Numbers, Equations, & Simple Arithmetic
+How To Make Money In Stocks
+How To Win Friends And Influence People
+HTML and CSS - Design And Build Websites
+Human Adaptive Strategies: Ecology, Culture and Politics
+Introducing Artificial Intelligence: A Graphic Guide
+Introducing Emotional Intelligence: A Practical Guide
+Introducing Logic: A Graphic Guide
+Introducing Quantum Theory: A Graphic Guide
+Introduction to Big Data - NTNU
+Introduction to Embedded Systems a Cyber Physical systems approach
+Introduction to Geography, People Places & Environment
 Invisible Monsters
+Invisible Monsters
+Invisible Monsters
+Isaac Newton
+Java SE For The Impatient
+Korean From Zero
+Last Man Standing : The Ascent of Jamie Dimon and JP Morgan
+Legend of Zelda Majora's Mask Manga
+Legend of Zelda Ocarina Of Time Manga
+LOTR : One Volume
+machine learning with random forests and decision trees: a visual guide for beginners
+Machine Learning With Random Forests And Decision Trees: A Visual Guide For Beginners
+Make Electronics
+Man's Search For Meaning
+Marxism A Graphic Guide
+MatLab Introduction To Machine Learning
+My Life As A Quant Reflections On Physics And Finance
+Neural Network Math: A Visual Introduction For Beginners
+Nise Control System's Engineering 6th edition
+No Country For Old Men
+Numsense! Data Science For The Layman (No Math Added)
+Object Oriented Modeling And Design With UML
+Only The Paranoid Survive: How To Exploit The Crisis Points That Challenge Every Company and Career
+Operating Systems Internals And Design Principles
+People's Style At Work And Beyond Second Edition
+Persistent Fat Loss: Combining Ketosis And Intermittent Fasting For Year Round Fitness
+Pig, Hive, and Impala - Student Guide
+Practice of Computing Using Python (2nd Edition)
+Practices of An Agile Developer
+Pragmatic Programmer
+Programming Embedded Systems in C and C++
+Push
 Quiet; The Power Of Introverts In a World That Can’t Stop Talking
-The Lucifer Effect: Understanding How Good People Turn Bad
+Rap Tees XL Dj Ross One
+Reading List
 Rose That Grew From Concrete
+Scala For The Impatient
+Sell With Confidence: Crush Your Fear of Being Rejected, Avoid being pushy
+Sell With Confidence! Crush Your Fear Of Being Rejected, Avoid Being Pushy And Have The Courage To Make Money Selling
+Single Asiatic Male Seeks Ride Or Die chick
+Star Wars Darth Plagueis
+Statistics A Graphic Guide
+Steve Jobs
+Summary Of Can't Hurt Me
+Survivor
+Tao Of Jeet Kune Do
+The 7 Habits Of Highly Effective People
+The Art Of God Of War
+The Art Of War
+The Autobiography of Malcolm X
+The Code To The Extraordinary Mind: 10 Unconventional Laws To Redefine Your Life And Succeed On Your Own Terms
+The Exorcist (DNF)
+The GodFather
+The Godfather The Official Motion Picture Archives
+The Guide To Data Analytics
+The Hitchhiker's Guide To Programming Contests
+The House Of Dimon: How JPMorgan’s Jamie Dimon Rose To The Top Of The Financial World
+The Joy Of Finding X : A Guided Tour Of Math From One To Infinity
+The Life And Death Of Martin Luther King Jr.
+The Lucifer Effect: Understanding How Good People Turn Bad
+The Mathematical Experience
+The Need To Question: An Introduction To Philosophy
+The Practice Of Computing Using Python
+The REAL ACT Prep Guide: The Only Official Prep Guide From The Makers Of ACT
+The Road To Avengers End Game
+The Sicilian
+The Universe in a nutshell
 The World Is Flat
 Thinking Like An Engineer
-Introduction to Geography, People Places & Environment
-Human Adaptive Strategies: Ecology, Culture and Politics
-Environmental Ethics: An Introduction to Environmental Philosophy
-Practice of Computing Using Python (2nd Edition)
-Analysis And Design Of Linear Circuits
-Object Oriented Modeling And Design With UML
-C++ Primer
-Discrete Mathematics And Its Applications
-The Practice Of Computing Using Python
-Design Patterns Elements Of Reusable Object - Oriented Software
-Operating Systems Internals And Design Principles
-Database Systems
-Advanced Engineering Mathematics
-Analog Circuits
-Data Structures and Algorithm Analysis in C++
-Computer Networking A Top Down Approach
-Decisions Life and Death on Wall Street
-Sell With Confidence: Crush Your Fear of Being Rejected, Avoid being pushy
-LOTR : One Volume
-A Spy’s Guide TO Thinking
 Thug Kitchen: The Official Cookbook: Eat Like You Give a F*ck
-15 Minutes To A Better Interview: What I Wish EVERY Job Candidate Knew
-Machine Learning With Random Forests And Decision Trees: A Visual Guide For Beginners
-The Code To The Extraordinary Mind: 10 Unconventional Laws To Redefine Your Life And Succeed On Your Own Terms
-Sell With Confidence! Crush Your Fear Of Being Rejected, Avoid Being Pushy And Have The Courage To Make Money Selling
-Persistent Fat Loss: Combining Ketosis And Intermittent Fasting For Year Round Fitness
-Practices of An Agile Developer
-“Why Should I Trust You” Explaining The Predictions of Any Classifier
-Design Patterns Elements Of Reusable Object Oriented Software
-Pragmatic Programmer
-The Mathematical Experience
-How To Make Money In Stocks
-Last Man Standing : The Ascent of Jamie Dimon and JP Morgan
-The House Of Dimon: How JPMorgan’s Jamie Dimon Rose To The Top Of The Financial World
-Invisible Monsters
-Steve Jobs
-How To learn & Memorize Math, Numbers, Equations, & Simple Arithmetic
-Introducing Quantum Theory: A Graphic Guide
-Single Asiatic Male Seeks Ride Or Die chick
-Create or Hate :: Successful People Make Things
-Getting Started with Apache Spark
-Data Jujitsu: The Art of Turning Data into Product
-The Exorcist (DNF)
-V For Vendetta
-A Train Near Magdeburg — The Holocaust, The survivors, and the American (DNF)
-A Programmer’s Guide To Data Mining: The Ancient Art Of The Numerati
-AWOL on the Appalachian Trail
-Autobiography of Gucci Mane
-Code: The Hidden Language Of Hardware And Software
-American Born Chinese
-Guide2DataMining
-
-Anthony Kiedis: Scar Tissue
-Autobiography of Gucci Mane
-Legend of Zelda Ocarina Of Time Manga
-Legend of Zelda Majora's Mask Manga
-Gears of War : The Slab
-Only The Paranoid Survive: How To Exploit The Crisis Points That Challenge Every Company and Career
-Java SE For The Impatient
-Scala For The Impatient
-Hadoop In Action
-Clean Code: A Handbook of Agile Software Craftsmanship
-Art of powerful questions: catalyzing, insight, innovation, and action
-Hadoop: The Definitive Guide
-The Guide To Data Analytics
-Bad Friends Ancco
-Introduction to Embedded Systems a Cyber Physical systems approach
-Introduction to Big Data - NTNU
-Introducing Logic: A Graphic Guide
-Introducing Artificial Intelligence: A Graphic Guide
-God of War 2018 (Novelization)
-Introducing Emotional Intelligence: A Practical Guide
-Star Wars Darth Plagueis
-What I wish I knew When I was 20: A Crash Course On Making Your Own In The World
-Getting Started In Electronics: Forest M.Mims III
-Data Analysis Made Accessible : 2018 Edition
-The 7 Habits Of Highly Effective People
-Business Brilliance: Suprising Lessons From The Greatest Self-Made Business Icons
-How I Became A Quant Insights From 25 Of Wall Street's Elite
-My Life As A Quant Reflections On Physics And Finance
-The Art Of God Of War
-Statistics A Graphic Guide
-Marxism A Graphic Guide
-Summary Of Can't Hurt Me
-Neural Network Math: A Visual Introduction For Beginners
-Applied Artificial Intelligence: A Handbook For Business Leaders
-Numsense! Data Science For The Layman (No Math Added)
-The Art Of War
-The Godfather The Official Motion Picture Archives
-Assassin's Creed The Complete Visual History
-No Country For Old Men
-Can't Hurt Me By David Goggins
-Cracking The Coding Interview 6th Edition
-Nise Control System's Engineering 6th edition
 Ullman Database Systems The Complete Book
-Competitive Coding By Steven & Felix
-Korean From Zero
+V For Vendetta
 Welcome To Machine Learning - LeetCode
-Make Electronics
-Getting Started With Electronics
-The Hitchhiker's Guide To Programming Contests
-Designing Data Intensive Applications
-People's Style At Work And Beyond Second Edition
-The Road To Avengers End Game
-Rap Tees XL Dj Ross One
-Gears Of War Omnibus Volume One
-American Sniper
-MatLab Introduction To Machine Learning
-Programming Embedded Systems in C and C++
-Effective Modern C++
-Fight Club II
-Man's Search For Meaning
-HTML and CSS - Design And Build Websites
-How To Know Higher Worlds
-How To Win Friends And Influence People
-Clean Architecture
+What I wish I knew When I was 20: A Crash Course On Making Your Own In The World
 Yoby Stark Iron Man
-Data Science Handbook: Advice and Insights from 25 Amazing Data Scientists 
