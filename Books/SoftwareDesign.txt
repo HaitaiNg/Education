@@ -216,3 +216,27 @@ Distinguishing types of errors: Program defects vs environmental problems. Progr
 
 Be a mentor. There is fun in sharing what you know - you gain as you give. You can motivate others to achieve better, and help others approach problems. 
 
+------- Design Patterns ------- 
+Singleton pattern: Create only one instance of a class (single DB connection, shared
+by multiple objects as creating a separate DB connection for every object may be 
+expensive)
+Creational: class instantiation or object creation (factory method, abstract factory, 
+singleton, object pool, prototype)
+Create multiple instances of similar kind and want to achieve loose coupling then you can 
+use a factory pattern.
+
+Structural: organizing different classes and objects to form larger structures and provide
+new functionality 
+Adapter pattern converts the interface into another interface of classes that the client
+expects, that is the adapter lets classes work together that may not not otherwise
+be compatible with. 
+Behavioral: identifying common communication patterns between objects and realize these
+patterns. 
+
+Factory: create an object without exposing the creation logic to client and the
+client uses the same common interface to create a new type of object. 
+
+Observer: defines a one to many dependency between objects where when one 
+object changes state, all of its dependents are notified and updated automatically
+Use this pattern when multiple objects are dependent on the state of an object. 
+
