@@ -232,4 +232,15 @@ reading the entire data sets takes to long; queries almost always filter on the 
 There are a reasonable number of different values for partition columns; Data generator or ETL
 process splits data by file or directory names; partition column values are not in the data itself.
 
+Tokenization: process of replacing sensitive data with unique identification symbols that retain
+essiential information about the data without compromising security. The token is an identifer that 
+maps back to the sensitive data through a tokenization system.
+Encyption: security information where information is encoded and can only be accessed or decrypted 
+by a user with the correct encryption key. Used to deter malicious or negligent parties from 
+accessing sensitive data. (asymmetric vs symmetric encrption): Encrpytion is the conversion of 
+data from readable format into an encoded format that can only be read or processed 
+after it's been decrypted. 
+Summarization: process of creating concise, informative version of the original data.
+Data Enrichment: managing third-party data from an external authoritative source with an existing 
+database of first party customer data. General term that refers to processes used to enhance, refine, or otherwise improve raw data. 
 
