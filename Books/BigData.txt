@@ -167,3 +167,69 @@ FLUME (massively distribute framework, streaming data for HDFS)
 -----------------------------------------------------------------------
 What are the top priorities for this company and what are we going after? What technology or product trends are opening up new opportunities? Who are our customers? What is the market, and how could I do this differently with data?
 -----------------------------------------------------------------------
+
+--- Spark --- 
+Resilient Distributed Dataset: Spark automatically distributes the data
+contained in RDDs across the cluster and parallelizes the opeartions you 
+perform on time. An RDD is an immutable disrributed collection of objects.
+Each RDD is split into multiple partitions, which may be computed 
+on different nodes of the cluster. RDDs can contain any type of Python, Java, 
+Scala objects including user defined classes. 
+
+Every Spark program and shell program will work as follows:
+Create some input RDDs from external data, 
+Transform them to define new RDDs using transformations like filter
+Add spark to persist() any immediate RDDs that will need to be reused 
+Launch applications such as count() and first() to kick off a parallel
+computation which is often optimized and executed by spark. 
+Meta data: Data that describes other data. It is the underlying definition or
+description of data. 
+
+Spark Structured data (schema): consistent set of fields across data nodes.
+Spark SQL supports multiple structured data sources as input and because 
+it understand their schema, it can effectively read only the fields you require from these data sources. 
+
+RDDs are fault tolerant, parallel data structures that let users explicitly 
+persist immediate results in memory, control their partitioning to optimize data placement, and manipulate them using a rich set of operators. 
+
+---- HIVE ----
+Apache HIVE: Hive can store tables in a variety of formats (plain-text to column
+oriented formats, inside HDFS or other storage systems). Spark SQL can load any table any table supported by HIVE. 
+
+In HIVE there are two ways to create a table (managed and external tables) 
+When we create a table in HIVE, it manages and saves it in its own warehouse. When we load 
+data into a managed table, it is moved into HIVE warehouse directory 
+create table managed_table(ds_string); 
+load data inpath "pathName"
+Now this load statement will move the file into the HIVE warehouse drectory for the manager_table
+If the table is later dropped: The table including its metadata and its data is deleted, which means the data no longer exists. 
+External tables: in case of external tables, tge location of the external data is specified at table creation time and also uses the key word external in create statement. 
+
+If you are doing all your processing in HIVE then it is a good idea to use a managed table,
+where as incase we use HIVE as well as another tool on the same dataset then it is godo to use
+an external table or incase of we use multiple schemas for the same data set. 
+Use external tables when the data is used outside of HIVE.
+External tables store files on the HDFS server but tables are not linked to the source file 
+completely. If you delete an external table the file still remains on the HDFS server. 
+External table files are accessible to anyone who has access to HDFS file structure and therefore 
+security needs to be maaged at the HDFS file / folder level. 
+Meta data is maintained on master node, and deleting an external table from HIVE only delets the metadata
+not the data / file. 
+
+--- Impala -- 
+Massive parallel SQL engine that runs on a Hadoop cluster. Can query date stored in HDFS or Hbase tables.
+High performance. Faster than HIVE. 
+Hive and Impala work with the same data (tables in HDFS, metadata in the metastore)
+HIve and Imapala are tools for performing SQL queries on data in Hadoop 
+HIVE generates jobs that run on the Hadoop cluster data processing pipeline 
+Impala executes queries directly on the Hadoop cluster
+
+Data partitioning: By default all data files for a table are stored in a single directory
+Partitioning subdivides the data. Data is physically divided during loading, based on values from
+one value or more columns. Speeds up queries that filter on partition columns. Loading data into a 
+partitioned table. Use partitioning for tables when:
+reading the entire data sets takes to long; queries almost always filter on the partition columns;
+There are a reasonable number of different values for partition columns; Data generator or ETL
+process splits data by file or directory names; partition column values are not in the data itself.
+
+
