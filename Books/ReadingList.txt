@@ -154,3 +154,4 @@ What I wish I knew When I was 20: A Crash Course On Making Your Own In The World
 Yoby Stark Iron Man
 Algorithms Unlocked 
 Spring Framework For Professionals
+The Guide To Get Into FAANG
