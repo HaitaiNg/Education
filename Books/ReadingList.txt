@@ -19,7 +19,6 @@ Applied Artificial Intelligence: A Handbook For Business Leaders
 Art of powerful questions: catalyzing, insight, innovation, and action
 Assassin's Creed The Complete Visual History
 Autobiography of Gucci Mane
-Autobiography of Gucci Mane
 AWOL on the Appalachian Trail
 Bad Friends Ancco
 Boss of Bosses : The Fall Of The Godfather : FBI & Paul Castellano
@@ -30,7 +29,7 @@ Can't Hurt Me By David Goggins
 Choke
 Clean Architecture
 Clean Code: A Handbook of Agile Software Craftsmanship
-Code of the extraordinary mind: 10 unconventional laws to redefine yourself
+Code Of The Extraordinary Mind: 10 Unconventional Laws To Redefine Yourself
 Code: The Hidden Language Of Hardware And Software
 Competitive Coding By Steven & Felix
 Computer Networking A Top Down Approach
@@ -45,7 +44,6 @@ Data Structures and Algorithm Analysis in C++
 Database Systems
 Decisions Life and Death on Wall Street
 Design Patterns Elements Of Reusable Object - Oriented Software
-Design Patterns Elements Of Reusable Object Oriented Software
 Designing Data Intensive Applications
 Discrete Mathematics And Its Applications
 Effective Modern C++
@@ -78,8 +76,6 @@ Introduction to Big Data - NTNU
 Introduction to Embedded Systems a Cyber Physical systems approach
 Introduction to Geography, People Places & Environment
 Invisible Monsters
-Invisible Monsters
-Invisible Monsters
 Isaac Newton
 Java SE For The Impatient
 Korean From Zero
@@ -87,7 +83,6 @@ Last Man Standing : The Ascent of Jamie Dimon and JP Morgan
 Legend of Zelda Majora's Mask Manga
 Legend of Zelda Ocarina Of Time Manga
 LOTR : One Volume
-machine learning with random forests and decision trees: a visual guide for beginners
 Machine Learning With Random Forests And Decision Trees: A Visual Guide For Beginners
 Make Electronics
 Man's Search For Meaning
@@ -114,7 +109,6 @@ Rap Tees XL Dj Ross One
 Reading List
 Rose That Grew From Concrete
 Scala For The Impatient
-Sell With Confidence: Crush Your Fear of Being Rejected, Avoid being pushy
 Sell With Confidence! Crush Your Fear Of Being Rejected, Avoid Being Pushy And Have The Courage To Make Money Selling
 Single Asiatic Male Seeks Ride Or Die chick
 Star Wars Darth Plagueis
