@@ -181,7 +181,86 @@ How many people are there? There are 10 people
  저는 취미가 수영 이에요	
 1일, 2 일, 3 일, 4일…… 29 일, 30 일, 31 일 
 
-12.12
+January: 1월 [i-rwol] February: 2월 [i-wol] March: 3월 [sa-mwol]
+April: 4월 [sa-wol]
+May: 5월 [o-wol]
+June: 6월 [yu-wol]
+July: 7월 [chi-rwol]
+August: 8월 [pa-rwol] 
+September: 9월 [gu-wol]
+ October: 10월 [si-wol]
+ November: 11월 [si-bi-rwol] 
+December: 12월 [si-bi-wol]
+
+오늘 몇월  며칠이에요? : What date is it today? 
+생일이 언제 예요? 	
+
+도 : Used to represent the meaning of “also” and “too” 
+저는 학생 이에요 
+저도 학생 이에요 : I am a student too 
+오늘 일해요? 
+오늘도 일해요?  : Do you work today as well? 
+물 주세요 
+저도 물 즈세요 
+ 저 물도 주세요 
+
+내일 갈 거예요 
+내일도 갈 거예요 : I will go (again) tomorrow too 
+Using  도 with verbs = Noun form of the verb + 도 하다 
+By doing this and adding the verb 하다 you are literally saying “to do + verb in the noun + also”. 
+도 하다 
+
+Adding 기 to the verb stem to change a verb into a noun
+보다 = noun form: 보기 
+보다  보기도 : to also see, to even see 
+
+먹다 -> 먹기도 하다 : To also east, to even eat 
+잡다 -> 잡기도 하다 : To also catch, to even catch
+팔다 -> 잘기도 하다 : To also sell, to even sell 
+사다 : 사기도 하다
+
+저는 영어도 가르쳐요. : I teach English as well 
+컴퓨터도 고쳐요 :  I fix computers as well 
+There are a few different ways to say “only” in Korean but the most basic way of saying it is adding 만 after a noun, pronoun, or the noun form (-기)  of a verb 
+이것만 : only this 
+이것만 살 거예요 : I will buy only this one 
+저만: Me only, I only 
+아침에는 커피만 마셔요. I only drink coffee in the morning 
+Adding 만 after noun forms of verbs 
+In order to add 만 after a verb, you need to change the verb into the noun form using 기 and add 만하다. Translated this means “ I only do + ~ing” 
+듣기 = listening 
+듣기만 하다 = to only listen 
+듣기만 했어요: I only listened 
+오늘만 일찍 왔어요 : I got here early only today 
+맥주만 주만 했어요 : I only ordered beer 
+왜 이것만 샀어요 ? : Why did you buy only this?
+어제 놀기만 했어요: I did nothing but played 
+영화는 집에서만 봐요 : I watch movies only at home 
+조금 = a little, a bit, a little bit 
+정말 = really, truly 
+아주 = very, quite 
+별로 = not really, not particularly 
+전혀 =  not at all 
+조금, 아주, and 정말 can be used with any sentence, but 별로 and 전혀 can only be used with negative sentences. 
+조금 비싸요 : It’s a little expensive 
+조금만 주세요 : Give me only a little bit 
+정말 빨라요 : Its really fast 
+정말 이사해요 : It’s really strange 
+아주 맛있어요 
+아주 멀어요 : It’s very far away 
+별로 안 나빠요. [byeol-lo an na-ppa-yo.] = It’s not too bad. 
+전혀 [ jeon-hyeo] = not at all 
+Ex)
+1. 전혀 안 바빠요. [ jeon-hyeo an ba-ppa-yo.] = I’m not busy at all. 
+2. 전혀 안 더워요. [ jeon-hyeo an deo-wo-yo.] = It’s not hot at all. 
+2.17
+
+
+
+ 
+ 
+
+
 
 
 
