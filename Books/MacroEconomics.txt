@@ -1,5 +1,3 @@
-Good are tangible items: what, iron ore, tables, oranges, etc.
-Service are intangible
 An economy's output is measured by GDP (gross domestic product):
 The total value of all final goods and services produced in an economy in a
 specified time period

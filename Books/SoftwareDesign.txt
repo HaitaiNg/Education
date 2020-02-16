@@ -1,6 +1,3 @@
-
-Important life goals: learn a new language every year; read nontechnical & technical books; take classes; participate in local user groups; stay current 
-
 ---------------------------------------------------------------------------------------------------
 Algorithm Design Manual 
 ---------------------------------------------------------------------------------------------------
