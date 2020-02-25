@@ -1,22 +1,40 @@
 ---------------------------------------------------------------------------------------------------
 Algorithm Design Manual 
 ---------------------------------------------------------------------------------------------------
-
 n!≫cn ≫n3 ≫n2 ≫n1+ε ≫nlogn≫n≫√n≫ log2 n ≫ logn ≫ logn/loglogn ≫ loglogn ≫ α(n) ≫ 1
-
-Questions to ask when solving problems: Do I understand the problem? What exactly does the input consist of? What exactly are the desired results or output? Can I construct an input example small enough to solve by hand? How important is speed in the application? Am I trying to solve a numerical / graph algorithm/ geometric / string / set problem? Will brute force solve my problem correctly by searching through all subsets or arrangements? Is there a way to split the problem in two smaller problems, perhaps by doing a binary search? How about partitioning the elements into big and small, or left and right? Does this suggest a divide-and-conquer algorithm? Do the input objects or desired solution have a natural left-to-right order, such as characters in a string, elements of a permutation, or leaves of a tree? Can I use dynamic programming to exploit this order? Are there certain operations being done repeatedly, such as searching, or finding the largest/smallest element? Can I use a data structure to speed up these queries? What about a dictionary/hash table or a heap/priority queue? Can I use random sampling to select which object to pick next? What about constructing many random configurations and picking the best one? Can I use some kind of directed randomness like simulated anneal- ing to zoom in on the best solution? Can I formulate my problem as a linear program? How about an integer program?
-
+Questions to ask when solving problems:
+Do I understand the problem? 
+What exactly does the input consist of? 
+What exactly are the desired results or output?
+Can I construct an input example small enough to solve by hand? 
+How important is speed in the application?
+Am I trying to solve a numerical / graph algorithm/ geometric / string / set problem? 
+Will brute force solve my problem correctly by searching through all subsets or arrangements? 
+Is there a way to split the problem in two smaller problems, perhaps by doing a binary search? 
+How about partitioning the elements into big and small, or left and right? 
+Does this suggest a divide-and-conquer algorithm? 
+Do the input objects or desired solution have a natural left-to-right order, 
+such as characters in a string, elements of a permutation, or leaves of a tree? 
+Can I use dynamic programming to exploit this order? 
+Are there certain operations being done repeatedly, such as searching, or finding the largest/smallest element?
+Can I use a data structure to speed up these queries? 
+What about a dictionary/hash table or a heap/priority queue?
+Can I use random sampling to select which object to pick next? 
+What about constructing many random configurations and picking the best one?
+Can I use some kind of directed randomness like simulated anneal- ing to zoom in on the best solution? 
+Can I formulate my problem as a linear program? How about an integer program?
 ---------------------------------------------------------------------------------------------------
 Competitive Programming C++ 
 ---------------------------------------------------------------------------------------------------
-Algorithm Analysis: pick the simplest algorithm that works (fast enough to pass the time, memory, and produce the correct output). Analyze the complexity of the algorithm with the given input bound and stated time / memory limit and you can do a better judgement whether you should try coding your algorithm or attempt to improve your first or switch to other problems in the problem set. 
+Algorithm Analysis: pick the simplest algorithm that works (fast enough to pass the time, 
+memory, and produce the correct output). 
+Analyze the complexity of the algorithm with the given input bound and stated time / memory 
+limit and you can do a better judgement whether you should try coding your algorithm or attempt to 
+improve your first or switch to other problems in the problem set. 
 
-If your problem is recursive with b recursive calls per level and has L levels, the program has roughly O(b^l) complexity. This is the upper bound. The actual complexity depends on what actions done per level and whether pruning is possible 
-
-O(nlog2(n)) is the ideal run time efficiency
-
-Master programming languages ( java & C++ ). Java is useful for BigInteger, String Processing and GregorianCalendar API 
-
+If your problem is recursive with b recursive calls per level and has L levels, 
+the program has roughly O(b^l) complexity. This is the upper bound. 
+The actual complexity depends on what actions done per level and whether pruning is possible 
 ---------------------------------------------------------------------------------------------------
 C++ Primer & Software Design & Algorithms 
 ---------------------------------------------------------------------------------------------------
