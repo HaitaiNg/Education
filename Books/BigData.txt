@@ -238,9 +238,22 @@ maps back to the sensitive data through a tokenization system.
 Encyption: security information where information is encoded and can only be accessed or decrypted 
 by a user with the correct encryption key. Used to deter malicious or negligent parties from 
 accessing sensitive data. (asymmetric vs symmetric encrption): Encrpytion is the conversion of 
-data from readable format into an encoded format that can only be read or processed 
-after it's been decrypted. 
+data from readable format into an encoded format that can only be read or processed fter it's been decrypted. 
 Summarization: process of creating concise, informative version of the original data.
 Data Enrichment: managing third-party data from an external authoritative source with an existing 
 database of first party customer data. General term that refers to processes used to enhance, refine, or otherwise improve raw data. 
 
+HashMaps will do resizing after there is a lot of key-value pairs 
+
+
+public int dailyCodingProble(ArrayList<Integer> x)
+{
+    //This is O( 2N) 
+    int lastValue = x.get( x.length() - 1); 
+    for(int i = 0; i < lastValue; i++){
+        if(x.contains(i)){
+            if(x.indexOf(i) == i) return i; 
+        }
+    }
+    return -1; 
+}

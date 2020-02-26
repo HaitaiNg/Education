@@ -39,30 +39,49 @@ The actual complexity depends on what actions done per level and whether pruning
 C++ Primer & Software Design & Algorithms 
 ---------------------------------------------------------------------------------------------------
 
-Encapsulation: user code cannot inadvertently corrupt the state of an encapsulated object; the implementation of an encapsulated class can change over time without requiring changes in the user level code
+Encapsulation: user code cannot inadvertently corrupt the state of an encapsulated object; the 
+implementation of an encapsulated class can change over time without requiring changes in the user level code
 
-By defining the member variables as private, the class author is free to make changes to the data. If the implementation changes only the class code needs to be examined to see what effect the change may have. User code needs to change only when the interface changes. If the data are public, then any code that used the old data members might be broken. It would be necessary to locate and rewrite any code that relied on the old representation before the program could be used again. 
+By defining the member variables as private, the class author is free to make changes to the data.
+If the implementation changes only the class code needs to be examined to see what effect the change may have. 
+User code needs to change only when the interface changes. If the data are public, 
+then any code that used the old data members might be broken. It would be necessary to locate and
+rewrite any code that relied on the old representation before the program could be used again. 
 
-Another advantage of making data members private is that data are protected from mistakes that users might introduce. If there is a bug that corrupts an object’s state the places to look for the bug are localized. Only code that is part of the implementation could be responsible for the error. 
+Another advantage of making data members private is that data are protected from
+mistakes that users might introduce. If there is a bug that corrupts an object’s 
+state the places to look for the bug are localized. Only code that is part 
+of the implementation could be responsible for the error. 
 
-Although user code need not change when a class definition changes, the source files that use a class must be recompiled any time the class changes 
+Although user code need not change when a class definition changes, the source 
+files that use a class must be recompiled any time the class changes 
 
-We say that a member is associated with a class by adding the keyword static to its declaration. Like any other class member, static members can be public or private. The type of a static data member can be const, reference, array, class type, and so forth 
+We say that a member is associated with a class by adding the keyword static to its declaration.
+ Like any other class member, static members can be public or private.
+  The type of a static data member can be const, reference, array, class type, and so forth 
 The static members of a class exist outside any class
 Objects do not contain data associated with static data members
-Even though static members are not part of the objects of its class, we can use an object, reference, or pointer of the class type to access a static member 
+Even though static members are not part of the objects of its class, we can use an object,
+ reference, or pointer of the class type to access a static member 
 
-Data abstraction: programming technique that focuses on the interface to a type. Data abstraction lets programmers ignore the details of how a type is represented and think instead about the operations that the type can perform. Data abstraction is fundamental in object oriented and generic programming 
+Data abstraction: programming technique that focuses on the interface to a type.
+ Data abstraction lets programmers ignore the details of how a type is represented
+  and think instead about the operations that the type can perform. Data abstraction 
+  is fundamental in object oriented and generic programming 
 
 Encapsulation: separation of implementation from interface; hides the implementation details of a type. 
 
-Polymorphism means many form. We speak of types related to inheritance as polymorphic types because we can use the many forms of these types while ignoring the differences between them. 
+Polymorphism means many form. We speak of types related to inheritance as polymorphic 
+types because we can use the many forms of these types while ignoring the differences between them. 
 
-When we call a function defined in a base class through a reference or pointer to the base class, we do not know the type of object on which that member is executed. If the function is virtual, then the decision as to which function to run is delayed until run time.
+When we call a function defined in a base class through a reference or pointer to the 
+base class, we do not know the type of object on which that member is executed. If the function is virtual, then the decision as to which function to run is delayed until run time.
 
-A function that is virtual in a base class is implicitly virtual in its derived classes. When a derived class overrides a virtual, the parameters in the base and derived classes must match exactly. 
+A function that is virtual in a base class is implicitly virtual in its derived classes.
+ When a derived class overrides a virtual, the parameters in the base and derived classes must match exactly. 
 
-Refactoring means redesigning a class hierarchy to move operations and/or data from one class to another. Refactoring Is common in object-oriented applications 
+Refactoring means redesigning a class hierarchy to move operations and/or data from one class to
+ another. Refactoring Is common in object-oriented applications 
 
 Abstract base class: class that has one or more pure virtual functions. We cannot create objects of an abstract base-class type
 Class derivation list: list of base classes, each of which may have an optional access level. 
@@ -211,25 +230,54 @@ Communicate Clearly with others. Great teams have a distinct personality. People
 Practices Of An Agile Developer 
 ---------------------------------------------------------------------------------------------------
 
-Tackle small problems first, and make mistakes early. Do not do the quick hack, invest the energy to keep code clean and out in the open. 
+Tackle small problems first, and make mistakes early. Do not do the quick hack, 
+invest the energy to keep code clean and out in the open. 
 
-Years ago on my first day on the job as a system administrator, a senior admin and I were working on installing some software. I accidentally pushed a button bringing down the server. Within seconds, several frustrated users were knocking on the door. My mentor earned my trust and respect when  — instead of pointing fingers — he said “sorry we’re trying to find what went wrong. The system should be up in a few minutes .”
+Years ago on my first day on the job as a system administrator, a senior admin and 
+I were working on installing some software. I accidentally pushed a button bringing 
+down the server. Within seconds, several frustrated users were knocking on the door. 
+My mentor earned my trust and respect when  — instead of pointing fingers — he said 
+“sorry we’re trying to find what went wrong. The system should be up in a few minutes .”
 
-Criticize ideas not people. Take pride in arriving at a solution rather than proving whose idea is better. It feels comfortable when the team discusses the genuine merits and possible drawbacks of several candidate solutions. You can reject solutions that have many drawbacks without hurt feelings. 
+Criticize ideas not people. Take pride in arriving at a solution rather than proving 
+whose idea is better. It feels comfortable when the team discusses the genuine merits 
+and possible drawbacks of several candidate solutions. You can reject solutions that 
+have many drawbacks without hurt feelings. 
 
-Is everyone better than you? Good. If you are the best on the team, you have little incentive to continue to invest in yourself. If everyone is better around you, you will be motivated to catch up. 
+Is everyone better than you? Good. If you are the best on the team, you have little 
+incentive to continue to invest in yourself. If everyone is better around you, you will be motivated to catch up. 
 
-Keep your project release a value at all times. Ensure that the project is always compilable, runnable, test, and ready to deploy at a moment’s notice. Integrate early, and often. Code integration is a major source of risk. TO mitigate the risk, start integration early and continue to do it regularly. Develop in increments, and release your product with minimal yet usable chunks of functionality.
+Keep your project release a value at all times. Ensure that the project is always 
+compilable, runnable, test, and ready to deploy at a moment’s notice. Integrate early,
+ and often. Code integration is a major source of risk. TO mitigate the risk, start 
+ integration early and continue to do it regularly. Develop in increments, and release your 
+ product with minimal yet usable chunks of functionality.
 
-Unit testing: provides instant feedback; code robust; helpful design tool; confidence booster; acts as probes when solving problems. Use automated unit tests. Good unit tests warn you about problems immediately. Do not make any design or code changes without solid tests in place. Run unit tests on each supported platform and environment combination, using continuous integration tools. Actively find problems before they find you. 
+Unit testing: provides instant feedback; code robust; helpful design tool; confidence
+ booster; acts as probes when solving problems. Use automated unit tests. Good unit
+  tests warn you about problems immediately. Do not make any design or code changes 
+  without solid tests in place. Run unit tests on each supported platform and environment
+   combination, using continuous integration tools. Actively find problems before they find you. 
 
-Keep classes focused and components small. Avoid the temptation to build large classes or components or miscellaneous catchall classes. Treat warnings as errors. Checking in code with warnings is just as bad as checking in code with errors or code that fails its tests. No checked-in code should produce any warnings from the build tools.
+Keep classes focused and components small. Avoid the temptation to build large classes 
+or components or miscellaneous catchall classes. Treat warnings as errors. 
+Checking in code with warnings is just as bad as checking in code with errors or code that 
+fails its tests. No checked-in code should produce any warnings from the build tools.
 
-Share code only when ready. Never check in code that not ready for others. Deliberately checking in code that  doesn’t compile or pass its unit tests should be considered an act of criminal projects negligence. Review all code. Code reviews are invaluable in improving the quality of the code and keeping the error rate low. If done correctly, reviews can be practical and effective. Review code after each task, using different developers. Code reviews happen in small chunks, continuously.
+Share code only when ready. Never check in code that not ready for others. Deliberately 
+checking in code that  doesn’t compile or pass its unit tests should be considered an act 
+of criminal projects negligence. Review all code. Code reviews are invaluable in improving 
+the quality of the code and keeping the error rate low. If done correctly, reviews can be practical 
+and effective. Review code after each task, using different developers. Code reviews happen in small
+ chunks, continuously.
 
-Distinguishing types of errors: Program defects vs environmental problems. Program defects include genuine bugs, NullPointerException, missing key, values. Environmental problems include: failure to connect to a database, remote web service, full disk, insufficient permissions. The programmer cannot do anything about it.
+Distinguishing types of errors: Program defects vs environmental problems. Program defects 
+include genuine bugs, NullPointerException, missing key, values. Environmental problems include:
+ failure to connect to a database, remote web service, full disk, insufficient permissions. 
+ The programmer cannot do anything about it.
 
-Be a mentor. There is fun in sharing what you know - you gain as you give. You can motivate others to achieve better, and help others approach problems. 
+Be a mentor. There is fun in sharing what you know - you gain as you give. You can motivate
+ others to achieve better, and help others approach problems. 
 
 ------- Design Patterns ------- 
 Singleton pattern: Create only one instance of a class (single DB connection, shared
