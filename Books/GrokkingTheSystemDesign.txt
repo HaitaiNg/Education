@@ -1,0 +1,43 @@
+1. Ask Requirements Clarifications 
+2. Estimate the scale of the system ( scaling, partitioning, load balancing, caching)
+How much storage will we need? We may have different storage requirements 
+for users if they can have photos / videos (Content Manager System)
+3. Systerm interface definition: Define what APIs are expected from the system
+(postTweet, generateTimeline, markFavoriteTwee) 
+4. Define the data model. The candidate should be able to identify various 
+entities of the system, how they interact, and different aspects of data management
+like storage (exL which database system do we use?)
+5. High level design 
+6. Detailed design 
+7. Identifying and resolving bottlenecks 
+
+If you anticipate on storing billions of rows, you do not need a relationship between objects 
+a NoSQL store like DynamoDB, Cassandra, RISK is the better choice. 
+
+Question for facebook: If we activate notifications on our phones, does this create 
+the pull model for messenging where the user will periodically ping the server if there
+are any new messages for them 
+
+How to maintain an open connection with the server? HttpLongPolling or Websockets 
+
+Facebook uses HBase. Hbase is a column oriented key-value NoSQL database that can
+store multiple values against one key into multiple rows. HBase is modeled after
+Google's BigTable and runs on top of HDFS. HBase groups data together to 
+store new data in a memory buffer, and once the buffer is full it will
+dump the data to the disk. Hbase is efficient in storing variable sized data 
+
+Load balancing spreads traffic across a cluster of servers to improve
+responsiveness and availability of applications or databases 
+A load balancer reduces individual server load and prevents any one 
+application server from becoming a single point of failure, thus improving overall 
+application availability and responsiveness 
+-Server is fast and uninterrupted. Requests are directly passed on to a more 
+readily available resource 
+-Service providers experience less downtime and higher throughput
+-Handles traffic bottlenecks 
+-Instead of single deice performing a lot of work, load balancing has several
+devices perform a little bit of work 
+
+Load balancing algorithms: least response time method, least bandwidth method, 
+round robin method, weighted round robin method 
+
