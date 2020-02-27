@@ -40,4 +40,24 @@ devices perform a little bit of work
 
 Load balancing algorithms: least response time method, least bandwidth method, 
 round robin method, weighted round robin method 
+Round robin method: this method cycles through a list of servers and sends each new request to the next server
+When it reaches the end of the list it starts over at the beginning. It is the most useful when the servers 
+are of equal specification and there are not many persistent connections 
+Weghted Round robin: designed to better handle servers with different processing capabilities 
+Each server is assigned a weight (an integer value that indicates the processing capacity) 
+Servers with higher weights receive new connections before those with less weights and servers 
+with higher weights get more connections than those with less weights 
+
+Redundant load balancers: load balancer can be a single point of failure, a second load balancer can be 
+connecte to the first to form a cluster. Each LB monitors the health of the other and both of them
+are equally capable of serving traffic and failure detection
+
+CAP Theorem: Impossible for a distributed system to provide more than two of the three 
+guarantees: Consistency, Availability, Partition tolerance 
+Consistency: update several nodes before read. All nodes see the same data 
+Availability: every request gets a success or failure. Achieved by data replication across different servers 
+Partition Tolerance: System works despite a failed message or failure 
+System can sustain any amount of network failure that does not result in a failure of the entire network 
+Data is replicated across combinations of nodes and networks to keep the system up 
+
 
