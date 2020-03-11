@@ -97,16 +97,20 @@ A class template is a blue print for generating classes. Class templates differ 
 templates in that the compiler cannot deduce the template parameter types(s) for a class template 
 
 C++ Sequential Container Types
-Vector: flexible sized array. Supports fast random access. Inserting or deleting elements other than at the back may be slow
+Vector: flexible sized array. Supports fast random access. 
+Inserting or deleting elements other than at the back may be slow
 Deque: double-ended queue. Supports fast random access. Fast insert / delete at front or back 
 List: doubly linked list. Supports only bidirectional sequential access. Fast insert / delete at any point in the list
-Foward_List: singly linked list. Supports only sequential access in one direction. Fast insert / delete at any point in the list
+Foward_List: singly linked list. Supports only sequential access in one direction. 
+ast insert / delete at any point in the list
 Array: fixed size array. Supports fast random access. Cannot add or remove elements
 
 The list and forward-list containers are designed to make it fast to add or remove an element anywhere 
-in the container. These types do not support random access. Therefore you have to iterate through the container. 
+in the container. These types do not support random access. 
+Therefore you have to iterate through the container. 
 
-Deque: adding or removing an element in the middle can be expensive. However adding to the beginning or end is quick 
+Deque: adding or removing an element in the middle can be expensive. 
+However adding to the beginning or end is quick 
 
 Most of the time a vector a good container to use 
 If your program has a lot of small elements and space overhead matters, don’t use list or forward_list. 
@@ -125,7 +129,8 @@ and accessed sequentially by their position in the container.
 
 Associative containers support efficient lookup and retrieval by a key. (Map, set) 
 
-Smart pointer acts like a regular pointer with the important exception that it automatically deletes the object to which it points. 
+Smart pointer acts like a regular pointer with the important exception that it 
+automatically deletes the object to which it points. 
 Programs tend to use dynamic memory for  three purpose:
 - You do not know how many objects you may need
 - You do not know the precise type of the object you need
@@ -137,26 +142,34 @@ Caution: Managing Dynamic Memory Is Error-Prone
 There are three common problems with using new and delete to manage dynamic memory: 
 1. Forgetting to delete memory. Neglecting to delete dynamic memory is known as a “memory leak,” 
 because the memory is never returned to the free store. Testing for memory leaks is difficult 
-because they usually cannot be detected until the application is run for a long enough time to actually exhaust memory. 
-2. Using an object after it has been deleted. This error can sometimes be detected by making the pointer null after the delete. 
+because they usually cannot be detected until the application is run for a 
+long enough time to actually exhaust memory. 
+2. Using an object after it has been deleted. This error can sometimes be
+detected by making the pointer null after the delete. 
 3. Deleting the same memory twice. This error can happen when two pointers address the same 
-dynamically allocated object. If delete is applied to one of the pointers, then the object’s memory is 
-returned to the free store. If we subsequently delete the second pointer, then the free store may be corrupted. 
+dynamically allocated object. If delete is applied to one of the pointers, 
+then the object’s memory is 
+returned to the free store. If we subsequently delete the second pointer, 
+then the free store may be corrupted. 
 
 Most applications should use a library container rather dynamically allocated array. 
-Using a container is easier, less likely to contain memory management bugs, and is likely to give better performance
+Using a container is easier, less likely to contain memory management bugs, 
+and is likely to give better performance
 
 Dangling pointer: a pointer that refers to memory that once had an object but no longer does.
 Program errors due to dangling pointers are notoriously difficult to debug 
-Destructor: special member function that cleans up an object when the object is out of scope or delete 
-Dynamically allocated: object that is allocated on the free store. Objects allocated on 
+Destructor: special member function that cleans up an object when 
+he object is out of scope or delete 
+Dynamically allocated: object that is allocated on the free store. 
+Objects allocated on 
 the free store exist until they are explicitly deleted or the program terminates 
 Heap: synonym for free store 
 Shared_PTR: smart pointer that provides shared ownership. The object is deleted when the 
 last shared_ptr point to that object is destroyed 
 Smart_PTR: library types that acts like a pointer but can be checked to see whether it is safe to use. 
 The type takes care of deleting memory hen appropriate
-Unique_PTR: smart pointer that provides single ownership. The object is deleted when the unique_ptr to that object is destroyed 
+Unique_PTR: smart pointer that provides single ownership. The object is 
+deleted when the unique_ptr to that object is destroyed 
 -----------------------------------------------------------------------------------------
 
 Tree Traversals:
@@ -176,19 +189,26 @@ int fib(int n )
 }
 
 What does the "static" mean in main's signature?
-The keyword static, when applied to a method or a member variable, simply means that this method 
-(or member variable) is defined for the class, but not for particular objects in the class. 
-Thus, main is a general method. There is no "calling object" inside main. If you want to call 
-instance methods from main, you must create objects and then call the instance methods on those 
+The keyword static, when applied to a method or a member variable, 
+simply means that this method 
+(or member variable) is defined for the class, but not for particular 
+objects in the class. 
+Thus, main is a general method. There is no "calling object" inside main. 
+If you want to call 
+instance methods from main, you must create objects and then call the 
+instance methods on those 
 objects. You can, however, call other static methods directly
 
 Overloading methods — two copies of constructors. One with parameter, one with without. Uses can vary.
-Example is below. Both these functions should be in the same file. Overloading methods is just 
+Example is below. Both these functions should be in the same file. 
+Overloading methods is just 
 various types of functions with the same name. Overloaded methods can have different return types  
 
 When can you overload? The two parts of a method signature are the method name and the 
-parameter list (number, type, and order of parameters). As long as the parameter list differs, 
-Java allows you to overload the method, and even change the return type because the return type 
+parameter list (number, type, and order of parameters). 
+As long as the parameter list differs, 
+Java allows you to overload the method, and even change the 
+return type because the return type 
 is not part of the method signature (it is ignored).
 
 
@@ -281,19 +301,24 @@ Metadata is data about data (data dictionary / data schema). A schema provides d
  how it should run, what resources it should use and so on. 
 
 Do not refactor and try to add functionality at the same time. Have good tests before you begin refactoring. 
-Project requirements rarely lie on the surface. Normally they are buried deep beneath layers of assumptions, and politics. 
+Project requirements rarely lie on the surface. 
+Normally they are buried deep beneath layers of assumptions, and politics. 
 
 There’s a simple technique for getting inside your users’ requirements that isn’t used often enough: become a
 user. Are you writing a system for the help desk? Spend a couple of days monitoring the phones with an
-experienced support person. Are you automating a manual stock control system? Work in the warehouse 
-for a week.1 As well as giving you insight into how the system will really be used, you’d be amazed at 
+experienced support person. Are you automating a manual stock control system? 
+Work in the warehouse 
+for a week 1. As well as giving you insight into how the system will really be used, 
+you’d be amazed at 
 how the request “May I sit in for a week while you do your job?” helps build trust and establishes a 
 basis for communication with your users. Just remember not to get in the way! 
 
-Pragmatic Teams: no broken windows: Teams should not tolerate broken windows. Teams must take responsibility 
+Pragmatic Teams: no broken windows: Teams should not tolerate broken windows. 
+Teams must take responsibility 
 for the quality of the product, supporting developers who understand the no broken windows. 
 
-Communicate clearly with others. Great teams have a distinct personality. People look forward to 
+Communicate clearly with others. Great teams have a distinct personality. 
+People look forward to 
 meeting with them, because they know that they will see a well prepared performance that makes everyone
 feel good. Documentation is crisp, accurate, and consistent. 
 

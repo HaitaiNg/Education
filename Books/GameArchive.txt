@@ -40,7 +40,7 @@ Sonic Adventure DX : Director’s Cut
 Sonic Heroes
 South Park Rally
 Spider Man 2
-Spider N64
+Spiderman N64
 Star Wars Episode 1 Racer
 Star Wars Jedi Outcast
 Star Wars Rebel Strike
@@ -86,6 +86,7 @@ Grand Theft Auto: San Andreas
 Grand Theft Auto: Vice City
 Guitar Hero 2
 God Of War PS4
+Jake 2
 Jak 3
 Kingdom Hearts II
 Kingdom Hearts III
