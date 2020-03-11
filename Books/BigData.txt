@@ -244,16 +244,16 @@ Data Enrichment: managing third-party data from an external authoritative source
 database of first party customer data. General term that refers to processes used to enhance, refine, or otherwise improve raw data. 
 
 HashMaps will do resizing after there is a lot of key-value pairs 
+Hadoop: 
+Volume: size of how much data you have
+Velocity: How fast data is getting to you 
+Variety: How different your data is 
+Veracity: Credability, how reliable your data is 
 
+Hadoop is a platform for distributed storing and analyzing of very large data sets 
+Four main modules: Hadoop Common, HDFS, MapReduce, Yarn, Ecosystem For Storing / Processing data 
+Hive creates temporary folders when executing a job. After the job is completed the temporary folder is deleted
 
-public int dailyCodingProble(ArrayList<Integer> x)
-{
-    //This is O( 2N) 
-    int lastValue = x.get( x.length() - 1); 
-    for(int i = 0; i < lastValue; i++){
-        if(x.contains(i)){
-            if(x.indexOf(i) == i) return i; 
-        }
-    }
-    return -1; 
-}
+https://github.com/andkret/Cookbook/blob/master/AdvancedSkills.md  <-- breaks down MapReduce / Spark 
+https://github.com/andkret/Cookbook/blob/master/InterviewQuestions.md 
+
