@@ -216,6 +216,11 @@ security needs to be maaged at the HDFS file / folder level.
 Meta data is maintained on master node, and deleting an external table from HIVE only delets the metadata
 not the data / file. 
 
+Metastore is the central repostiroy of Apache Hive metadata
+It stores metadata for tables like (schema and location) / partitions 
+for relational databases. It provides client access to this information by using a meta store API 
+
+
 --- Impala -- 
 Massive parallel SQL engine that runs on a Hadoop cluster. Can query date stored in HDFS or Hbase tables.
 High performance. Faster than HIVE. 
@@ -256,4 +261,9 @@ Hive creates temporary folders when executing a job. After the job is completed 
 
 https://github.com/andkret/Cookbook/blob/master/AdvancedSkills.md  <-- breaks down MapReduce / Spark 
 https://github.com/andkret/Cookbook/blob/master/InterviewQuestions.md 
+
+Sqoop is a tool used to transfer data between RDBMS and HDFS 
+If a data node fails the job tracker and the name node will detect the failure then deallocate the node 
+Truncating a table: delete a table from the database and memory while keeping the structure
+of the table intact 
 

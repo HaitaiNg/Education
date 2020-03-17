@@ -81,3 +81,7 @@ Interpreter: converts high level code into machine code.
 This includes source code, pre-compiled code, and scripts. Both compiler and
 interpreters do the same job which is converting higher level programming
 language to machine code. Interpreters convert code into machine code which is then executed.
+
+Corvid-19
+Stock market tanked once it spread to other nations
+If one nation panics, move on in the market ealier. 
