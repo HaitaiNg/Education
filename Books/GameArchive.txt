@@ -123,6 +123,7 @@ Call of Duty Black Ops
 Call Of Duty Modern Warfare
 Call Of Duty Modern Warfare 2
 Call Of Duty Modern Warfare 3
+Call Of Duty Warzone 
 EA Sports Fifa 17
 Fallout 3
 Fallout New Vegas
@@ -161,4 +162,4 @@ The Sims Deluxe Edition, Unleashed, Superstar
 MapleStory
 Starcraft II
 Warrock
-World Of Warcraft (Burning Crusade, Wraith Of The Litch King, Legion, Battle For Azeroth) 
+World Of Warcraft (Classic, Burning Crusade, Wraith Of The Litch King, Legion, Battle For Azeroth) 
