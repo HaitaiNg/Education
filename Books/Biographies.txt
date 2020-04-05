@@ -74,3 +74,61 @@ How often do you want me to fill you in on what I am doing?
 Would you prefer a detailed analysis, a brief summary with recommendations, or some other approach?
 In my last report did I give too much or too little information? 
 Do you have any suggestions about how I could present information like this in away that would be more useful to you?
+
+---------------------------------
+Grokking The Behavioral Interview
+---------------------------------
+
+I just heard my own response and it sounds a bit rehearsed. 
+I really prepared for this interview because it is important to me. You can 
+count on my answers being genuine even if they are practiced.
+
+Behavioral Interview Questsions are said to be 55 percent predictive of future
+on-the-job behavior. 
+Are you calm under pressure? Are you comfortable giving formal presentations? 
+Can you respectfully give your boss bad news? The focus of this interview
+is to see your ability in whether you can work in teams and collaborate with others
+
+Behavioral interviews exists to test whether you are the person who 
+will get overwhelmed with the job in three months and cause commotion. 
+
+Homework: Research the organization, study the values of the organization, practice
+the response. 
+Information like the organization’s mission statement, history, products, services, management, 
+and culture will all be present on their website. 
+
+Industry. Competitions and competitors. Mission and values. 
+Most important products and services. What is the size of the industry with respect 
+to the national or global economy. 
+
+Time when you felt a huge sense of accomplishment or success? 
+    Data Usage (Automation Testing) / Testing of status on data nodes 
+Time when you fixed something that wasn't working? UAT and Production errors 
+Time when you made a challenging decision? Software Design, UML 
+Time when you had to influence a leader or team? FitNesse (Automation Testing)
+Time when you got suprised by something or overlooked something? Rules & Policies 
+Time when you removed barriers or came up with a creative solution? Standardization 
+A time when you failed but learned? Data Summarization 
+A time when you had to defuse an escalating situation? 
+
+Avoid talking in absolutes: (Never and Always)
+You don’t have to wait until you need a moment. 
+You can take a moment each time. 
+This shows confidence and sets a relaxed and natural conversational pace.
+
+Use "I" instead of "We" 
+I learned how important it is to take responsibility for a failure
+as the leader of a team. A few members of the team expressed their 
+concerns about additional hardware testing, that I completely dismissed 
+
+"Great to hear from you. I am not at my desk and will not be able 
+to give this call the attention it deserves. When can I call you back?"
+
+"You want to be extra rigorous about making the best poissible thing
+you can. Find everything that's wrong with it and fix it. Seek negative
+feedback particularly from friends" - Elon Musk 
+
+"You cant connect the dots looking forward, you can only connect them 
+looking backward. So, you have to trust that the dots will somehow 
+connect in your future" - Steve Jobs 
+
