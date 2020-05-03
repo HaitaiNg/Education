@@ -1,176 +1,284 @@
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------- 
 Algorithm Design Manual 
----------------------------------------------------------------------------------------------------
-n!≫cn ≫n3 ≫n2 ≫n1+ε ≫nlogn≫n≫√n≫ log2 n ≫ logn ≫ logn/loglogn ≫ loglogn ≫ α(n) ≫ 1
+--------------------------------------------------------------------------------------------------- 
+n!≫cn ≫n3 ≫n2 ≫n1+ε ≫nlogn≫n≫√n≫ 
+log2 n ≫ logn ≫ logn/loglogn ≫ loglogn ≫ α(n) 
+≫ 1 
 Questions to ask when solving problems:
 Do I understand the problem? 
 What exactly does the input consist of? 
 What exactly are the desired results or output?
-Can I construct an input example small enough to solve by hand? 
+Can I construct an input example small enough to solve 
+by hand? 
 How important is speed in the application?
-Am I trying to solve a numerical / graph algorithm/ geometric / string / set problem? 
-Will brute force solve my problem correctly by searching through all subsets or arrangements? 
-Is there a way to split the problem in two smaller problems, perhaps by doing a binary search? 
-How about partitioning the elements into big and small, or left and right? 
+Am I trying to solve a numerical / graph algorithm/ 
+geometric / string / set problem? 
+Will brute force solve my problem correctly by searching 
+through all subsets or arrangements? 
+Is there a way to split the problem in two smaller 
+problems, perhaps by doing a binary search? 
+How about partitioning the elements into big and small, 
+or left and right? 
 Does this suggest a divide-and-conquer algorithm? 
-Do the input objects or desired solution have a natural left-to-right order, 
-such as characters in a string, elements of a permutation, or leaves of a tree? 
+Do the input objects or desired solution have a natural 
+left-to-right order, 
+such as characters in a string, elements of a permutation, 
+or leaves of a tree? 
 Can I use dynamic programming to exploit this order? 
-Are there certain operations being done repeatedly, such as searching, or finding the largest/smallest element?
+Are there certain operations being done repeatedly, 
+such as searching, or finding the largest/smallest 
+element? 
 Can I use a data structure to speed up these queries? 
-What about a dictionary/hash table or a heap/priority queue?
-Can I use random sampling to select which object to pick next? 
-What about constructing many random configurations and picking the best one?
-Can I use some kind of directed randomness like simulated anneal- ing to zoom in on the best solution? 
-Can I formulate my problem as a linear program? How about an integer program?
----------------------------------------------------------------------------------------------------
+What about a dictionary/hash table or a heap/priority 
+queue? 
+Can I use random sampling to select which object to 
+pick next? 
+What about constructing many random configurations 
+and picking the best one? 
+Can I use some kind of directed randomness like simulated 
+anneal- ing to zoom in on the best solution? 
+Can I formulate my problem as a linear program? How 
+about an integer program? 
+--------------------------------------------------------------------------------------------------- 
 Competitive Programming C++ 
----------------------------------------------------------------------------------------------------
-Algorithm Analysis: pick the simplest algorithm that works (fast enough to pass the time, 
+--------------------------------------------------------------------------------------------------- 
+Algorithm Analysis: pick the simplest algorithm that 
+works (fast enough to pass the time, 
 memory, and produce the correct output). 
-Analyze the complexity of the algorithm with the given input bound and stated time / memory 
-limit and you can do a better judgement whether you should try coding your algorithm or attempt to 
-improve your first or switch to other problems in the problem set. 
+Analyze the complexity of the algorithm with the given 
+input bound and stated time / memory 
+limit and you can do a better judgement whether you 
+should try coding your algorithm or attempt to 
+improve your first or switch to other problems in the 
+problem set. 
 
-If your problem is recursive with b recursive calls per level and has L levels, 
-the program has roughly O(b^l) complexity. This is the upper bound. 
-The actual complexity depends on what actions done per level and whether pruning is possible 
----------------------------------------------------------------------------------------------------
+If your problem is recursive with b recursive calls 
+per level and has L levels, 
+the program has roughly O(b^l) complexity. This is 
+the upper bound. 
+The actual complexity depends on what actions done 
+per level and whether pruning is possible 
+--------------------------------------------------------------------------------------------------- 
 C++ Primer & Software Design & Algorithms 
----------------------------------------------------------------------------------------------------
-Encapsulation: user code cannot inadvertently corrupt the state of an encapsulated object; the 
-implementation of an encapsulated class can change over time without requiring changes in the user level code
+--------------------------------------------------------------------------------------------------- 
+Encapsulation: user code cannot inadvertently corrupt 
+the state of an encapsulated object; the 
+implementation of an encapsulated class can change 
+over time without requiring changes in the user level 
+code 
 
-By defining the member variables as private, the class author is free to make changes to the data.
-If the implementation changes only the class code needs to be examined to see what effect the change may have. 
-User code needs to change only when the interface changes. If the data are public, 
-then any code that used the old data members might be broken. It would be necessary to locate and
-rewrite any code that relied on the old representation before the program could be used again. 
+By defining the member variables as private, the class 
+author is free to make changes to the data. 
+If the implementation changes only the class code needs 
+to be examined to see what effect the change may have. 
+User code needs to change only when the interface changes. 
+If the data are public, 
+then any code that used the old data members might 
+be broken. It would be necessary to locate and 
+rewrite any code that relied on the old representation 
+before the program could be used again. 
 
-Another advantage of making data members private is that data are protected from
-mistakes that users might introduce. If there is a bug that corrupts an object’s 
-state the places to look for the bug are localized. Only code that is part 
-of the implementation could be responsible for the error. 
+Another advantage of making data members private is 
+that data are protected from 
+mistakes that users might introduce. If there is a 
+bug that corrupts an object’s 
+state the places to look for the bug are localized. 
+Only code that is part 
+of the implementation could be responsible for the 
+error. 
 
-Although user code need not change when a class definition changes, the source 
-files that use a class must be recompiled any time the class changes 
+Although user code need not change when a class definition 
+changes, the source 
+files that use a class must be recompiled any time 
+the class changes 
 
-We say that a member is associated with a class by adding the keyword static to its declaration.
- Like any other class member, static members can be public or private.
-  The type of a static data member can be const, reference, array, class type, and so forth 
-The static members of a class exist outside any class
-Objects do not contain data associated with static data members
-Even though static members are not part of the objects of its class, we can use an object,
- reference, or pointer of the class type to access a static member 
+We say that a member is associated with a class by 
+adding the keyword static to its declaration. 
+Like any other class member, static members can be 
+public or private. 
+The type of a static data member can be const, reference, 
+array, class type, and so forth 
+The static members of a class exist outside any class 
+Objects do not contain data associated with static 
+data members 
+Even though static members are not part of the objects 
+of its class, we can use an object, 
+reference, or pointer of the class type to access a 
+static member 
 
-Data abstraction: programming technique that focuses on the interface to a type.
-Data abstraction lets programmers ignore the details of how a type is represented
-and think instead about the operations that the type can perform. Data abstraction 
+Data abstraction: programming technique that focuses 
+on the interface to a type. 
+Data abstraction lets programmers ignore the details 
+of how a type is represented 
+and think instead about the operations that the type 
+can perform. Data abstraction 
 is fundamental in object oriented and generic programming 
 
-Encapsulation: separation of implementation from interface; hides the implementation details of a type. 
+Encapsulation: separation of implementation from interface; 
+hides the implementation details of a type. 
 
-Polymorphism means many form. We speak of types related to inheritance as polymorphic 
-types because we can use the many forms of these types while ignoring the differences between them. 
+Polymorphism means many form. We speak of types related 
+to inheritance as polymorphic 
+types because we can use the many forms of these types 
+while ignoring the differences between them. 
 
-When we call a function defined in a base class through a reference or pointer to the 
-base class, we do not know the type of object on which that member is executed.
-If the function is virtual, then the decision as to which function to run is delayed until run time.
+When we call a function defined in a base class through 
+a reference or pointer to the 
+base class, we do not know the type of object on which 
+that member is executed. 
+If the function is virtual, then the decision as to 
+which function to run is delayed until run time. 
 
-A function that is virtual in a base class is implicitly virtual in its derived classes.
-When a derived class overrides a virtual, the parameters in the base and derived classes must match exactly. 
+A function that is virtual in a base class is implicitly 
+virtual in its derived classes. 
+When a derived class overrides a virtual, the parameters 
+in the base and derived classes must match exactly. 
 
-Refactoring means redesigning a class hierarchy to move operations and/or data from one class to
+Refactoring means redesigning a class hierarchy to 
+move operations and/or data from one class to 
 another. Refactoring Is common in object-oriented applications 
 
-Abstract base class: class that has one or more pure virtual functions. We cannot create objects of an abstract base-class type
-Class derivation list: list of base classes, each of which may have an optional access level. 
+Abstract base class: class that has one or more pure 
+virtual functions. We cannot create objects of an abstract 
+base-class type 
+Class derivation list: list of base classes, each of 
+which may have an optional access level. 
 
-Dynamic binding: delaying until run time the selection of which function to run. 
-In C++ dynamic binding refers to the runtime choice of which virtual function to run based on the 
-underlying type of the object to which a reference or pointer is bound. 
+Dynamic binding: delaying until run time the selection 
+of which function to run. 
+In C++ dynamic binding refers to the runtime choice 
+of which virtual function to run based on the 
+underlying type of the object to which a reference 
+or pointer is bound. 
 
-A template is a blueprint or formula for creating classes or functions. When we use a generic type, 
-we supply the information needed to transform that blueprint into a specific class or function 
+A template is a blueprint or formula for creating classes 
+or functions. When we use a generic type, 
+we supply the information needed to transform that 
+blueprint into a specific class or function 
 
-A class template is a blue print for generating classes. Class templates differ from function 
-templates in that the compiler cannot deduce the template parameter types(s) for a class template 
+A class template is a blue print for generating classes. 
+Class templates differ from function 
+templates in that the compiler cannot deduce the template 
+parameter types(s) for a class template 
 
 C++ Sequential Container Types
-Vector: flexible sized array. Supports fast random access. 
-Inserting or deleting elements other than at the back may be slow
-Deque: double-ended queue. Supports fast random access. Fast insert / delete at front or back 
-List: doubly linked list. Supports only bidirectional sequential access. Fast insert / delete at any point in the list
-Foward_List: singly linked list. Supports only sequential access in one direction. 
+Vector: flexible sized array. Supports fast random 
+access. 
+Inserting or deleting elements other than at the back 
+may be slow 
+Deque: double-ended queue. Supports fast random access. 
+Fast insert / delete at front or back 
+List: doubly linked list. Supports only bidirectional 
+sequential access. Fast insert / delete at any point 
+in the list 
+Foward_List: singly linked list. Supports only sequential 
+access in one direction. 
 ast insert / delete at any point in the list
-Array: fixed size array. Supports fast random access. Cannot add or remove elements
+Array: fixed size array. Supports fast random access. 
+Cannot add or remove elements 
 
-The list and forward-list containers are designed to make it fast to add or remove an element anywhere 
-in the container. These types do not support random access. 
+The list and forward-list containers are designed to 
+make it fast to add or remove an element anywhere 
+in the container. These types do not support random 
+access. 
 Therefore you have to iterate through the container. 
 
-Deque: adding or removing an element in the middle can be expensive. 
+Deque: adding or removing an element in the middle 
+can be expensive. 
 However adding to the beginning or end is quick 
 
 Most of the time a vector a good container to use 
-If your program has a lot of small elements and space overhead matters, don’t use list or forward_list. 
-If the program requires random access to elements, use vector or a deque 
-If the program needs to insert or delete elements in the middle of the container, use a list or foward_list.
-If the program needs to insert or delete elements at the front and the back, but not in the middle use a deque 
-If the program needs to insert elements in the middle of the container only while reading input, and subsequently 
+If your program has a lot of small elements and space 
+overhead matters, don’t use list or forward_list. 
+If the program requires random access to elements, 
+use vector or a deque 
+If the program needs to insert or delete elements in 
+the middle of the container, use a list or foward_list. 
+If the program needs to insert or delete elements at 
+the front and the back, but not in the middle use a 
+deque 
+If the program needs to insert elements in the middle 
+of the container only while reading input, and subsequently 
 needs random access to the elements 
 
-If you’re unsure of what container to use, write your code so that it uses only common operations 
-that are common to both vector and list. Using iterators not subscripts, and avoid random access to elements. 
+If you’re unsure of what container to use, write 
+your code so that it uses only common operations 
+that are common to both vector and list. Using iterators 
+not subscripts, and avoid random access to elements. 
 
-Associative and sequential contains differ from one another in a fundamental way. Elements in an 
-associative container are stored and retrieved by a key. Elements in a sequential container are stored 
-and accessed sequentially by their position in the container. 
+Associative and sequential contains differ from one 
+another in a fundamental way. Elements in an 
+associative container are stored and retrieved by a 
+key. Elements in a sequential container are stored 
+and accessed sequentially by their position in the 
+container. 
 
-Associative containers support efficient lookup and retrieval by a key. (Map, set) 
+Associative containers support efficient lookup and 
+retrieval by a key. (Map, set) 
 
-Smart pointer acts like a regular pointer with the important exception that it 
+Smart pointer acts like a regular pointer with the 
+important exception that it 
 automatically deletes the object to which it points. 
-Programs tend to use dynamic memory for  three purpose:
+Programs tend to use dynamic memory for three purpose: 
 - You do not know how many objects you may need
-- You do not know the precise type of the object you need
+- You do not know the precise type of the object you 
+need 
 - You want to share data between several objects
 
-One common reason to use dynamic memory is to allow multiple objects to share the same state 
+One common reason to use dynamic memory is to allow 
+multiple objects to share the same state 
 
 Caution: Managing Dynamic Memory Is Error-Prone 
-There are three common problems with using new and delete to manage dynamic memory: 
-1. Forgetting to delete memory. Neglecting to delete dynamic memory is known as a “memory leak,” 
-because the memory is never returned to the free store. Testing for memory leaks is difficult 
-because they usually cannot be detected until the application is run for a 
+There are three common problems with using new and 
+delete to manage dynamic memory: 
+1. Forgetting to delete memory. Neglecting to delete 
+dynamic memory is known as a “memory leak,” 
+because the memory is never returned to the free store. 
+Testing for memory leaks is difficult 
+because they usually cannot be detected until the application 
+is run for a 
 long enough time to actually exhaust memory. 
-2. Using an object after it has been deleted. This error can sometimes be
+2. Using an object after it has been deleted. This 
+error can sometimes be 
 detected by making the pointer null after the delete. 
-3. Deleting the same memory twice. This error can happen when two pointers address the same 
-dynamically allocated object. If delete is applied to one of the pointers, 
+3. Deleting the same memory twice. This error can happen 
+when two pointers address the same 
+dynamically allocated object. If delete is applied 
+to one of the pointers, 
 then the object’s memory is 
-returned to the free store. If we subsequently delete the second pointer, 
+returned to the free store. If we subsequently delete 
+the second pointer, 
 then the free store may be corrupted. 
 
-Most applications should use a library container rather dynamically allocated array. 
-Using a container is easier, less likely to contain memory management bugs, 
+Most applications should use a library container rather 
+dynamically allocated array. 
+Using a container is easier, less likely to contain 
+memory management bugs, 
 and is likely to give better performance
 
-Dangling pointer: a pointer that refers to memory that once had an object but no longer does.
-Program errors due to dangling pointers are notoriously difficult to debug 
-Destructor: special member function that cleans up an object when 
+Dangling pointer: a pointer that refers to memory that 
+once had an object but no longer does. 
+Program errors due to dangling pointers are notoriously 
+difficult to debug 
+Destructor: special member function that cleans up 
+an object when 
 he object is out of scope or delete 
-Dynamically allocated: object that is allocated on the free store. 
+Dynamically allocated: object that is allocated on 
+the free store. 
 Objects allocated on 
-the free store exist until they are explicitly deleted or the program terminates 
+the free store exist until they are explicitly deleted 
+or the program terminates 
 Heap: synonym for free store 
-Shared_PTR: smart pointer that provides shared ownership. The object is deleted when the 
+Shared_PTR: smart pointer that provides shared ownership. 
+The object is deleted when the 
 last shared_ptr point to that object is destroyed 
-Smart_PTR: library types that acts like a pointer but can be checked to see whether it is safe to use. 
-The type takes care of deleting memory hen appropriate
-Unique_PTR: smart pointer that provides single ownership. The object is 
+Smart_PTR: library types that acts like a pointer but 
+can be checked to see whether it is safe to use. 
+The type takes care of deleting memory hen appropriate 
+Unique_PTR: smart pointer that provides single ownership. 
+The object is 
 deleted when the unique_ptr to that object is destroyed 
------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------- 
 
 Tree Traversals:
 (PreOrder: root -> left -> right), 
@@ -189,27 +297,37 @@ int fib(int n )
 }
 
 What does the "static" mean in main's signature?
-The keyword static, when applied to a method or a member variable, 
+The keyword static, when applied to a method or a member 
+variable, 
 simply means that this method 
-(or member variable) is defined for the class, but not for particular 
+(or member variable) is defined for the class, but 
+not for particular 
 objects in the class. 
-Thus, main is a general method. There is no "calling object" inside main. 
+Thus, main is a general method. There is no "calling 
+object" inside main. 
 If you want to call 
-instance methods from main, you must create objects and then call the 
+instance methods from main, you must create objects 
+and then call the 
 instance methods on those 
-objects. You can, however, call other static methods directly
+objects. You can, however, call other static methods 
+directly 
 
-Overloading methods — two copies of constructors. One with parameter, one with without. Uses can vary.
-Example is below. Both these functions should be in the same file. 
+Overloading methods — two copies of constructors. 
+One with parameter, one with without. Uses can vary. 
+Example is below. Both these functions should be in 
+the same file. 
 Overloading methods is just 
-various types of functions with the same name. Overloaded methods can have different return types  
+various types of functions with the same name. Overloaded 
+methods can have different return types 
 
-When can you overload? The two parts of a method signature are the method name and the 
+When can you overload? The two parts of a method signature 
+are the method name and the 
 parameter list (number, type, and order of parameters). 
 As long as the parameter list differs, 
-Java allows you to overload the method, and even change the 
+Java allows you to overload the method, and even change 
+the 
 return type because the return type 
-is not part of the method signature (it is ignored).
+is not part of the method signature (it is ignored). 
 
 
 public SimpleCoordinates()
@@ -218,180 +336,296 @@ public SimpleCoordinates()
 	 log = 500; 
 }
 
-public SimpleCoordinates(int latitude, int longitude)
+public SimpleCoordinates(int latitude, int longitude) 
 {
 	mLat = latitude;
 	mLog = longitude
 }
 
-Binary search assumes that the items are sorted. We first look at the middle item (median) and 
-check if the v < first half of elements or else we look at the second half of elements
-Inheritance: sharing of attributes and operations (factors out common features, reduces 
-repetition within programs, ability to form new classes that extend capabilities of existing 
-classes). Polymorphism: Some classes may behave differently for different classes. The ability of one
-type to appear and be used as another type. Encapsulation hides something that is not visible to the user. 
-Separating the interface from an implementation, hiding detail that may change. 
+Binary search assumes that the items are sorted. We 
+first look at the middle item (median) and 
+check if the v < first half of elements or else we 
+look at the second half of elements 
+Inheritance: sharing of attributes and operations (factors 
+out common features, reduces 
+repetition within programs, ability to form new classes 
+that extend capabilities of existing 
+classes). Polymorphism: Some classes may behave differently 
+for different classes. The ability of one 
+type to appear and be used as another type. Encapsulation 
+hides something that is not visible to the user. 
+Separating the interface from an implementation, hiding 
+detail that may change. 
 
-Inheritance is one of the most abused concepts in OO modeling and programming. If you violate the 
-substitution principle, your inheritance hierarchy may still provide some code reusability but will not
-help with extensibility.. When using inheritance ask yourself whether your derived class is a 
-substitutable in place of the base class. If the answer is no, then ask yourself why are you using 
-inheritance. If the answer is to reuse code in the base class, then you could probably use composition 
-instead. Composition is where an object of your class contains and uses an object of another class,
- delegating responsibilities to the contained object 
+Inheritance is one of the most abused concepts in OO 
+modeling and programming. If you violate the 
+substitution principle, your inheritance hierarchy 
+may still provide some code reusability but will not 
+help with extensibility.. When using inheritance ask 
+yourself whether your derived class is a 
+substitutable in place of the base class. If the answer 
+is no, then ask yourself why are you using 
+inheritance. If the answer is to reuse code in the 
+base class, then you could probably use composition 
+instead. Composition is where an object of your class 
+contains and uses an object of another class, 
+delegating responsibilities to the contained object 
 
-Rules For Class Design: Attributes are single items for information; if there are multiples of 
-something then it should be a class; if you have a subset of attributes of a class represent a 
-thing onto itself, those attributes should become a class itself. 
+Rules For Class Design: Attributes are single items 
+for information; if there are multiples of 
+something then it should be a class; if you have a 
+subset of attributes of a class represent a 
+thing onto itself, those attributes should become a 
+class itself. 
 
-Abstraction: reducing or factoring out details so we can focus on concepts / objects. Isolate aspects
- that are important for some purposes and suppress aspects that are not important.  
+Abstraction: reducing or factoring out details so we 
+can focus on concepts / objects. Isolate aspects 
+that are important for some purposes and suppress aspects 
+that are not important. 
 Constructor is used to instantiate an object 
-Pure virtual functions can only be used in derived classes (abstract). Every derived class must 
-have an implementation of that function. (Abstract = base class). 
+Pure virtual functions can only be used in derived 
+classes (abstract). Every derived class must 
+have an implementation of that function. (Abstract 
+= base class). 
 
-Aggregation: Is one part of another? Is one subordinate to the other?
-Composition: One class owns another class. Composition is where an object of your class 
-contains and uses an object of another class, delegating responsibilities to the contained object 
+Aggregation: Is one part of another? Is one subordinate 
+to the other? 
+Composition: One class owns another class. Composition 
+is where an object of your class 
+contains and uses an object of another class, delegating 
+responsibilities to the contained object 
 
-Intermediate class: a class that connects two or more things where the connection has information associated to with it. 
+Intermediate class: a class that connects two or more 
+things where the connection has information associated 
+to with it. 
 
 When should you use inheritance vs delegation?
-If your new class can be used in place of the existing class and the relationship between them can be described as is-a then use inheritance 
-If your new class needs to simply use the existing class and the relationship can be described as has-a or use-a then use delegation 
+If your new class can be used in place of the existing 
+class and the relationship between them can be described 
+as is-a then use inheritance 
+If your new class needs to simply use the existing 
+class and the relationship can be described as has-a 
+or use-a then use delegation 
 
-Single responsibility principle: every context class, function, variable should have a single 
-responsibility and that responsibility should be encapsulated by the context. 
+Single responsibility principle: every context class, 
+function, variable should have a single 
+responsibility and that responsibility should be encapsulated 
+by the context. 
  
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------- 
 Pragmatic Programmer
----------------------------------------------------------------------------------------------------
-Early adopter; critical thinker; inquisitive; realistic; jack of all trades
-Do not leave broken windows (bad designs, wrong decisions, poor code). Be a catalyst for change.
-Your knowledge and experience are your most important professional assets. Invest regularly in your
-knowledge portfolio, and critically analyze what you read and hear. 
+--------------------------------------------------------------------------------------------------- 
+Early adopter; critical thinker; inquisitive; realistic; 
+jack of all trades 
+Do not leave broken windows (bad designs, wrong decisions, 
+poor code). Be a catalyst for change. 
+Your knowledge and experience are your most important 
+professional assets. Invest regularly in your 
+knowledge portfolio, and critically analyze what you 
+read and hear. 
 
-Programming is like painting. You start with a blank canvas, and certain basic raw materials. 
-You use a combination of science, art, and craft to determine what to do with them. You 
-sketch out an overall shape, paint the underlying environment, then fill in the details. 
+Programming is like painting. You start with a blank 
+canvas, and certain basic raw materials. 
+You use a combination of science, art, and craft to 
+determine what to do with them. You 
+sketch out an overall shape, paint the underlying environment, 
+then fill in the details. 
 
-Orthogonality :: concept to produce systems that are easy to design, build, test and extend. 
-In a well designed system, the database code will be orthogonal to the user interface; you can 
-change the interface without affecting the database, and swap databases without changing the 
-interface. Ideally, systems are self contained, independent; with a single well defined-purpose 
-(cohesion), when components are isolated from one another. If I drastically change the requirements 
-behind a particular function, how many modules are affected? Bug fixing and refactoring is a good 
-time to assess the orthogonality of the system. Orthogonality is related to the DRY principle. DRY
-means you are trying to minimize code duplication within a system, whereas the orthogonality you
-reduce the interdependency among the system's components. Orthogonality - It is a mistake to think 
-that the activities of a project - analysis, design, coding, and testing can happen in isolation. 
-Organize around functionality, not job functions. Let the teams organize themselves internally, 
-building on individual strengths as they can. Each team has responsibilities to others in the project, 
+Orthogonality :: concept to produce systems that are 
+easy to design, build, test and extend. 
+In a well designed system, the database code will be 
+orthogonal to the user interface; you can 
+change the interface without affecting the database, 
+and swap databases without changing the 
+interface. Ideally, systems are self contained, independent; 
+with a single well defined-purpose 
+(cohesion), when components are isolated from one another. 
+If I drastically change the requirements 
+behind a particular function, how many modules are 
+affected? Bug fixing and refactoring is a good 
+time to assess the orthogonality of the system. Orthogonality 
+is related to the DRY principle. DRY 
+means you are trying to minimize code duplication within 
+a system, whereas the orthogonality you 
+reduce the interdependency among the system's components. 
+Orthogonality - It is a mistake to think 
+that the activities of a project - analysis, design, 
+coding, and testing can happen in isolation. 
+Organize around functionality, not job functions. Let 
+the teams organize themselves internally, 
+building on individual strengths as they can. Each 
+team has responsibilities to others in the project, 
 as defined by their agreed-upon commitments. 
 
-No one knows what the future may hold, especially not us! So enable your code to rock-n-roll; to 
-“rock on” when it can, to roll with the punches when it must.
+No one knows what the future may hold, especially not 
+us! So enable your code to rock-n-roll; to 
+“rock on” when it can, to roll with the punches 
+when it must. 
 
-Estimates to complete tasks: ask someone who has already completed it
+Estimates to complete tasks: ask someone who has already 
+completed it 
 
-Sometimes when you are debugging, you may need to interview the user who reported the bug in order to gather more data. 
+Sometimes when you are debugging, you may need to interview 
+the user who reported the bug in order to gather more 
+data. 
 
-Metadata is data about data (data dictionary / data schema). A schema provides data that describes the fields (columns)
- in terms of names, storage lengths, and other attributes. Metadata is any data that describes the application - 
- how it should run, what resources it should use and so on. 
+Metadata is data about data (data dictionary / data 
+schema). A schema provides data that describes the 
+fields (columns) 
+in terms of names, storage lengths, and other attributes. 
+Metadata is any data that describes the application 
+- 
+how it should run, what resources it should use and 
+so on. 
 
-Do not refactor and try to add functionality at the same time. Have good tests before you begin refactoring. 
+Do not refactor and try to add functionality at the 
+same time. Have good tests before you begin refactoring. 
 Project requirements rarely lie on the surface. 
-Normally they are buried deep beneath layers of assumptions, and politics. 
+Normally they are buried deep beneath layers of assumptions, 
+and politics. 
 
-There’s a simple technique for getting inside your users’ requirements that isn’t used often enough: become a
-user. Are you writing a system for the help desk? Spend a couple of days monitoring the phones with an
-experienced support person. Are you automating a manual stock control system? 
+There’s a simple technique for getting inside your 
+users’ requirements that isn’t used often enough: 
+become a 
+user. Are you writing a system for the help desk? Spend 
+a couple of days monitoring the phones with an 
+experienced support person. Are you automating a manual 
+stock control system? 
 Work in the warehouse 
-for a week 1. As well as giving you insight into how the system will really be used, 
+for a week 1. As well as giving you insight into how 
+the system will really be used, 
 you’d be amazed at 
-how the request “May I sit in for a week while you do your job?” helps build trust and establishes a 
-basis for communication with your users. Just remember not to get in the way! 
+how the request “May I sit in for a week while you 
+do your job?” helps build trust and establishes a 
+basis for communication with your users. Just remember 
+not to get in the way! 
 
-Pragmatic Teams: no broken windows: Teams should not tolerate broken windows. 
+Pragmatic Teams: no broken windows: Teams should not 
+tolerate broken windows. 
 Teams must take responsibility 
-for the quality of the product, supporting developers who understand the no broken windows. 
+for the quality of the product, supporting developers 
+who understand the no broken windows. 
 
-Communicate clearly with others. Great teams have a distinct personality. 
+Communicate clearly with others. Great teams have a 
+distinct personality. 
 People look forward to 
-meeting with them, because they know that they will see a well prepared performance that makes everyone
+meeting with them, because they know that they will 
+see a well prepared performance that makes everyone 
 feel good. Documentation is crisp, accurate, and consistent. 
 
----------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------- 
 Practices Of An Agile Developer 
----------------------------------------------------------------------------------------------------
-Tackle small problems first, and make mistakes early. Do not do the quick hack, 
-invest the energy to keep code clean and out in the open. 
+--------------------------------------------------------------------------------------------------- 
+Tackle small problems first, and make mistakes early. 
+Do not do the quick hack, 
+invest the energy to keep code clean and out in the 
+open. 
 
-Criticize ideas not people. Take pride in arriving at a solution rather than proving 
-whose idea is better. It feels comfortable when the team discusses the genuine merits 
-and possible drawbacks of several candidate solutions. You can reject solutions that 
+Criticize ideas not people. Take pride in arriving 
+at a solution rather than proving 
+whose idea is better. It feels comfortable when the 
+team discusses the genuine merits 
+and possible drawbacks of several candidate solutions. 
+You can reject solutions that 
 have many drawbacks without hurt feelings. 
 
-Is everyone better than you? Good. If you are the best on the team, you have little 
-incentive to continue to invest in yourself. If everyone is better around you, 
+Is everyone better than you? Good. If you are the best 
+on the team, you have little 
+incentive to continue to invest in yourself. If everyone 
+is better around you, 
 you will be motivated to catch up. 
 
-Keep your project release a value at all times. Ensure that the project is always 
-compilable, runnable, test, and ready to deploy at a moment’s notice. Integrate early,
-and often. Code integration is a major source of risk. To mitigate the risk, start 
-integration early and continue to do it regularly. Develop in increments, and release your 
-product with minimal yet usable chunks of functionality.
+Keep your project release a value at all times. Ensure 
+that the project is always 
+compilable, runnable, test, and ready to deploy at 
+a moment’s notice. Integrate early, 
+and often. Code integration is a major source of risk. 
+To mitigate the risk, start 
+integration early and continue to do it regularly. 
+Develop in increments, and release your 
+product with minimal yet usable chunks of functionality. 
 
-Unit testing: provides instant feedback; code robust; helpful design tool; confidence
-booster; acts as probes when solving problems. Use automated unit tests. Good unit
-tests warn you about problems immediately. Do not make any design or code changes 
-without solid tests in place. Run unit tests on each supported platform and environment
-combination, using continuous integration tools. Actively find problems before they find you. 
+Unit testing: provides instant feedback; code robust; 
+helpful design tool; confidence 
+booster; acts as probes when solving problems. Use 
+automated unit tests. Good unit 
+tests warn you about problems immediately. Do not make 
+any design or code changes 
+without solid tests in place. Run unit tests on each 
+supported platform and environment 
+combination, using continuous integration tools. Actively 
+find problems before they find you. 
 
-Keep classes focused and components small. Avoid the temptation to build large classes 
-or components or miscellaneous catchall classes. Treat warnings as errors. 
-Checking in code with warnings is just as bad as checking in code with errors or code that 
-fails its tests. No checked-in code should produce any warnings from the build tools.
+Keep classes focused and components small. Avoid the 
+temptation to build large classes 
+or components or miscellaneous catchall classes. Treat 
+warnings as errors. 
+Checking in code with warnings is just as bad as checking 
+in code with errors or code that 
+fails its tests. No checked-in code should produce 
+any warnings from the build tools. 
 
-Share code only when ready. Never check in code that not ready for others. Deliberately 
-checking in code that  doesn’t compile or pass its unit tests should be considered an act 
-of criminal projects negligence. Review all code. Code reviews are invaluable in improving 
-the quality of the code and keeping the error rate low. If done correctly, reviews can be practical 
-and effective. Review code after each task, using different developers. Code reviews happen in small
+Share code only when ready. Never check in code that 
+not ready for others. Deliberately 
+checking in code that doesn’t compile or pass its 
+unit tests should be considered an act 
+of criminal projects negligence. Review all code. Code 
+reviews are invaluable in improving 
+the quality of the code and keeping the error rate 
+low. If done correctly, reviews can be practical 
+and effective. Review code after each task, using different 
+developers. Code reviews happen in small 
  chunks, continuously.
 
-Distinguishing types of errors: Program defects vs environmental problems. Program defects 
-include genuine bugs, NullPointerException, missing key, values. Environmental problems include:
- failure to connect to a database, remote web service, full disk, insufficient permissions. 
+Distinguishing types of errors: Program defects vs 
+environmental problems. Program defects 
+include genuine bugs, NullPointerException, missing 
+key, values. Environmental problems include: 
+failure to connect to a database, remote web service, 
+full disk, insufficient permissions. 
  The programmer cannot do anything about it.
 
-Be a mentor. There is fun in sharing what you know - you gain as you give. You can motivate
- others to achieve better, and help others approach problems. 
+Be a mentor. There is fun in sharing what you know 
+- you gain as you give. You can motivate 
+others to achieve better, and help others approach 
+problems. 
 
 ------- Design Patterns ------- 
-Singleton pattern: Create only one instance of a class (single DB connection, shared
-by multiple objects as creating a separate DB connection for every object may be 
+Singleton pattern: Create only one instance of a class 
+(single DB connection, shared 
+by multiple objects as creating a separate DB connection 
+for every object may be 
 expensive)
 
-Creational: class instantiation or object creation (factory method, abstract factory, 
+Creational: class instantiation or object creation 
+(factory method, abstract factory, 
 singleton, object pool, prototype)
 
-Create multiple instances of similar kind and want to achieve loose coupling then you can 
+Create multiple instances of similar kind and want 
+to achieve loose coupling then you can 
 use a factory pattern.
 
-Structural: organizing different classes and objects to form larger structures and provide
+Structural: organizing different classes and objects 
+to form larger structures and provide 
 new functionality 
-Adapter pattern converts the interface into another interface of classes that the client
-expects, that is the adapter lets classes work together that may not not otherwise
+Adapter pattern converts the interface into another 
+interface of classes that the client 
+expects, that is the adapter lets classes work together 
+that may not not otherwise 
 be compatible with. 
-Behavioral: identifying common communication patterns between objects and realize these
+Behavioral: identifying common communication patterns 
+between objects and realize these 
 patterns. 
 
-Factory: create an object without exposing the creation logic to client and the
-client uses the same common interface to create a new type of object. 
+Factory: create an object without exposing the creation 
+logic to client and the 
+client uses the same common interface to create a new 
+type of object. 
 
-Observer: defines a one to many dependency between objects where when one 
-object changes state, all of its dependents are notified and updated automatically
-Use this pattern when multiple objects are dependent on the state of an object. 
+Observer: defines a one to many dependency between 
+objects where when one 
+object changes state, all of its dependents are notified 
+and updated automatically 
+Use this pattern when multiple objects are dependent 
+on the state of an object. 
 

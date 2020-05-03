@@ -1,135 +1,220 @@
 1. Ask Requirements Clarifications 
-2. Estimate the scale of the system ( scaling, partitioning, load balancing, caching)
-How much storage will we need? We may have different storage requirements 
-for users if they can have photos / videos (Content Manager System)
-3. Systerm interface definition: Define what APIs are expected from the system
+2. Estimate the scale of the system ( scaling, partitioning, 
+load balancing, caching) 
+How much storage will we need? We may have different 
+storage requirements 
+for users if they can have photos / videos (Content 
+Manager System) 
+3. Systerm interface definition: Define what APIs are 
+expected from the system 
 (postTweet, generateTimeline, markFavoriteTwee) 
-4. Define the data model. The candidate should be able to identify various 
-entities of the system, how they interact, and different aspects of data management
-like storage (exL which database system do we use?)
+4. Define the data model. The candidate should be able 
+to identify various 
+entities of the system, how they interact, and different 
+aspects of data management 
+like storage (exL which database system do we use?) 
 5. High level design 
 6. Detailed design 
 7. Identifying and resolving bottlenecks 
 
-If you anticipate on storing billions of rows, you do not need a relationship between objects 
-a NoSQL store like DynamoDB, Cassandra, RISK is the better choice. 
+If you anticipate on storing billions of rows, you 
+do not need a relationship between objects 
+a NoSQL store like DynamoDB, Cassandra, RISK is the 
+better choice. 
 
-Question for facebook: If we activate notifications on our phones, does this create 
-the pull model for messenging where the user will periodically ping the server if there
+Question for facebook: If we activate notifications 
+on our phones, does this create 
+the pull model for messenging where the user will periodically 
+ping the server if there 
 are any new messages for them 
 
-How to maintain an open connection with the server? HttpLongPolling or Websockets 
+How to maintain an open connection with the server? 
+HttpLongPolling or Websockets 
 
-Facebook uses HBase. Hbase is a column oriented key-value NoSQL database that can
-store multiple values against one key into multiple rows. HBase is modeled after
-Google's BigTable and runs on top of HDFS. HBase groups data together to 
-store new data in a memory buffer, and once the buffer is full it will
-dump the data to the disk. Hbase is efficient in storing variable sized data 
+Facebook uses HBase. Hbase is a column oriented key-value 
+NoSQL database that can 
+store multiple values against one key into multiple 
+rows. HBase is modeled after 
+Google's BigTable and runs on top of HDFS. HBase groups 
+data together to 
+store new data in a memory buffer, and once the buffer 
+is full it will 
+dump the data to the disk. Hbase is efficient in storing 
+variable sized data 
 
-Load balancing spreads traffic across a cluster of servers to improve
-responsiveness and availability of applications or databases 
-A load balancer reduces individual server load and prevents any one 
-application server from becoming a single point of failure, thus improving overall 
+Load balancing spreads traffic across a cluster of 
+servers to improve 
+responsiveness and availability of applications or 
+databases 
+A load balancer reduces individual server load and 
+prevents any one 
+application server from becoming a single point of 
+failure, thus improving overall 
 application availability and responsiveness 
--Server is fast and uninterrupted. Requests are directly passed on to a more 
+-Server is fast and uninterrupted. Requests are directly 
+passed on to a more 
 readily available resource 
--Service providers experience less downtime and higher throughput
+-Service providers experience less downtime and higher 
+throughput 
 -Handles traffic bottlenecks 
--Instead of single deice performing a lot of work, load balancing has several
+-Instead of single deice performing a lot of work, 
+load balancing has several 
 devices perform a little bit of work 
 
-Load balancing algorithms: least response time method, least bandwidth method, 
+Load balancing algorithms: least response time method, 
+least bandwidth method, 
 round robin method, weighted round robin method 
-Round robin method: this method cycles through a list of servers and sends each new request to the next server
-When it reaches the end of the list it starts over at the beginning. It is the most useful when the servers 
-are of equal specification and there are not many persistent connections 
-Weghted Round robin: designed to better handle servers with different processing capabilities 
-Each server is assigned a weight (an integer value that indicates the processing capacity) 
-Servers with higher weights receive new connections before those with less weights and servers 
-with higher weights get more connections than those with less weights 
+Round robin method: this method cycles through a list 
+of servers and sends each new request to the next server 
+When it reaches the end of the list it starts over 
+at the beginning. It is the most useful when the servers 
+are of equal specification and there are not many persistent 
+connections 
+Weghted Round robin: designed to better handle servers 
+with different processing capabilities 
+Each server is assigned a weight (an integer value 
+that indicates the processing capacity) 
+Servers with higher weights receive new connections 
+before those with less weights and servers 
+with higher weights get more connections than those 
+with less weights 
 
-Redundant load balancers: load balancer can be a single point of failure, a second load balancer can be 
-connecte to the first to form a cluster. Each LB monitors the health of the other and both of them
-are equally capable of serving traffic and failure detection
+Redundant load balancers: load balancer can be a single 
+point of failure, a second load balancer can be 
+connecte to the first to form a cluster. Each LB monitors 
+the health of the other and both of them 
+are equally capable of serving traffic and failure 
+detection 
 
-CAP Theorem: Impossible for a distributed system to provide more than two of the three 
+CAP Theorem: Impossible for a distributed system to 
+provide more than two of the three 
 guarantees: Consistency, Availability, Partition tolerance 
-Consistency: update several nodes before read. All nodes see the same data 
-Availability: every request gets a success or failure. Achieved by data replication across different servers 
-Partition Tolerance: System works despite a failed message or failure 
-System can sustain any amount of network failure that does not result in a failure of the entire network 
-Data is replicated across combinations of nodes and networks to keep the system up 
+Consistency: update several nodes before read. All 
+nodes see the same data 
+Availability: every request gets a success or failure. 
+Achieved by data replication across different servers 
+Partition Tolerance: System works despite a failed 
+message or failure 
+System can sustain any amount of network failure that 
+does not result in a failure of the entire network 
+Data is replicated across combinations of nodes and 
+networks to keep the system up 
 
-Caching (Locality Of Referene Principle): Recently requested data is likely to be requested again
+Caching (Locality Of Referene Principle): Recently 
+requested data is likely to be requested again 
 Cache is short term memory 
-Data partitioning: break up a big datbase into smaller parts ( split up database / table across multiple machines 
-to improve maneageability, performance, availability, and load balancing of an application).
-After a certain point it may be cheaper and more feasible to scale horizontally 
+Data partitioning: break up a big datbase into smaller 
+parts ( split up database / table across multiple machines 
+to improve maneageability, performance, availability, 
+and load balancing of an application). 
+After a certain point it may be cheaper and more feasible 
+to scale horizontally 
 by adding more machines than to grow vertically 
-(horizontal partitioning, vertical partitioning, directory basec partitioning) 
-Keym hash-based partitioning, round-robin partitioning, compositie partitioning
-Common problems in data partioninig: SQL joins may be performance efficient.
+(horizontal partitioning, vertical partitioning, directory 
+basec partitioning) 
+Keym hash-based partitioning, round-robin partitioning, 
+compositie partitioning 
+Common problems in data partioninig: SQL joins may 
+be performance efficient. 
 Data has to compiled from multiple servers
   
-Indexing: make it faster to search through the table and find the row / rows that we want 
-Indexes can be created using one or more columns of a database table, providing the basis 
-for random looksups and efficient access of ordered records 
+Indexing: make it faster to search through the table 
+and find the row / rows that we want 
+Indexes can be created using one or more columns of 
+a database table, providing the basis 
+for random looksups and efficient access of ordered 
+records 
 
-Indexing can speed up data retrieval but may be large due to additional keys, which can slow down
-data insertion and update. When adding rows or making updates to existing rows for a table with an active index, 
-we not only have to the write the data but also have to update the index.
-Performance degradation applies to when all insert, update, and delete operations are performed
+Indexing can speed up data retrieval but may be large 
+due to additional keys, which can slow down 
+data insertion and update. When adding rows or making 
+updates to existing rows for a table with an active 
+index, 
+we not only have to the write the data but also have 
+to update the index. 
+Performance degradation applies to when all insert, 
+update, and delete operations are performed 
 on a table. 
 
-Proxies: A proxy server is a server application or appliance that acts as
-an intermediary for requests from clients seeking resources from servers 
-that provide those resources. A proxy server thus functions on behalf of the client 
-when requesting service, potentially masking the true origin of the 
+Proxies: A proxy server is a server application or 
+appliance that acts as 
+an intermediary for requests from clients seeking resources 
+from servers 
+that provide those resources. A proxy server thus functions 
+on behalf of the client 
+when requesting service, potentially masking the true 
+origin of the 
 request of the server 
 
-Proxy server is an intermediate server between client and back-end server 
-Clients connect to proxy servers to make a request for a service like web page, 
-file, connection. Proxy servers act as an intermediary for requests from clients seeking resources 
-from other servers. Proxies can filter requests, log requests, or even transform resources by 
-adding / removing headers, encrypting/decrypting, compressing resources 
+Proxy server is an intermediate server between client 
+and back-end server 
+Clients connect to proxy servers to make a request 
+for a service like web page, 
+file, connection. Proxy servers act as an intermediary 
+for requests from clients seeking resources 
+from other servers. Proxies can filter requests, log 
+requests, or even transform resources by 
+adding / removing headers, encrypting/decrypting, compressing 
+resources 
 
-Client directs request to the proxy server, which evaluates the request and performs 
-the required network transaction. This simplifies / control complexity of the request 
-Redundancy and replication: extra memory, files, processes (structural redundancy) 
-Redundancy akkiws us to duplicate components of our system.
-Replication is what makes those duplicated values actually useful to us  
+Client directs request to the proxy server, which evaluates 
+the request and performs 
+the required network transaction. This simplifies / 
+control complexity of the request 
+Redundancy and replication: extra memory, files, processes 
+(structural redundancy) 
+Redundancy akkiws us to duplicate components of our 
+system. 
+Replication is what makes those duplicated values actually 
+useful to us 
 Replication creates reliability and fault tolerance 
-Perfomant: more likely to respond quickly and handle higher throughoutputs 
-Easy to scale: much easier to handle a higher workload and serve more locations 
+Perfomant: more likely to respond quickly and handle 
+higher throughoutputs 
+Easy to scale: much easier to handle a higher workload 
+and serve more locations 
 
-Relational SQL: Pre-defined schema, All of the data must follow the same structure, therefore
-SQL has an up-front preparation. Changes in the structure can be distruptive to the system 
-Vertical scalability: increase the load on a single server by increasing RAM, CPU, SSD 
+Relational SQL: Pre-defined schema, All of the data 
+must follow the same structure, therefore 
+SQL has an up-front preparation. Changes in the structure 
+can be distruptive to the system 
+Vertical scalability: increase the load on a single 
+server by increasing RAM, CPU, SSD 
 ACId: Atomicity, Consistency, Isolation, Durability 
 
 NoSQL: Dynamic schema and unstructured data
-Document-oriented, column oriented, graph based, keyValue store.
+Document-oriented, column oriented, graph based, keyValue 
+store. 
 No defined structure. Horizontal scalability:
-You can handle more traffic by sharding or adding more servers in your NoSQL database 
+You can handle more traffic by sharding or adding more 
+servers in your NoSQL database 
 CAP Thereom: Consistency, Availability, Partition Tolerance 
 
-SQL: relational database management system: Phone book (fixed Schema) 
+SQL: relational database management system: Phone book 
+(fixed Schema) 
 Fixed, static, pre-defined schema 
-Not suited for hierarchical data. Best data for complex queries. Vertically scalable 
+Not suited for hierarchical data. Best data for complex 
+queries. Vertically scalable 
 NoSQL: Suitable for big data 
-Non-relational distributed database system. Best suited for hierarchical data.
+Non-relational distributed database system. Best suited 
+for hierarchical data. 
 Not so good for complex queries. Horizontall scalable 
 KeyValueStore: dynamo, voldemort, redis 
 Document databases: MongoDB. 
-WIde Column Databases; column famalies, containers for rows, large data sets 
+WIde Column Databases; column famalies, containers 
+for rows, large data sets 
 
-Schema: blue print of the database, how the data is organized 
-The speed of each of these platforms is dependent on the context and information being 
+Schema: blue print of the database, how the data is 
+organized 
+The speed of each of these platforms is dependent on 
+the context and information being 
 retrieved. 
-NoSQL databases are specifically designed for unstructured data which can be 
+NoSQL databases are specifically designed for unstructured 
+data which can be 
 document-oriented, column oriented, graph based.
-Consistent hashing : distributed hashing sceheme that operates independently of the number
-of servers or objects in a distributed hash table by assigning them a position
+Consistent hashing : distributed hashing sceheme that 
+operates independently of the number 
+of servers or objects in a distributed hash table by 
+assigning them a position 
 or an abstract circle or hash ring
 
  
