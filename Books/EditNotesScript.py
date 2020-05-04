@@ -1,11 +1,14 @@
-targetFile = open("Biographies.txt", "r")
+targetFileName = "BigData.txt"
+characterLimitPerSentence = 50 
+
+targetFile = open(targetFileName, "r")
 newListOfContents = [] 
 for sentence in targetFile.readlines(): 
-    if(len(sentence) > 50):
+    if(len(sentence) > characterLimitPerSentence):
         wordList = sentence.split() 
         temporarySentence = "" 
         while(len(wordList) > 0): 
-            if(len(temporarySentence) > 50):
+            if(len(temporarySentence) > characterLimitPerSentence):
                 temporarySentence += "\n"
                 newListOfContents.append(temporarySentence)
                 temporarySentence = "" 
@@ -16,6 +19,6 @@ for sentence in targetFile.readlines():
     else:
         newListOfContents.append(sentence) 
 
-writeFile = open("Biographies.txt", "w") 
+writeFile = open(targetFileName, "w") 
 for i in newListOfContents:
     writeFile.write(i)

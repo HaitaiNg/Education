@@ -613,3 +613,23 @@ Truncating a table: delete a table from the database
 and memory while keeping the structure 
 of the table intact 
 
+LINUX UMASK
+Inserting in the middle of an array or list: With Lists, 
+you change the previous element to point to something 
+else. For arrays you have to shift all the rest of 
+the elements down. If there is no space for hte array, 
+you have to copy everything to a new location. Lists 
+are better if you want to insert elements in the middle 
+Your computer's memory is like a set of drawers.(Array): 
+All elements are stored next to each other. (Lists): 
+Elements are strewn all over, and one element stores 
+the address of the next one 
+Array allows fast reads. Linked Lists allows fast inserts 
+and deletes 
+Fourier Transofrm: Given a song, the algorithm can 
+separate the song based on the frequencies (Audio compression, 
+processing signals) SHAZAM 
+Hyrum’s Law: With a sufficient number of users of 
+an API, it does not matter what you promise in the 
+contract, all observable behaviors of your system will 
+be dependent on somebody 
