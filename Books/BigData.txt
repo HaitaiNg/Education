@@ -633,3 +633,330 @@ Hyrum’s Law: With a sufficient number of users of
 an API, it does not matter what you promise in the 
 contract, all observable behaviors of your system will 
 be dependent on somebody 
+
+Data engineers / distributed systems engineers: due 
+to scalability issues 
+and massive amounts of data. Infrastructure engineers 
+can resolve challenges 
+associated with large data sets allowing researchers 
+and data scientists 
+to focus on their models rather than on data issues. 
+
+
+
+Abstraction: hiding implementation. Objects hide their 
+data behind abstractions 
+and expose functions that operate on that data.
+Compiler: transforms code written in a high level programming 
+language to 
+machine level.
+Interpreter: converts high level code into machine 
+code. 
+This includes source code, pre-compiled code, and scripts. 
+Both compiler and 
+interpreters do the same job which is converting higher 
+level programming 
+language to machine code. Interpreters convert code 
+into machine code which is then executed. 
+
+
+Hadoop does not enforce a schema on the data it stores. 
+It can handle arbitrary text and binary data. 
+
+Hadoops allows organizations to capture expensive types 
+of data such as web site click logs 
+Scalable analytics: Map Reduce (crunch large volumes 
+of data in parallel) 
+
+Native map reduce java is the primary programming language. 
+Other languages that can be used include Ruby, Python, 
+R) 
+
+Hadoop: open source software stack that runs on a cluster 
+of machines. It provides distributed storage and distributed 
+processing for very large data sets. 
+
+Hadoop developer: develops MapReduce jobs, designs 
+data warehouses: skills: java, scripting linux 
+
+Hadoop Admin: manages Hadoop cluster, designs data 
+pipelines. Linux administration, network management 
+Data scientist: data mining and figuring out hidden 
+knowledge in data. Math, data mining algorithms 
+
+Kermashphere IDE : Hadoop IDE 
+Eclipse, Intellij: Java Code 
+VIM 
+
+Hadoop is an open source implementation of Google’s 
+distributed computing framework. It consists of HDFS 
+modeled after Google’s GFS 
+and Google’s map reduce 
+
+MapReduce is a programming framework 
+
+Expansion: add more data nodes (modify the replication) 
+Computations take a long time: Map reduce then run 
+on Amazon EC2. Amazon EC@ can run map reduce jobs 
+
+Horizontal scalability: When you need more storage, 
+ad server 
+Commodity hardware: self-healing and replicating
+Fault tolerance; (data replication onto multiple nodes) 
+
+ZooKeeper: centralized service for maintaining configuration 
+information, naming, providing distributed synchronization, 
+and providing group services. 
+
+ZooKeeper is fault tolerant 
+
+HIVE: to get the honey and leave the work for the bee.s 
+Hive takes the data and performs MapReduce. 
+Hive defines a simple SQL like query language the enables 
+users familiar with SQL to query the data 
+
+HIVE : SQL OF BIG DATA 
+PIG: Pig latin. It allows you to manipulate large volumes 
+of information, analyze them, and create new derivative 
+data sets 
+
+HBase is a near clone of Google’s Big able 
+Cassandra purports to being a “big table / dynamo 
+hybrid” 
+
+MongoDB (from "humongous") is a scalable, high-performance, 
+open source, document-oriented database. Written in 
+C++, MongoDB features document-oriented storage, full 
+index on any attribute, replication and high availability, 
+rich, document-based queries, and it works with MapReduce. 
+If you are specifically processing documents and not 
+arbitrary data, it is worth a look. 
+
+JavaSpace Paradigm: Giant Hash Map Container 
+Tired safe and fault tolerant. Locking mechanism for 
+databases 
+
+GIGAScience DB 
+
+Key components of Cloud Computing
+On-Demand Self-Service
+Broad Network Access 
+Resource Pooling 
+Rapid Elasticity 
+Measured Service 
+
+IaaS: virtualized computing resources that you manage 
+yourself 
+PaaS: Development tools that the cloud provider will 
+maintain on your behalf 
+SaaS: Ready to use application (e.g G Suite, Slack, 
+SalesForce) 
+Managed ServiceL Any cloud service where the underlying 
+infrastructure is handled for you 
+Hybrid cloud: mix of using on-prem and cloud providers 
+VPC: logical separation of your cloud resources from 
+other customers 
+
+Getting Data into HDFS 
+Flume: gathers data from multiple sources and gets 
+it into HDFS 
+Scribe: Distributed log gatherer
+Chukwa: data collection system
+Sqoop: transfers data between hadoop and relational 
+databases ( RBDMS) 
+Kafka: distributed publish-subscribe system 
+
+Compute Frameworks
+MapReduce
+YARN : mapreduce 2.0 
+Weave: simplified version of YARN 
+Cloudera SDK: Simplified MapReduce programing 
+
+Querying Data In HDFS 
+Java MapReduce: Native MapReduce in Java 
+Hadoop Streaming: MapReduce in other languages (Ruby, 
+Python) 
+Pig: Pig provides a higher level data flow language 
+to process data. Pig scripts are much more compact 
+than Java Map Reduce code 
+
+Hive: Hive provides an SQL layer on top of HDFS The 
+data can be queried using SQL rather than writing Java 
+Map Reduce code 
+
+Stinger: next generation hive 
+
+Cloudera Search: Text search on HDFS 
+Impala: provides real time queries over Big Data. Developed 
+by Cloudera 
+
+
+SQL on Hadoop / Hbase
+HIVE : hive provides an SQL layer on top of HDFS. The 
+data can be queried using SQL rather than writing Java 
+Map Reduce Code 
+
+
+Apache Drill: interactive analysis of large scale data 
+sets 
+
+— Real Time Querying — 
+Apache Drill: interactive analysis of large scale data 
+sets 
+Impala: provides real time queries over big data, developed 
+by cloudera 
+
+Stream processing
+STORM 
+
+NoSQL Stores
+Hbase: NoSQL built on top of Hadoop 
+Cassandra: NoSQL store does not use Hadoop)
+Amazon SimpleDB 
+
+
+Serialization Frameworks: 
+Avro : data serialization system
+Parquet: Columnar storage format for Hadoop 
+
+Monitoring Systems 
+HUE : Developed by Cloudera 
+
+Distributed Coordination: 
+Zookeeper: Centralized service for maintaining configuration 
+information, naming, and providing distributed synchronization 
+Book keeper: Distributed logging service based on ZooKeeper 
+
+Data Analytics Tools
+R 
+
+Distributed Message Processing:
+Kafka 
+
+
+YARN-based frameworks
+SPARK 
+STORM
+
+https://netgames.io/games/onu-werewolf/rooms/YTDD
+
+
+Map Reduce Algorithm Simplified 
+MapReduce has a master and workers, but it is not push 
+or pull. The work is collaborative effort between them 
+The master assigns a work portion to the next available 
+worker; thus, no work portion is forgotten or left 
+unfinished. 
+Workers send periodic heartbeats to the master. If 
+the worker is silent for a period of time (usually 
+10 minutes) then the master presumes this poker crashed 
+and assigns its work to another worker. The master 
+also cleans up the unfinished portion of the crashed 
+worker 
+All of the data resides in HDFS which avoids the central 
+server concept. 
+
+
+Map Reduce never updates data, rather it writes new 
+output instead. 
+
+
+Understanding Mappers and Reducers
+EXIT polling. Election in progress 
+Phase One: Sort the voters into distinct age groups 
+(20s, 30s, 40s) :: MAPPER 
+Phase Two: Interview each age group and see how they 
+voted :: REDUCER 
+	-Interview each age group concurrently 
+
+
+Software Engineering At Google
+
+Lack Of Psychological Safety: An environment in which 
+people are afraid to take risks or make mistakes in 
+front of others because they fear being punished for 
+it. This often manifests as a culture of fear or a 
+tendency to avoid transparency. 
+
+Information Islands: Knowledge fragmentation that occurs 
+in different parts of an organization that don’t 
+communicate with one another or use shared resources. 
+In such an environment, each group develops its own 
+way of doing things. This leads to information fragmentation. 
+
+Information duplication: Each island has reinvented 
+its own way of doing something. 
+Information skew: Each island has its own way of doing 
+the same thing, and these might or might not conflict. 
+Single Point Of Failure: A bottleneck that occurs when 
+critical information is available from only a single 
+person. 
+All-Or-Nothing Expertise: A group of people that is 
+split between people who know “everything” and 
+novices with little middle ground. This problem reinforces 
+itself if experts always do everything themselves and 
+don’t take the time to develop new experts through 
+mentoring or documentation. In this scenario, knowledge 
+and responsibilities continue to accumulate on those 
+who already have expertise, and new team members or 
+novices are left to fend for themselves and ramp up 
+more slowly. 
+
+Haunted Graveyards: Code that people avoid touching 
+or changing because they are afraid that something 
+might go wrong. 
+
+Nooglers that ramp up take around six months. 
+One of the biggest mistakes that beginners make is 
+not to ask for help when they are stuck. It does not 
+matter whether you are new to a team or a senior leader. 
+You should always be in an environment in which there 
+is something to learn. 
+
+When you learn something from a one-to-one discussion, 
+write it down. Chances are that future newcomers will 
+have the same questions that you had. Do them a favor, 
+and share what you write down. 
+
+Readability: Google’s peer review of code. This instills 
+confidence, and some sense of consistency across the 
+firm. 
+
+Performance ratings are indicative only of how a person 
+is performing in their given role at the time they 
+are being evaluated. Ratings, although an important 
+way to measure performance during a specific, are not 
+predictive of future performance and should not be 
+used to gauge readiness for a future role or qualify 
+an internal candidate for a different team. (They can, 
+however, be used to evaluate whether an employee is 
+properly or improperly splotted on their current team. 
+They can provide an opportunity to evaluate how to 
+better support an internal candidate moving forward) 
+
+Your organization’s code base is sustainable when 
+you are able to change all of the things you ought 
+to change, safety, and can do so for the life of your 
+codebase. 
+
+Programming is the immediate act of producing code. 
+Software engineering is the set of policies, practices, 
+and tools that are necessary to make that code useful 
+for as long as it needs to be used and allows collaboration 
+across a team. 
+
+A good postmortem should include:
+A brief summary of the event
+A timeline of the vent, from discovery through investigation 
+to resolution 
+The primary cause of the event 
+Impact and damage assessment 
+A set of action items (with owners) to fix the production 
+immediately 
+A set of action items to prevent the event from happening 
+again 
+Lessons learned 
+
+
+
+
