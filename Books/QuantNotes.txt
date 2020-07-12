@@ -21,7 +21,7 @@ assimilating economic information, page frantically
 through spreadsheets, 
 run programs written by quants, enter trades, talk 
 to salespeople, brokers, 
-and punch keys.Wall streets behavior is manic depressive. 
+and punch keys. Wall streets behavior is manic depressive. 
 Fast or famine 
 style of hiring and firing, expanding and contracting, 
 larges raises follow by large cuts -- all mirrored 
@@ -100,8 +100,3 @@ For cutting edge AI - research positions, advanced
 mathematical intuition 
 is a prerequisite in order to design and develop novel 
 methodologies. 
-
-Successful machine learning systems:
-Algorithm agnostic, reusable, simple, centralized knowledge, 
-flexible, reliable / scalable, intuitive user interface. 
-

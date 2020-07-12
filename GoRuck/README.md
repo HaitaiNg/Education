@@ -56,7 +56,7 @@ serve as the connector to additional EMT conduit pipes.
 - I designed this flag such that the length can be easily extended or reduced. To 
 add length, attach EMT additional conduit pipes.
 - I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
-medical tape, so when I bump into shit I have a lower probability of scratching
+medical tape, so I have a lower probability of scratching
 or denting whatever hits this pole. 
 - The Stainless Steel Spring Lake can be replaced by any standard carabiner that can
 fit thru the holes of the flag. Most flags have the two holes on the left side of the flag,
@@ -65,10 +65,5 @@ thus making it easy to swap out flags if needed.
 you can try using bungie cable and wrap the flag around the EMT
 conduit pipe. When I originally built this I had less than 36 hours to find
 a drill. This was my back up plan if I was unable to find a drill and commit to my original design.
--  I visited and contacted multiple hardware, lumber, plumbing, and Electrical stores in lower Manhattan in search of a drill.
 
 <img src="Photos/flagWTC.jpg" width=“376” height="869">
-
-Best of luck,
-Haitai Ng 
-

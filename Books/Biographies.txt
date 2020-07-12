@@ -150,18 +150,36 @@ Time when you felt a huge sense of accomplishment or
 success? 
 Data Usage (Automation Testing) / Testing of status 
 on data nodes 
+SQL UDF to allow user impersonation
+Catalog of HDFS directories 
+
 Time when you fixed something that wasn't working? 
 UAT and Production errors 
+HBase, Hive, Impala 
+Fixing jobs on a periodic build 
+
 Time when you made a challenging decision? Software 
 Design, UML 
+
 Time when you had to influence a leader or team? FitNesse 
 (Automation Testing) 
+Unit Testing, code quality, code reviews,
+documentation 
+
 Time when you got suprised by something or overlooked 
 something? Rules & Policies 
+Corporate policy on automation, approvals, etc. 
+
 Time when you removed barriers or came up with a creative 
-solution? Standardization 
-A time when you failed but learned? Data Summarization 
+solution?  Standardization. Automation
+because I manual intensive taks 
+
+A time when you failed but learned? 
+Data Summarization. Proof of concept but I struggled 
+with this. 
+
 A time when you had to defuse an escalating situation? 
+Data on-boarding (time sensitive)   
 
 Avoid talking in absolutes: (Never and Always)
 You don’t have to wait until you need a moment. 
