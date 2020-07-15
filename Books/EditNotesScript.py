@@ -1,4 +1,4 @@
-targetFileName = "BigData.txt"
+targetFileName = "SoftwareArchitect.txt"
 characterLimitPerSentence = 50 
 
 targetFile = open(targetFileName, "r")

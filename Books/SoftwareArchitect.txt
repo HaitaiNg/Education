@@ -1,0 +1,174 @@
+ The Software Architect Elevator — 
+Technical architects should ride the elevator up and 
+down 
+The architect can get feedback on decisions and to 
+understand their ramifications at the implementation 
+level. 
+Architects should be viewed like gardeners. They are 
+to trim and prune what doesn’t fit and to established 
+an overall balance and harmony in the garden 
+
+Automated tests breed confidence. It allows teams to 
+change 
+code confidently.
+
+Code Architect:
+SKILL: requires knowledge and ability to apply it to 
+solve real problems 
+taking a course, reading a book, online material. Skill 
+implies what tool to use 
+
+Impact: measure of how well an architect applies his 
+or her skill to benefit the company 
+	Usually measured by revenue or reduced cost. 
+
+Leadership: architect advances the state of the practice 
+Skill - Leadership - Impact 
+mentors - amplify - apply 
+feedback - community- priority 
+
+Confirmation bias: describes our tendency to interpret 
+data in such a way that supports our own hypotheses 
+Loss aversion: escape a negative event 
+Prospect theory: when faced with an opportunity, people 
+tend to favor a smaller but guaranteed gain over the 
+uncertain chance for a larger one 
+Micromort value: the amount you are willing to pay 
+to avoid the risk 
+
+Asking questions in traditional organizations might 
+not get you insights but defensiveness to cover up 
+the lack of decision discipline 
+Software architecture 
+
+The structure of the components of a system, their 
+interrelationships, and principles and guidelines governing 
+their design and evolution over time. 
+
+A colleague once suggested that an architect’s key 
+performance indicator (KPI) should be the number of 
+decisions made. While decision making is a defining 
+element of doing architecture. I had a feeling that 
+making as many decisions as possible isn’t what drives 
+my profession 
+— bad approach equivalent to the idea that a software 
+engineer’s contribution is based on the lines of 
+code they wrote 
+
+Making critical decisions early comes with a major 
+challenge, though: the beginning of the project is 
+also the time of highest ignorance because little is 
+known about the project as well as the technologies 
+to be used. Therefore, architects are generally expected 
+to draw on their ability to abstract from their past 
+experience to get those decisions “right.” Consistent 
+project cost and timeline overruns have hinted, though, 
+that deciding the system structure early in a project 
+is difficult at best, even for an all-knowing architect 
+( 
+
+Martin Fowler concluded some time ago that the opposite 
+is actually true: “one of an architect’s most important 
+tasks is to eliminate irreversibility in software designs.”1 
+So, instead of entrusting all crucial decisions to 
+one person, a project can be better off by minimizing 
+the number of early and irreversible decisions. For 
+example, choosing a flexible or modular design can 
+localize the scope of a later change and thus minimize 
+the extent of up-front decision making. Now one could 
+posit that deciding on a modular design is a second-degree 
+up-front decision—we’ll come back to that point 
+later. 
+
+option: the right but not the obligation to execute 
+a financial transaction at fixed parameters in the 
+future. An option allows you to defer a decision: instead 
+of deciding to buy or sell a stock today, you can buy 
+the option today and thus acquire the right make that 
+decision in the future 
+
+You may acquire the option to buy a stock for $100 
+(the “strike price”) in a year’s time (assuming 
+a European option). After a year passes, it’s trivial 
+to decide whether to exercise this option: if the stock 
+price trades higher than $100, you can instantly make 
+money by exercising your option to buy the stock for 
+$100 and selling it at a profit. If the actual stock 
+price is less than $100, you let the option expire, 
+meaning you don’t use your right to buy at $100. 
+Coincidentally, this doesn’t mean buying the option 
+was a bad decision 
+
+Tradegey of the commons 
+
+Systems resist change. A lot of inertia. Amber organizations 
+they are built on the assumption that what worked in 
+the past will work in the future and it often served 
+them well over thousands of years 
+
+External consultants who are difficult to hold liable 
+because they will have long moved to another project 
+by the time the problems surface 
+
+Thanks to abstraction, very few programmers still write 
+assembly level code, read single data blocks from a 
+hard disk or put individual data packets onto the network. 
+This level of detail is hidden behind nicely wrapped 
+high-level languages, files, and socket streams. These 
+programming abstractions are very convenient and dramatically 
+increasing productivity; try doing without them. 
+
+If abstractions are useful you might wonder whether 
+adding further abstraction layers could boost productivity 
+even more. You could use libraries or services for 
+all business functions. When raising the level of abstraction 
+you face a fundamental dilemma: how do you make a really 
+simple model without losing too much flexibility. The 
+best abstractions are therefore those that solve and 
+encapsulate the difficult part of the problem while 
+leaving the user with sufficient flexibility. 
+
+If an abstraction takes away too many things or the 
+wrong things, it becomes overly restrictive and no 
+longer applicable. If it takes away to few things, 
+it didn’t accomplish much in terms of simplification 
+and hence it is not very valuable 
+
+Simple things should be simple, complex things should 
+be possible.1 MapReduce, a framework for distributed 
+data processing, is a positive example: it abstracts 
+away the gnarly parts of distributed data processing, 
+such as controlling and scheduling many worker instances, 
+dealing with failed nodes, aggregating data across 
+nodes, and so on. But it nevertheless leaves the programmer 
+enough flexibility to solve a wide range of problems 
+and was extremely widely used within Google. 
+
+That’s because running and supporting legacy applications 
+is expensive: operational processes are often manual; 
+the software may not be stable, necessitating constant 
+attention; the software may not scale well, requiring 
+the procurement of expensive hardware; lack of documentation 
+means time-consuming trial-and-error troubleshooting 
+in case of problems. These are reasons why legacy systems 
+tie up valuable IT resources and skills, effectively 
+devouring the brains of IT that could be applied to 
+more useful tasks; for example, delivering features 
+to the business. 
+
+Tacit knowledge is knowledge that exists only in an 
+employee’s heads but isn’t documented anywhere. 
+Such undocumented knowledge can be a major overhead 
+for large or rapidly growing organization because it 
+can easily be lost and requires new employees to relearn 
+things the organization should already know. Encoding 
+tacit knowledge which existed only in an operator’s 
+hand into a set of scripts, tools, or source code makes 
+these processes visible and eases knowledge transfer 
+
+I have a rather critical view of such behavior and 
+generally advise management to not approve something 
+that is not clear to them. If something is not comprehensive 
+it is due to a lack of clarity. 
+
+
