@@ -1,4 +1,4 @@
-*Refresh Date: 7.17.20 
+Refresh Date: 07.17.20 
 
  The Software Architect Elevator — 
 Technical architects should ride the elevator up and 
