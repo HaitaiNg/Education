@@ -9,13 +9,11 @@ to trim and prune what doesn’t fit and to established
 an overall balance and harmony in the garden 
 
 Automated tests breed confidence. It allows teams to 
-change 
-code confidently.
+change code confidently.
 
-Code Architect:
 SKILL: requires knowledge and ability to apply it to 
-solve real problems 
-taking a course, reading a book, online material. Skill 
+solve real problems taking a course, 
+reading a book, online material. Skill 
 implies what tool to use 
 
 Impact: measure of how well an architect applies his 
@@ -39,8 +37,8 @@ to avoid the risk
 Asking questions in traditional organizations might 
 not get you insights but defensiveness to cover up 
 the lack of decision discipline 
-Software architecture 
 
+Software architecture: 
 The structure of the components of a system, their 
 interrelationships, and principles and guidelines governing 
 their design and evolution over time. 
@@ -50,8 +48,8 @@ performance indicator (KPI) should be the number of
 decisions made. While decision making is a defining 
 element of doing architecture. I had a feeling that 
 making as many decisions as possible isn’t what drives 
-my profession 
-— bad approach equivalent to the idea that a software 
+my profession — bad approach equivalent
+to the idea that a software 
 engineer’s contribution is based on the lines of 
 code they wrote 
 
@@ -64,8 +62,7 @@ to draw on their ability to abstract from their past
 experience to get those decisions “right.” Consistent 
 project cost and timeline overruns have hinted, though, 
 that deciding the system structure early in a project 
-is difficult at best, even for an all-knowing architect 
-( 
+is difficult at best, even for an all-knowing architect  
 
 Martin Fowler concluded some time ago that the opposite 
 is actually true: “one of an architect’s most important 
@@ -75,31 +72,7 @@ one person, a project can be better off by minimizing
 the number of early and irreversible decisions. For 
 example, choosing a flexible or modular design can 
 localize the scope of a later change and thus minimize 
-the extent of up-front decision making. Now one could 
-posit that deciding on a modular design is a second-degree 
-up-front decision—we’ll come back to that point 
-later. 
-
-option: the right but not the obligation to execute 
-a financial transaction at fixed parameters in the 
-future. An option allows you to defer a decision: instead 
-of deciding to buy or sell a stock today, you can buy 
-the option today and thus acquire the right make that 
-decision in the future 
-
-You may acquire the option to buy a stock for $100 
-(the “strike price”) in a year’s time (assuming 
-a European option). After a year passes, it’s trivial 
-to decide whether to exercise this option: if the stock 
-price trades higher than $100, you can instantly make 
-money by exercising your option to buy the stock for 
-$100 and selling it at a profit. If the actual stock 
-price is less than $100, you let the option expire, 
-meaning you don’t use your right to buy at $100. 
-Coincidentally, this doesn’t mean buying the option 
-was a bad decision 
-
-Tradegey of the commons 
+the extent of up-front decision making.
 
 Systems resist change. A lot of inertia. Amber organizations 
 they are built on the assumption that what worked in 
@@ -134,8 +107,7 @@ longer applicable. If it takes away to few things,
 it didn’t accomplish much in terms of simplification 
 and hence it is not very valuable 
 
-Simple things should be simple, complex things should 
-be possible.1 MapReduce, a framework for distributed 
+MapReduce, a framework for distributed 
 data processing, is a positive example: it abstracts 
 away the gnarly parts of distributed data processing, 
 such as controlling and scheduling many worker instances, 
@@ -171,4 +143,100 @@ generally advise management to not approve something
 that is not clear to them. If something is not comprehensive 
 it is due to a lack of clarity. 
 
+My translation for software engineers: when writing, 
+assume that your readers use a single-pass compilation 
+algorithm and don’t have access to a complete symbol 
+table. This means that forward references aren’t 
+allowed: you can only refer to terms and concepts that 
+were already introduced. For the algorithmically minded, 
+you’ll need to do a topological sort on your topic 
+graph. What if there’s a circle? You’ll get a stack 
+overflow, just like your audience! 
 
+Writing good documents in an organization that is generally 
+poor at writing can give you significant visibility, 
+but it can also rock the political system. 
+
+Internal organization black market
+If the answer to “how long does it take to get a 
+server” it “depends on who’s asking” then you 
+have a black market 
+
+Automated tests are your safety belt—how else would 
+you be able to deploy code into production at a moment’s 
+notice, e.g., in case of a serious problem? 
+
+Fast Software Development & Deployment
+Velocity: Assures you can make code changes quickly. 
+If the code base is fraught with technical debt, duplication, 
+you will lose speed right here 
+Confidence: Code correctness. Code reviews, rigorous 
+automated tests, small incremental releases. 
+Repeatable: 100% automated. All time and energy should 
+go into writing great features for your users, not 
+into making each deployment work. 
+Feedback: Feedback from monitoring to make sure you 
+can spot production issues early and learn what your 
+users need 
+Secure: secure your runtime environment against accidental 
+and malicious attacks, especially when deploying new 
+features that are dependent on libraries that could 
+contain exploits. 
+Do not send a computer to do a human’s job. Companies 
+tend to prefer to do things manual but do not realize 
+that this option is very short sighted. 
+
+It may be more beneficial to standardize connecting 
+elements, such as monitoring or source control than 
+endpoints such as laptops and IDEs 
+
+the biggest enemy of change is complacency: if things 
+are not so bad, the motivation to change is low. Organizations 
+can artificially increase the pain of not changing, 
+by creating fear or conjuring a (fake) crisis before 
+the real crisis occurs. 
+
+Google is infamous for dogfooding its own products, 
+meaning its own employees get to try alpha or beta 
+versions of new products. 
+
+Bringing younger employees into the mix can help companies 
+become digital as it brings some of your younger target 
+customer segment in-house 
+
+At Google, getting a USB charger cable was a matter 
+of 2.5 minutes: 1 minute to walk to the nearest Tech 
+Stop, 30 seconds to swipe your badge and scan the cable 
+at the self-checkout, and 1 minute to walk back to 
+your desk. To do this in corporate IT, I had to mail 
+someone, who mailed someone, who asked me the type 
+of phone I use and then entered an order, which I had 
+to approve. Elapsed time: about 2 weeks. Speed factor: 
+14 days × 24 hours/day × 60 minutes/hour / 2.5 minutes 
+= 8064, in the same league as setting up a source code 
+repository (Chapter 35). 
+
+How can an organization have too much money? Their 
+goal is to maximize profits and shareholder returns. 
+To do so, companies use stringent budgeting processes 
+that control spending. For example, proposed projects 
+are assessed by their expected rate of return against 
+a benchmark typically set by existing investments, 
+sometimes called internal rate of return (IRR). 
+
+Companies make investment decisions based on expected 
+return at least use a consistent decision metric. Many 
+rich companies have a different decision process that 
+of the highest paid persons opinion. 
+
+Outsourcing IT has severe drawbacks in the digital 
+age because it excludes the organization from the critical 
+innovation cycle 
+
+Many companies try to overcome this hurdle by paying 
+higher salaries. However, compensation is often not 
+the main motivator for top candidates; they are looking 
+for an employer where they can learn from their peers 
+and have the freedom to implement projects rapidly. 
+That’s why it’s difficult for companies to “buy” 
+skilled employees. 
