@@ -1,3 +1,5 @@
+*Refresh Date: 07.24.20
+
 “Why Should I Trust You” Explaining The Predictions of Any Classifier
 15 mInutes To A Better Interview: What I Wish Every Job Candidate Knew
 1984
@@ -7,6 +9,7 @@ A Programmer’s Guide To Data Mining: The Ancient Art Of The Numerati
 A Spy’s Guide To Thinking
 A Train Near Magdeburg — The Holocaust, The survivors, and the American (DNF)
 Advanced Engineering Mathematics
+Algorithms Unlocked 
 American Born Chinese
 American Sniper
 American Thought From Puritanism To Pragmatism and Beyond
@@ -25,6 +28,7 @@ Boss of Bosses : The Fall Of The Godfather : FBI & Paul Castellano
 Bruce Lee : The Celebrated Life Of the Golden Dragon
 Business Brilliance: Suprising Lessons From The Greatest Self-Made Business Icons
 C++ Primer
+Calculus Made Easy 
 Can't Hurt Me By David Goggins
 Choke
 Clean Architecture
@@ -58,13 +62,19 @@ Getting Started with Apache Spark
 Getting Started With Electronics
 God of War 2018 (Novelization)
 Great Books Of The Western World
+Grokking Algorithms: An Illustrated Guide For Programmers And Other Curious People
+Grokking Behaviorial Interview 
+Grokking System Design Interview
 Guide2DataMining
+Hadoop Illuminated 
 Hadoop In Action
 Hadoop: The Definitive Guide
+Hatchet 
 How I Became A Quant Insights From 25 Of Wall Street's Elite
 How To Know Higher Worlds
 How To learn & Memorize Math, Numbers, Equations, & Simple Arithmetic
 How To Make Money In Stocks
+How To Run A City Like Amazon
 How To Win Friends And Influence People
 HTML and CSS - Design And Build Websites
 Human Adaptive Strategies: Ecology, Culture and Politics
@@ -111,57 +121,52 @@ Rose That Grew From Concrete
 Scala For The Impatient
 Sell With Confidence! Crush Your Fear Of Being Rejected, Avoid Being Pushy And Have The Courage To Make Money Selling
 Single Asiatic Male Seeks Ride Or Die chick
+Slaughterhouse Five 
+Software Engineering At Google 
+Spring Framework For Professionals
 Star Wars Darth Plagueis
 Statistics A Graphic Guide
 Steve Jobs
 Summary Of Can't Hurt Me
 Survivor
+Talk To Me In Korean Level III 
+Talk To Me In Korean Level IV 
+Talk To Me In Korean Level V 
 Tao Of Jeet Kune Do
 The 7 Habits Of Highly Effective People
 The Art Of God Of War
 The Art Of War
 The Autobiography of Malcolm X
 The Code To The Extraordinary Mind: 10 Unconventional Laws To Redefine Your Life And Succeed On Your Own Terms
+The Data Engineering Cookbook - Andreas Kretz 
 The Exorcist (DNF)
+The Giver
 The GodFather
 The Godfather The Official Motion Picture Archives
 The Guide To Data Analytics
+The Guide To Get Into FAANG
 The Hitchhiker's Guide To Programming Contests
 The House Of Dimon: How JPMorgan’s Jamie Dimon Rose To The Top Of The Financial World
 The Joy Of Finding X : A Guided Tour Of Math From One To Infinity
 The Life And Death Of Martin Luther King Jr.
 The Lucifer Effect: Understanding How Good People Turn Bad
+The Martian 
 The Mathematical Experience
 The Need To Question: An Introduction To Philosophy
 The Practice Of Computing Using Python
 The REAL ACT Prep Guide: The Only Official Prep Guide From The Makers Of ACT
 The Road To Avengers End Game
 The Sicilian
+The Software Architect Elevator 
 The Universe in a nutshell
 The World Is Flat
 Thinking Like An Engineer
 Thug Kitchen: The Official Cookbook: Eat Like You Give a F*ck
+Touching Spirit Bear 
 Ullman Database Systems The Complete Book
 V For Vendetta
 Welcome To Machine Learning - LeetCode
 What I wish I knew When I was 20: A Crash Course On Making Your Own In The World
 Yoby Stark Iron Man
-Algorithms Unlocked 
-Spring Framework For Professionals
-The Guide To Get Into FAANG
-How To Run A City Like Amazon
-팥죽할어니와 호랑이 
 누나가 곻다
-The Data Engineering Cookbook - Andreas Kretz 
-Talk To Me In Korean Level III 
-Talk To Me In Korean Level IV 
-Talk To Me In Korean Level V 
-Grokking Algorithms: An Illustrated Guide For Programmers And Other Curious People
-Slaughterhouse Five 
-Software Engineering At Google 
-Calculus Made Easy 
-Grokking Behaviorial Interview 
-Grokking System Design Interview
-Hadoop Illuminated 
-The Software Architect Elevator 
-The Martian 
+팥죽할어니와 호랑이 
