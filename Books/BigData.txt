@@ -30,7 +30,9 @@ within Hadoop. Avro files can store metadata with the
 data but also allow independent schema for reading 
 the file Avro files are splittable, support block compression, 
 and enjoy broad, relatively mature, tool support within 
-the Hadoop ecosystem. 
+the Hadoop ecosystem. Embeds schema in file 
+
+
 
 Parquet Files are yet another columnar file format 
 that originated from Hadoop creator Doug Cutting’s 
@@ -45,6 +47,7 @@ in the ecosystem such as Hadoop Pig may face challenges.
 Parquet is supported by Cloudera and optimized for 
 Cloudera Impala. Native Parquet support is rapidly 
 being added for the rest of the Hadoop ecosystem. 
+Schema is also embeded into the file 
  
 One note on Parquet file support with Hive. It is very 
 important that Parquet column names are lowercase. 
@@ -150,7 +153,7 @@ to handle the load, applications usually only touch
 a small number of records in each query. The application 
 requests records using some kind of key, and the storage 
 engine uses an index to find the data for the requested 
-key. Disk seek time is often the bottleneck here.  
+key. Disk seek time is often the bottleneck here. 
 * Data warehouses and similar analytic systems are 
 less well known, because they are primarily used by 
 business analysts, not by end users. They handle a 
@@ -159,7 +162,7 @@ each query is typically very demanding, requiring many
 millions of records to be scanned in a short time. 
 Disk bandwidth (not seek time) is often the bottleneck 
 here, and column- oriented storage is an increasingly 
-popular solution for this kind of workload.  
+popular solution for this kind of workload. 
 As an application developer, if you’re armed with 
 this knowledge about the internals of storage engines, 
 you are in a much better position to know which tool 
