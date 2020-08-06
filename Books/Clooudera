@@ -1,0 +1,35 @@
+Cloudera Morphlines: open source framework used to integrate,
+build, and change Hadoop processing applications that 
+extract, transform, or load data into Apache Solr, Hbase, HDFS, 
+data warehouses, or analytic dashboards. 
+
+What is a morphline? Morphline is a config file that 
+makes it easy to define a transformation chain
+that is flexible with multiple types of data sources. 
+CONFIG that processes and loads data into Hadoop. 
+Replaces Java programming with simple config steps, 
+thus reducing the cost and integration effort with 
+developing, maintaining or integrating custom ETL projects. 
+
+Morphline: (in memory container of transformation commands) 
+A record is an in-memory data structure of name-vale pairs with 
+optional blob attachments or POJO attachments. 
+
+"Morphlines replaces Java programming with simple config 
+steps, reducing the cost and effort of doing custom ETL: 
+Morphline creates an efficient way to consume records 
+(Flume events, HDFS files, RDBMS tables, Apache Avro objects) 
+
+A record is a set of named fields where each field has an ordered list 
+of one or more values. 
+A value can be any Java Object. 
+A record is essentially a hash table, where each hash table entry contains
+a String key, and a list of Java objects as values 
+
+""a record can contain an optional field named _attachment_body, which can be a Java java.io.InputStream or Java byte[]""
+
+Morphline configuration file is implemented using HOCON format 
+(human optimized config object notation) 
+
+GROK-Dictionary: config file that contains prefabricated 
+regular expressions that can be referred to by name 
