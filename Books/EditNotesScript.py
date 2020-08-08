@@ -1,4 +1,4 @@
-targetFileName = "SoftwareArchitect.txt"
+targetFileName = "Cloudera.txt"
 characterLimitPerSentence = 50 
 
 targetFile = open(targetFileName, "r")
