@@ -1,4 +1,4 @@
-targetFileName = "Cloudera.txt"
+targetFileName = "1_Introduction_To_Operating_Systems.txt"
 characterLimitPerSentence = 50 
 
 targetFile = open( "1_Introduction_To_Operating_Systems.txt", "r")
@@ -22,4 +22,6 @@ for sentence in targetFile.readlines():
 writeFile = open(targetFileName, "w") 
 for i in newListOfContents:
     writeFile.write(i)
+
+print("Target File " + str(targetFileName))
 print("Text File Refactored") 
