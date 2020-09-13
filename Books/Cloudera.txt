@@ -1,86 +1,45 @@
-Cloudera Morphlines: open source framework used to 
-integrate, 
-build, and change Hadoop processing applications that 
-extract, transform, or load data into Apache Solr, 
-Hbase, HDFS, 
-data warehouses, or analytic dashboards. 
+Computer operating system coordinate and manages computer 
+information. Provides 
+Graphical User Interface (GUI) and presents data in 
+the User Interface (UI) 
 
-What is a morphline? Morphline is a config file that 
-makes it easy to define a transformation chain
-that is flexible with multiple types of data sources. 
-CONFIG that processes and loads data into Hadoop. 
-Replaces Java programming with simple config steps, 
-thus reducing the cost and integration effort with 
-developing, maintaining or integrating custom ETL projects. 
+I/O management
+Software Standard Library Management 
+CPU scheduling 
+Multitasking 
+Multiprogramming
+Address Translation 
+Dual Mode Operation 
+Simplify Applications
+Fault containment, recovery, tolerance 
+Internet Browser
+Communications 
+Full coordination and protection 
+Multiplex programs simultaneously
 
-Morphline: (in memory container of transformation commands) 
-A record is an in-memory data structure of name-vale 
-pairs with 
-optional blob attachments or POJO attachments. 
+Coordinates the running of compilers: turns mouse clicks 
+and keystrokes into ones and zeroes 
 
-Rich confi file that makes it easy to define a transofmration 
-chain that consumes any kind of data source, processes 
-data, and loads 
-results into a hadoop component 
+A system is called a real-time system when we need 
+quantitative expression of time 
+(real-time) to describe the behavior of the system. 
+Real time systems can be constrainted by the environment. 
 
+A fail safe system is one in which if entered no damage 
+will occur 
 
-"Morphlines replaces Java programming with simple config 
-steps, reducing the cost and effort of doing custom 
-ETL: 
-Morphline creates an efficient way to consume records 
-(Flume events, HDFS files, RDBMS tables, Apache Avro 
-objects) 
+A safety critical system is one in which cause severe 
+damages 
 
-A record is a set of named fields where each field 
-has an ordered list 
-of one or more values. 
-A value can be any Java Object. 
-A record is essentially a hash table, where each hash 
-table entry contains 
-a String key, and a list of Java objects as values 
+How to achieve reliability:
+Error Avoidance: Possibility of error should be minimized 
+(Testing, Improvements In Design) 
+Error Detection & Removal: Reviews / Extensive Testing 
+Fault Tolerance: Built in Self Testing; Run tests on 
+internal componenets. Automatic Reconfigurations 
+Triple Modular Redundancy: Critical Components are 
+copied 3x 
+N Version Programming: Hardware fault tolerance. Multiple 
+teams work on N different versions. 
+Recovery blocks 
 
-""a record can contain an optional field named _attachment_body, 
-which can be a Java java.io.InputStream or Java byte[]"" 
-
-Morphline configuration file is implemented using HOCON 
-format 
-(human optimized config object notation) 
-
-GROK-Dictionary: config file that contains prefabricated 
-regular expressions that can be referred to by name 
-
-Data parsing is a method used to convert data from 
-one 
-format to another
-
-Downside of building your own parser: 
--Hire and train a whole in-house team to build the 
-parser 
--Maintenace == cost 
--Buy servers fast enough to parse data 
-
-Kubernates: container deployment. Automate the container 
-deployment 
-process. Can spin up docker on-demand to execute tasks 
-You can define how much CPU, RAM, Network, Docker Container 
-to use 
-
-Kereberos Authentication 
-LDAP
-SENTRY : RPC service that stores authorization metadata 
-in an 
-underlying relational database and provides RPC interfaces 
-to retrieve and manipulate priviledges 
-Supports secure access to services using kerberos 
-
-Jenkins is a free / open source automation server. 
-It helps automate the software development related 
-to building, testing, deploying, and facilitating continous 
-integration and 
-continous delivery.
-Server container that runs on Apache tomcat.
-Contiguous delivery pipeline automated expression of 
-your process 
-for getting software from version control right through 
-to your 
-users and customers. 

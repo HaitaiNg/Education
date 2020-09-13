@@ -1,7 +1,7 @@
 targetFileName = "Cloudera.txt"
 characterLimitPerSentence = 50 
 
-targetFile = open(targetFileName, "r")
+targetFile = open( "target_file", "r")
 newListOfContents = [] 
 for sentence in targetFile.readlines(): 
     if(len(sentence) > characterLimitPerSentence):
@@ -22,3 +22,4 @@ for sentence in targetFile.readlines():
 writeFile = open(targetFileName, "w") 
 for i in newListOfContents:
     writeFile.write(i)
+print("Text File Refactored") 
