@@ -960,6 +960,16 @@ A set of action items to prevent the event from happening
 again 
 Lessons learned 
 
-
+Map Reduce is a framework that is used to process large data sets 
+across a number of clusters (many machines)
+Worker Nodes (computations) and master node which delegates tasks
+for each worker node.
+Map Step: Each worker node applies a specific map operation on 
+input data 
+Data is redistributed based on the output keys from prior step's map
+function, such that for any given key, it is located on the same 
+worker node. 
+Each worker node processes each key in parallel using specific 
+reduce operations to get the output result 
 
 
