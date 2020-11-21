@@ -5,9 +5,6 @@
 */ 
 
 import java.util.*;
-import java.util.Map;
-import java.util.ArrayList; 
-
 
 class Graph{
 
@@ -108,15 +105,6 @@ class Graph{
         return costOfRoute; 
     }
 
-    boolean numberOne(String route)
-    {
-        // int distanceAlongRoute  = getDistanceAlongRoute(route);
-        // if(distanceAlongRoute == 0) System.out.println("NO SUCH ROUTE");
-        // else System.out.println("The distance of route " + route +  " " + String.valueOf(distanceAlongRoute));
-
-        return false; 
-    }
-
     public static Node calculateClosestNode(Set<Node> unvisited){
         Node closestNode = null; 
         int closestDistance = Integer.MAX_VALUE; 
@@ -146,7 +134,7 @@ class Graph{
             adjacentNode.setShortestPath(shortestPath);
         }
     }
-    public static int dijkstrasAlgorithm(Graph graph, String start, String end)
+    public static String dijkstrasAlgorithm(Graph graph, String start, String end)
     {
         Node startNode = graph.getNode(start); 
         startNode.setDistance(0); 
@@ -168,7 +156,9 @@ class Graph{
             }
              visited.add(currentNode);    
          }
-        return graph.getNode(end).getDistance();  
+         int shortestDistance = graph.getNode(end).getDistance(); 
+         if(shortestDistance == Integer.MAX_VALUE) return("NO SUCH ROUTE").trim();
+        return String.valueOf(graph.getNode(end).getDistance());
     }
 
         // Variation of depth first search to find the route 
@@ -203,7 +193,17 @@ class Graph{
             graph.allPathsBetweenTwoNodes.add(path.trim()); 
         }
 
-        public int numberTwo(Graph graph, String start, String end, int maxNumberOfStops)
+
+        
+        public String calculateDistanceAlongRoute(String route)
+        {
+            int distanceAlongRoute  = getDistanceAlongRoute(route);
+            if(distanceAlongRoute == 0) return("NO SUCH ROUTE").trim();
+            else return (String.valueOf(distanceAlongRoute)).trim();
+        }
+
+
+        public void calculateAllPaths(Graph graph, String start, String end)
         {
             List<Character> visited = new ArrayList<Character>(); 
             visited.add(start.charAt(0));
@@ -221,28 +221,37 @@ class Graph{
             else{
                 search(graph, start, end, visited);
             }
-            
+        }
 
-            int numberOfRoutesWithLimitedStops = 0; maxNumberOfStops++;
+        public int getRoutesWithLimitedPaths(Graph graph, String start, String end, int maxNumberOfStops)
+        {
+            calculateAllPaths(graph, start, end);
+            int routes = 0; maxNumberOfStops++;
             for(String path : graph.allPathsBetweenTwoNodes){
                 if(start == end) path = (start.charAt(0) + path).trim();
                 if(path.length() <= maxNumberOfStops){
-                    numberOfRoutesWithLimitedStops++; 
+                    routes++; 
                     // Debug: print out all paths that have number of stops <= maxNumberOfStops 
                     // System.out.println(path + " " + path.len gth()); 
                 }
                 // Debug: print all possible paths between two nodes 
                 // System.out.println(path + " " + path.length());
             }
-            return numberOfRoutesWithLimitedStops; 
+            return routes;  
         }
 
-        public void numberThree(){
-            // get all paths, then count the number of paths where length <= number of stops
-        }
-        public void numberFour()
-        {
-            // sort all paths by size, then determine whether 
+        public int getRoutesWithLimitedDistance(Graph graph, String start, String end, int maxDistance){
+            calculateAllPaths(graph, start, end);
+            Map<String, Integer> routesAndDistance = new HashMap<String, Integer>(); 
+            for(String path: graph.allPathsBetweenTwoNodes) routesAndDistance.put((start.charAt(0)+path).trim(), graph.getDistanceAlongRoute(path)); 
+            Set<String> allUniqueRoutes = new HashSet<String>(); 
+
+
+            // given a set of characters, return all combinations of characters
+            // where the max integer sum < maxDistance 
+
+
+            return allUniqueRoutes.size();
         }
 }
 
@@ -282,7 +291,6 @@ public class java_solution{
     
     public static void main(String[] args)
     {
-
         ArrayList<String> test = new ArrayList<String>(); 
         test.add("AB5"); 
         test.add("BC4"); 
@@ -294,16 +302,20 @@ public class java_solution{
         test.add("EB3");
         test.add("AE7");
         
-        //test.add("DZ50");
-
         // Create Graph 
         Graph graph = createGraph(test); 
-        // 1  graph.executeAllQuestions("CC");
+  
+        //1 
+        // System.out.println(graph.calculateDistanceAlongRoute("ABC"));
+        //4 
+        //  System.out.println(graph.dijkstrasAlgorithm(graph, "E", "A")); 
         //  System.out.println(graph.dijkstrasAlgorithm(graph, "A", "C"));
 
-        //graph.search(graph, "C", "C", visited);
-        //System.out.println(graph.numberTwo(graph, "A", "D", 10));
-        System.out.println(graph.numberTwo(graph, "C", "C", 10));
-        
+        // System.out.println(graph.getRoutesWithLimitedPaths(graph, "A", "D", 10));
+        // System.out.println(graph.getRoutesWithLimitedPaths(graph, "C", "C", 10));
+
+        System.out.println(graph.getRoutesWithLimitedDistance(graph, "C", "C", 10)); 
+        // System.out.println(graph.getRoutesWithLimitedDistance(graph, "C", "C", 10));
+        // e
     }
 }
