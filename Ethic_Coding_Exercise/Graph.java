@@ -61,7 +61,6 @@ class Graph{
         graph.allPathsBetweenTwoNodes.add(path.trim()); 
     }
 
-    //Get vertices for a particular node 
     Map<Node, Integer> getAdjacentVerticies(char id){
         for(Node node: adjacencyList.keySet())
         {
@@ -80,7 +79,6 @@ class Graph{
         return null; 
     }
 
-    // Get all possible paths from start node to end node 
     public void calculateAllPaths(Graph graph, String start, String end)
     {
         List<Character> visited = new ArrayList<Character>(); 
@@ -117,8 +115,6 @@ class Graph{
     public void calculateShortestDistance(Graph graph, Node adjacentNode, Node source, int weight){
         if(source.getDistance() + weight < adjacentNode.getDistance()){
             adjacentNode.setDistance(source.getDistance()+weight);
-            //System.out.println(adjacentNode.getDistance());
-
             Node temp = graph.getNode(String.valueOf(adjacentNode.id));
             if(adjacentNode.getDistance() < temp.getDistance())
             {

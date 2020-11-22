@@ -4,14 +4,14 @@
 This repository stores Haitai Ng's submission for the Ethic Coding Exercise. 
 
 ##### How to compile the source code on the command line 
-Using a command line terminal, please check you are in the correct directory that contains the file "java_solution.java". Once you have confirmed the file exists please run the following commands:
+Using a command line terminal, please check you are in the correct directory that contains the files: Graph.java; Ethic_Coding_Exercise.java; User_Executable.java. Once you have confirmed the three file exists please run the following commands:
 ```
-$ javac java_solution.java 
+$ javac *.java
 ```
 ##### How to run the application from the command line, along with the sample input file
-After you have compiled the program by using “javac java_solution.java” execute the following command to run the program.
+After you have compiled the program by using “javac *.java” execute the following command to run the program.
 ```
-$ java java_solution
+$ java Ethic_Coding_Exercise
 ```
 
 ##### Input: 
@@ -39,6 +39,7 @@ The user must provide a valid integer corresponding to a particular question. Fo
 - For question 4, the user must provide two arguments; start node (single character) denoting the starting location; the destination node (single character)
 
 - ***For additional references and supporting pictures showcasing the program execution, please refer to folder "Development_Process/Standard_Sample_Execution.png"*** 
+
 ##### Output 
 The console will display the corresponding output immediately after the input parameters have been provided.  
 ##### How to run unit tests#
@@ -49,6 +50,7 @@ The console will display the corresponding output immediately after the input pa
 - The distance between towns is a positive integer where : ( 1 <= distance <= max_integer) 
 - We will not be removing any nodes in graph or modifying the graph after it has been instantiated by the input 
 - Most inputs will be valid. I did not incorporate extensive error handling (exceptions, try / catch clauses) 
+- Note: Unit testing is high level. I primarily wrote tests for the methods that validated the questions. These methods make several other method calls downstream. If this code were to be submitted to a production environment, I would like to include some tests for the lengthy supporting methods. 
 
 ##### Support 
 Please contact Haitai Ng if there any questions or concerns. Thank you for your time. 

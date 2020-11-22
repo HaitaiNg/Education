@@ -71,7 +71,7 @@ public class Ethic_Coding_Exercise {
     }
 
 
-    //< All print statements 
+    //< All print statements used for unit testing 
     public void printDistanceAlongRoute(String route){
         if(route == "\0") System.out.println(("The distance of the route _").trim()); 
         else System.out.println(("The distance of the route " + route).trim()); 
