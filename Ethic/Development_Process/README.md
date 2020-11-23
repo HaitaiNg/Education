@@ -15,7 +15,7 @@ After reading the problem description, I first drew out the weighted directed gr
 - How to handle user input: display questions on console vs pass in file
 
 ##### Solving the problems:
-Note: I will be using the words node and town interchangeably. In this context, a node represents a town. In this documentatiion, every reference to node can be replaced with "town". An edge is defined as a directed association or connection between two nodes (towns).
+Note: I will be using the words node and town interchangeably. In this context, a node represents a town. An edge is defined as a directed association or connection between two nodes (towns).
 - In order to create and represent the graph, I considered using an adjacency matrix due to the quick loop up time and speed, however I had some difficulty figuring out how I could accurately represent the edges with characters instead of integers. Therefore ***I decided to use an adjacency list.***
 
 - The adjacency list. Each entry in the adjacency list is a node. The node will have a map entry that contains the connected nodes and their weights. (example: node A -> { node B : 5, node D : 8, node E : 7}). Please refer to paper_documentation.jpg for a visual representation.
@@ -26,7 +26,7 @@ Note: I will be using the words node and town interchangeably. In this context, 
 
 - For question 3, I re-used the modified depth first search algorithm to find all the paths from a start node to an end node. I then traversed through all the possible paths between the start node and end nodes. I computed the path’s weight by reusing the function I wrote to solve question 1 and determined whether that returned distance was less than the allocated distance. The challenging component for this question was calculating all permutations of cyclic combinations. I had to write multiple support methods. To otbtain the permutations I wrote a recursive function to calculate the various combinations of paths within the allocated distance.
 
-- For question 4, the user must provide two arguments: start node (single character) denoting the starting location; the destination node (single character). I used Dijkstra’s algorithm to calculate the shortest path from a start node to all nodes and updated each node’s distance attribute. The distance attribute for each node is the numerical distance from the root node to that particular node. If no path exists, the distance will be Integer.MAX_VALUE (2^31-1). Given the destination node, I would return the distance attribute for that node denoting the shortest distance between root and that destination node.
+- For question 4, the user must provide two arguments: start node (single character) denoting the starting location; the destination node (single character). I used Dijkstra’s algorithm to calculate the shortest path from a start node to all nodes and updated each node’s distance attribute. The distance attribute for each node is the numerical distance from the root node to that particular node. Given the destination node, I would return the distance attribute for that node denoting the shortest distance between root and that destination node. If no path exists, the message "NO SUCH ROUTE" will be returned.
 
 - Writing and testing my program using unit tests helped me identify major bugs, and errors in my code.
 
