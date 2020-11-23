@@ -46,7 +46,7 @@ public class Unit_Test_I {
     public void routesWithLimitedDistance(){
         Ethic sample = createExecutable("AB5,BC4,CD8,DC8,DE6,AD5,CE2,EB3,AE7");
         assertEquals("7", sample.getRoutesWithLimitedDistance("C", "C", 30));
-        assertEquals("5", sample.getRoutesWithLimitedDistance("C", "E", 10));
+        assertEquals("4", sample.getRoutesWithLimitedDistance("C", "E", 10));
     }
 
     @Test //< Question Four

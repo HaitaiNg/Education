@@ -22,13 +22,13 @@ Please provide the absolute path to your input file:
 
 The user is responsible for providing the ***absolute path*** to the input test file. Once a file has been entered the results will be displayed on the console. 
 Please note that the input file format is case-sensitive with file type “.txt”. The questions are tokenized, therefore the format must match the exercise description. Please refer to the /InputFiles/sample.txt or other files in /InputFiles for additional examples.
-######Console Execution Example
+##### Console Execution Example
 ```
 Please provide the absolute path to your input file: /Users/haitai/Documents/Ethic/InputFiles/sample.txt
 ```
 
 
-######Input File Example: /Users/haitai/Documents/Ethic/InputFiles/sample.txt
+##### Input File Example: /Users/haitai/Documents/Ethic/InputFiles/sample.txt
 ```
 AB5,BC4,CD8,DC8,DE6,AD5,CE2,EB3,AE7
 The distance of the route ABC.
