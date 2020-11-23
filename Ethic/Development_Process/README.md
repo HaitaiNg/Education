@@ -15,7 +15,7 @@ After reading the problem description, I first drew out the weighted directed gr
 - How to handle user input: display questions on console vs pass in file
 
 ##### Solving the problems:
-Note: I will be using the words node and town interchangeably. In this context, a node represents a town. In this documentatiion ever reference to node can be replaced with "town". An edge is defined as a directed association or connection between two nodes (towns).
+Note: I will be using the words node and town interchangeably. In this context, a node represents a town. In this documentatiion, every reference to node can be replaced with "town". An edge is defined as a directed association or connection between two nodes (towns).
 - In order to create and represent the graph, I considered using an adjacency matrix due to the quick loop up time and speed, however I had some difficulty figuring out how I could accurately represent the edges with characters instead of integers. Therefore ***I decided to use an adjacency list.***
 
 - The adjacency list. Each entry in the adjacency list is a node. The node will have a map entry that contains the connected nodes and their weights. (example: node A -> { node B : 5, node D : 8, node E : 7}). Please refer to paper_documentation.jpg for a visual representation.
