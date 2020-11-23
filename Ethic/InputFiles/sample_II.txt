@@ -1,0 +1,5 @@
+AB50,BC40,CD80,DC80,DE60,AD50,CE20,EB30,AE70
+The distance of the route ABC.
+The number of trips starting at C and ending at C with a maximum of 6 stops
+The number of different routes from C to C with a distance of less than 300
+The length of the shortest route (in terms of distance to travel) from A to C
