@@ -2,7 +2,7 @@
 
 # GoRuck Flag.
 
-This flag was designed and built by Haitai Ng for GoRuck Tough NYC 10/12/18. Constructed using EMT Steel conduit, this flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in.
+This flag was designed and built by Haitai Ng for GoRuck events. Constructed using EMT Steel conduit, this flag stands at 10ft x 3/4in, however the height can be re-adjusted to 5ft x 3/4in.
 
 <img src="Photos/flag10ft.jpg" width="376" height="894">
 <img src="Photos/flag5ft.jpg" width=“376” height="894">
@@ -52,7 +52,7 @@ serve as the connector to additional EMT conduit pipes.
 6. Optional: Add medical tape and bungie cable. 
 
 #### Substitutions and Tips
-- EMT conduit is one of the lightest forms of steel conduit and is used to protect and route electrical wiring in houses and commercial buildings. You can substitute the EMT conduit with PVC or copper pipes.
+- EMT conduit is one of the lightest forms of steel conduit. It is used to protect and route electrical wiring in houses and commercial buildings. You can substitute the EMT conduit with PVC or copper pipes.
 - I designed this flag such that the length can be easily extended or reduced. To 
 add length, attach EMT additional conduit pipes.
 - I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
