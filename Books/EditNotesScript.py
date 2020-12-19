@@ -1,7 +1,7 @@
-targetFileName = "Cloudera.txt"
+targetFileName = "Biographies.txt"
 characterLimitPerSentence = 50 
 
-targetFile = open( "target_file", "r")
+targetFile = open( targetFileName, "r")
 newListOfContents = [] 
 for sentence in targetFile.readlines(): 
     if(len(sentence) > characterLimitPerSentence):

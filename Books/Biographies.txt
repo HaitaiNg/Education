@@ -244,3 +244,91 @@ How has this organization changed since you joined?
 Is there anything about my background or resume that 
 makes you 
 question whether or not I am a good fit for this role? 
+
+While on Job
+* Make a daily habit of acquiring new skills.
+* Read code written by brilliant engineers.
+* Jump fearlessly into code you don't know.
+* Always be learning. Invest in skills that are in 
+high demand. 
+* Read Books. Attend Conferences.
+* Build and maintain strong relationships.
+Manage complexity through Abstraction
+* Example: MapReduce.
+* Right abstractions make huge difference.
+* “Pick the right ones, and programming will flow 
+naturally from design; modules will have small and 
+simple interfaces; and new functionality will more 
+likely fit in without extensive reorganization,” 
+* “Pick the wrong ones, and programming will be a 
+series of nasty surprises: interfaces will become baroque 
+and clumsy as they are forced to accommodate unanticipated 
+interactions, and even the simplest of changes will 
+be hard to make.” 
+* The right abstraction can increase engineering productivity 
+by an order of magnitude. 
+* Simple abstractions avoid interweaving multiple concepts, 
+so that you can reason about them independently rather 
+than being forced to consider them together. 
+* Designing good abstractions take work.
+* An abstraction's usage and popularity provides a 
+reasonable proxy for its quality. 
+
+Automate Testing
+* Unit test cases and some integration testing provide 
+a scalable way of managing growing codebase. 
+* A suite of extensive and automated tests can reduce 
+overall error rates by validating the quality and by 
+safeguarding against regressions. 
+* Tests also allow engineers to make changes, especially 
+large refactorings, with significantly higher confidence. 
+* Despite its benefits, it can be difficult to foster 
+a culture of automated testing. 
+* Focus on high leverage tests.
+* Writing more tests, creating a virtuous feedback 
+cycle and saving more development time. 
+
+You did not get along with your coworker for a project? 
+Maybe talk about how you did not see eye to eye for 
+the future of the codebase and you resolved it by making 
+the architecture flexible enough to accommodate fo 
+
+Your biggest weakness? Getting bored when new features 
+are not challenging to implement because it means the 
+code base you protect is clean (humble brag). No matter 
+what answer you give, always always always tie it back 
+to how you are committed to the quality and protection 
+of your code. It doesn’t have to be directly. It 
+can be a bit roundabout (ie. team cohesion). But if 
+you cannot eventually tie it to the quality of your 
+code, you are giving a bad answer! 
+
+No company is going to value a guy who cannot think 
+about the quality of their code or its future impact. 
+At best, they’re just going to be fixing bugs all 
+day. So always try to eventually pivot to your core 
+values after answering the question. 
+
+However, if you are asking questions about the code 
+base, product cycle, releases, migrations to new languages, 
+how new features get approved, etc., then it's a different 
+ballgame. Engineers who are looking to play a bigger 
+role and expand their presence and skill have a natural 
+inclination to ask these questions because they understand 
+how each of these elements affects their work. They 
+are more valuable to the company because it is more 
+cost-effective to grow talent than to hire new talent 
+and spend 6 months ramping them up on a code base before 
+they contribute anything meaningful. 
+
+1. I suck at estimating how long something will take 
+me - I know everyone sucks at estimating but I feel 
+especially weak in this area. 
+2. I get frustrated when I'm blocked - I'm not going 
+to sit and do nothing but if I'm constantly blocked 
+I get pretty snarky when I could be more professional. 
+3. I need to be told I'm doing a good job - this is 
+a personality trait of mine but if my managers and 
+other team members don't outwardly make an effort to 
+thank me, my work suffers. 
+4. I struggle with work/life balance 
