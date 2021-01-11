@@ -1,4 +1,4 @@
-targetFileName = "Biographies.txt"
+targetFileName = "BigShort.txt"
 characterLimitPerSentence = 50 
 
 targetFile = open( targetFileName, "r")
