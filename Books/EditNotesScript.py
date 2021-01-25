@@ -1,4 +1,4 @@
-targetFileName = "BigShort.txt"
+targetFileName = "FlashBoys.txt"
 characterLimitPerSentence = 50 
 
 targetFile = open( targetFileName, "r")
