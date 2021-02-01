@@ -1,4 +1,4 @@
-targetFileName = "FlashBoys.txt"
+targetFileName = "TheManagerPath.txt"
 characterLimitPerSentence = 50 
 
 targetFile = open( targetFileName, "r")
