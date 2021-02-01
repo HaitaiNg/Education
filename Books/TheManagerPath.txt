@@ -150,7 +150,7 @@ not want to look stupid. They are probably nervous
 abnout screwing this opportunity up. 
 Check in frequency. (minimum is once a week, sometimes 
 even once a day). 
-Ideally the intern leaves on good terms. 
+Ideally the intern leaves on good terms. (28) 
 
 Mentoring a new hire. 
 Good hires will ask questions. Do pair programming. 
@@ -190,7 +190,7 @@ Contributing to the team's onboarding documentation
 Would you like a weekly summary of my progress via 
 email? 
 How long should I work alone trying to solve a problem 
-before reaching out for help? 
+before reaching out for help? (33)
 Mondays and Fridays are bad for 1:1s 
 Adjusting 1:1s
 
@@ -313,9 +313,6 @@ Managing a project (54)
 requirements changes 
 -Revisit the details as you get close to completion 
 
-**** 56 - 58 (page 44 - 44) life of senior engineer / life 
-of manager. Review this one more time  
-
 Agile Manifesto
 -Individuals and interactions over processes and tools 
 -Working software over comprehensive documentation 
@@ -384,4 +381,6 @@ new skills. In all these things, she is an ena- bler,
 a coach, and a champion. (127) 
 
 
-(continue on 140)
+Continue on page 140: 
+ToDo: 56-58 (44) life of senior engineer / life 
+of manager. Review this one more time  
