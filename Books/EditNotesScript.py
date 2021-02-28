@@ -1,4 +1,4 @@
-targetFileName = "TheManagerPath.txt"
+targetFileName = "AWS.txt"
 characterLimitPerSentence = 50 
 
 targetFile = open( targetFileName, "r")
