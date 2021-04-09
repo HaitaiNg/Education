@@ -1,4 +1,4 @@
-targetFileName = "AWS.txt"
+targetFileName = "Biographies.txt"
 characterLimitPerSentence = 50 
 
 targetFile = open( targetFileName, "r")
