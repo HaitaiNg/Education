@@ -1,25 +1,29 @@
-targetFileName = "Biographies.txt"
-characterLimitPerSentence = 50 
+import re
+import sys 
 
-targetFile = open( targetFileName, "r")
-newListOfContents = [] 
-for sentence in targetFile.readlines(): 
-    if(len(sentence) > characterLimitPerSentence):
-        wordList = sentence.split() 
-        temporarySentence = "" 
-        while(len(wordList) > 0): 
-            if(len(temporarySentence) > characterLimitPerSentence):
-                temporarySentence += "\n"
-                newListOfContents.append(temporarySentence)
-                temporarySentence = "" 
-            else:
-                temporarySentence += wordList.pop(0) + " "
-        if(len(temporarySentence) != 0):
-            newListOfContents.append(temporarySentence + "\n") 
+file_name = sys.argv[1] 
+character_limit_per_line = 50 
+
+file = open(file_name, "r") 
+new_list_of_contents = [] 
+for line in file.readlines(): 
+    if len(line) > character_limit_per_line:
+        wl = line.split() 
+        tmp = "" 
+        while len(wl) > 0: 
+            if len(tmp) > character_limit_per_line: 
+                tmp +=  "\n"
+                new_list_of_contents.append(tmp)
+                tmp = "" 
+            else: 
+                tmp += wl.pop(0) + " " 
     else:
-        newListOfContents.append(sentence) 
+        new_list_of_contents.append(line) 
 
-writeFile = open(targetFileName, "w") 
-for i in newListOfContents:
-    writeFile.write(i)
-print("Text File Refactored") 
+output = open(file_name, "w") 
+for j in new_list_of_contents:
+    output.write(j) 
+
+file_name = str(file_name)
+print("File Refactored")
+print(file_name)
