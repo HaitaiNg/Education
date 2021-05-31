@@ -972,4 +972,12 @@ worker node.
 Each worker node processes each key in parallel using specific 
 reduce operations to get the output result 
 
+UTF-8 is the new standard for data encryption
+It's the right choice and is backwards compatible with ASCII 
+All valid ASCII is Valid UTF-8
 
+Private key is used to both encrypt and decrypt the data. The 
+Key is shared between the sender and receiver of the encrypted sensitive 
+Information. The private key is also called symmetric being common 
+For both parties. Private key cryptography is faster than 
+Public-key cryptography
