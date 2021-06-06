@@ -1,4 +1,4 @@
-Refresh Date: 07.24.20
+
 
 “Why Should I Trust You” Explaining The Predictions of Any Classifier
 15 mInutes To A Better Interview: What I Wish Every Job Candidate Knew
@@ -177,3 +177,5 @@ The Big Short: Inside The Doomsday Machine
 Flash Boys: A Wall Street Revolt 
 The Manager's Path: A Guide For Tech Leaders Navigating Growth And Change 
 Born to Run: A Hidden Tribe, Superathletes, and The Greatest Race The World Has Ever Seen
+Effective Python: 90 Specific Ways To Write Better Python 
+Liar's Poker 
