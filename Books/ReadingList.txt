@@ -179,3 +179,4 @@ The Manager's Path: A Guide For Tech Leaders Navigating Growth And Change
 Born to Run: A Hidden Tribe, Superathletes, and The Greatest Race The World Has Ever Seen
 Effective Python: 90 Specific Ways To Write Better Python 
 Liar's Poker 
+The Blindside: Evolution Of A Game
