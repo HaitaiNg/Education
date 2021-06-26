@@ -51,12 +51,6 @@ and was willing to spend a lifetime doing it.
 Some professors would stop doing work once they reach 
 “tenure status” “publish or perish” 
 
-MPP: masive parallel processing - Hadoop stores structure 
-and unstructured data, 
-tag and value, HDFS, HBASE, HIVE, AVRO, parquet.
-Each clustered servers have their own memory, disc, 
-and operating system. 
-
 Descriptive statistics: visualizes the basic features 
 of the data being studied. 
 Inferential statistics: drawing conclusions on a smaller 
