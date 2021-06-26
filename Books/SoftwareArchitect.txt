@@ -1,6 +1,8 @@
 Refresh Date: 07.17.20 
 
- The Software Architect Elevator — 
+---------------------------
+The Software Architect Elevator
+---------------------------
 Technical architects should ride the elevator up and 
 down 
 The architect can get feedback on decisions and to 
@@ -242,3 +244,114 @@ for an employer where they can learn from their peers
 and have the freedom to implement projects rapidly. 
 That’s why it’s difficult for companies to “buy” 
 skilled employees. 
+
+---------------------------
+Software Engineering At Google
+---------------------------
+
+Lack Of Psychological Safety: An environment in which 
+people are afraid to take risks or make mistakes in 
+front of others because they fear being punished for 
+it. This often manifests as a culture of fear or a 
+tendency to avoid transparency. 
+
+Information Islands: Knowledge fragmentation that occurs 
+in different parts of an organization that don’t 
+communicate with one another or use shared resources. 
+In such an environment, each group develops its own 
+way of doing things. This leads to information fragmentation. 
+
+Information duplication: Each island has reinvented 
+its own way of doing something. 
+Information skew: Each island has its own way of doing 
+the same thing, and these might or might not conflict. 
+Single Point Of Failure: A bottleneck that occurs when 
+critical information is available from only a single 
+person. 
+All-Or-Nothing Expertise: A group of people that is 
+split between people who know “everything” and 
+novices with little middle ground. This problem reinforces 
+itself if experts always do everything themselves and 
+don’t take the time to develop new experts through 
+mentoring or documentation. In this scenario, knowledge 
+and responsibilities continue to accumulate on those 
+who already have expertise, and new team members or 
+novices are left to fend for themselves and ramp up 
+more slowly. 
+
+Haunted Graveyards: Code that people avoid touching 
+or changing because they are afraid that something 
+might go wrong. 
+
+Nooglers that ramp up take around six months. 
+One of the biggest mistakes that beginners make is 
+not to ask for help when they are stuck. It does not 
+matter whether you are new to a team or a senior leader. 
+You should always be in an environment in which there 
+is something to learn. 
+
+When you learn something from a one-to-one discussion, 
+write it down. Chances are that future newcomers will 
+have the same questions that you had. Do them a favor, 
+and share what you write down. 
+
+Readability: Google’s peer review of code. This instills 
+confidence, and some sense of consistency across the 
+firm. 
+
+Performance ratings are indicative only of how a person 
+is performing in their given role at the time they 
+are being evaluated. Ratings, although an important 
+way to measure performance during a specific, are not 
+predictive of future performance and should not be 
+used to gauge readiness for a future role or qualify 
+an internal candidate for a different team. (They can, 
+however, be used to evaluate whether an employee is 
+properly or improperly splotted on their current team. 
+They can provide an opportunity to evaluate how to 
+better support an internal candidate moving forward) 
+
+Your organization’s code base is sustainable when 
+you are able to change all of the things you ought 
+to change, safety, and can do so for the life of your 
+codebase. 
+
+Programming is the immediate act of producing code. 
+Software engineering is the set of policies, practices, 
+and tools that are necessary to make that code useful 
+for as long as it needs to be used and allows collaboration 
+across a team. 
+
+A good postmortem should include:
+A brief summary of the event
+A timeline of the vent, from discovery through investigation 
+to resolution 
+The primary cause of the event 
+Impact and damage assessment 
+A set of action items (with owners) to fix the production 
+immediately 
+A set of action items to prevent the event from happening 
+again 
+Lessons learned 
+
+Map Reduce is a framework that is used to process large data sets 
+across a number of clusters (many machines)
+Worker Nodes (computations) and master node which delegates tasks
+for each worker node.
+Map Step: Each worker node applies a specific map operation on 
+input data 
+Data is redistributed based on the output keys from prior step's map
+function, such that for any given key, it is located on the same 
+worker node. 
+Each worker node processes each key in parallel using specific 
+reduce operations to get the output result 
+
+UTF-8 is the new standard for data encryption
+It's the right choice and is backwards compatible with ASCII 
+All valid ASCII is Valid UTF-8
+
+Private key is used to both encrypt and decrypt the data. The 
+Key is shared between the sender and receiver of the encrypted sensitive 
+Information. The private key is also called symmetric being common 
+For both parties. Private key cryptography is faster than 
+Public-key cryptography
