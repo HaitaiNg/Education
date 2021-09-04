@@ -1,0 +1,120 @@
+Effective Python 
+
+-Lines should be 79 characters or less 
+-Continuation of long expressions onto additional lines 
+should be indented by four extra spaces from their 
+-In a file, function and classes should be separated 
+-In a class, methods should be separated bye one blank 
+-In a dictionary, put no whitespace between each key 
+-Put a single space before the corresponding value 
+-Functions, variables, and attributes should be in 
+-Protected instance attributes should be in _leading_underscore 
+-Private instance attributes should be __double_leading 
+-Instance methods in class should use self, which refers 
+-Class methods should use cos, which refers to the 
+-Functions should not return more than 3 values 
+-The rule of thumb is to avoid using more than two 
+control subexpressions in a comprehension. This could 
+be two conditions; two loops; one condition with one 
+loop. Use helper functions as soon as things start 
+
+
+:Encoding 
+-str instances do not have an associated binary encoding, 
+and bytes instances do not have an associated text 
+-To convert unicode into binary data, you must call 
+-To convert binary data into unicode data, you must 
+-You can explicitly specify the encoding you want to 
+use for these methods, or accept the system default, 
+
+Python 3.6 introduced f strings: F-strings allow you 
+to prefix format strings with an f character, which 
+is similar to how byte strings are prefixed with a 
+b character and row (unescaped) strings are prefixed 
+
+Sexy Bubble Sort 
+def bubble_sort(a):
+	for _ in range(len(a)): 
+		for i in range(1, len(a)): 
+			if a[I] < a[I-1]: 
+				a[I-1], a[I] = a[I], a[i-1] 
+
+Use enumerate over range. Enumerate wraps any iterator 
+with a lazy generator. Enumerate yields pairs of the 
+loop index and the next value from the given iterator. 
+Enumerate provides concise syntax for looping over 
+an iterator and getting the index of each item from 
+
+Zip wraps two or more iterators with a lazy generator. 
+The Zip generator yields tuples contains the next value 
+from each iterator. These tuples can be unpacked directly 
+within the statement. Zip consumes the integrators 
+it wraps one item at a time which means it can be used 
+with infinitely long inputs without the risk of a program 
+
+Zip allows you to iterate over multiple iterators in 
+parallel. It creates a lazy generator that produces 
+tuples so it can be used for infinitely long inputs. 
+Zip truncates its output silently to the shortest iterator 
+
+for i, name in enumerate(names): 
+	count = counts[j] 
+	if count > max_count: 
+		longest_name = name 
+		max_count = count 
+
+For name, count in zip(names, counts): 
+	if count > max_count: 
+		longest_name = name 
+		max_count = count 
+
+Walrus Operator: Assignment expressions using the walrus 
+operator ( := ) to assign and evaluate variable names 
+
+Starting in Python 3.6, dictionaries will preserve 
+insertion order. OrderedDict and standard python dictionary 
+are very similar now that the ordering is preserved. 
+When would you use an OrderedDict vs a standard dictionary 
+now that both preserve order? If you handle a high 
+rate of insertions and “pop item calls” such as 
+a LRU cache. An ordered dict may be a better fit than 
+
+Naive approach: 
+	key = “wheat” 
+	if key in counters:
+		count = counters[key] 
+	else:
+		count = 0 
+	counters[key] = count + 1 
+
+Better approach: 
+	try:
+		count = counters[key] 
+	except KeyError: 
+		count = 0 
+	counters[key] = count + 1 
+
+Best approach: 
+	count = counters.get(key, 0)
+	counters[key] = count + 1 
+
+if(names := votes.get(key) is None): 
+	votes[key] = names = [] 
+names.append(who) 
+
+———
+Utilize itertools if possible, especially if you are 
+
+Define new class interfaces using simple public attributes 
+Use @property to define special behavior when attributes 
+
+The built in @property decorator makes it easy for 
+simple accesses of an instance’s attributes to act 
+smarter. One advanced but common use of @property is 
+transitioning what was once a simple numerical attribute 
+into an on-the-fly calculation. This is extremely helpful 
+because it lets you migrate all existing usage of a 
+class to have new behaviors without requiring any of 
+the call sites to be rewritten (which is especially 
+important if there’s a calling code that you don’t 
+———
