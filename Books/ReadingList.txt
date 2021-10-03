@@ -180,3 +180,4 @@ Born to Run: A Hidden Tribe, Superathletes, and The Greatest Race The World Has 
 Effective Python: 90 Specific Ways To Write Better Python 
 Liar's Poker 
 The Blindside: Evolution Of A Game
+Two Scoops Of Django
