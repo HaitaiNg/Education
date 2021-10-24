@@ -640,3 +640,25 @@ CONSISTENCT: Transactions will keep data in a valid state. This prevents data co
 ISOLATION: Concurrent execution of data within a transaction will not collide or leak into another transaction. This prevents data corruption 
 DURABILITY: Once a transaction is committed, it will remain so even if the database server is down 
 
+Add Git Tags to th repo.
+Git Tags: This is a snapshot of the code at the time the relaese was submitted PyPI. 
+
+A test method must be extremely narrow in what it tests. A single unit test should never assert the bahavior of multiple views, models,
+forms, or even multiple methods within a class. A single test should assert the behavior of a single view, model, form, method,
+or function.
+
+Use mock to keep unit tests from touching the world. Unit tests are not supposed to test things external to the function or method they are calling. Unit tests should not access external APis, receive emails, or webhooks or anything that is not part 
+of the tested action. (24.3.8) 
+
+If undocumented code makes a project somewhat harder to maintain, undocumented test code can make a project impossible to test. 
+
+Integration tests is when individual software modules are combined and tested as a group. This is best done after unit tests are complete. 
+Integration tests are extremely slow compared to unit tests. 
+
+One counter argument to skipping tests: What happens when its time to upgrade? 
+If you have tests, upgrade the environment; run tests; fix the bugs;
+If you do not have tests, good luck you have to simulate all the manual scenarios yourself. 
+Having tests means we can make changes and dependency upgrades with the confidence that our users won't have to deal with a buggy experience.
+
+Chapter 25: Documentation
+
