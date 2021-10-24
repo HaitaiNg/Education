@@ -631,3 +631,12 @@ and updated automatically
 Use this pattern when multiple objects are dependent 
 on the state of an object. 
 
+--------------------------------------------------------------------------------------------------- 
+Two Scoopts of Django 3.x 
+--------------------------------------------------------------------------------------------------- 
+Not all non-relational databases are ACID compliant 
+ATOMICITY: transactions work or it fails, there is no in between. This prevents data corruption
+CONSISTENCT: Transactions will keep data in a valid state. This prevents data corruption
+ISOLATION: Concurrent execution of data within a transaction will not collide or leak into another transaction. This prevents data corruption 
+DURABILITY: Once a transaction is committed, it will remain so even if the database server is down 
+
