@@ -480,3 +480,24 @@ Conway's Law: Organizations which design systems are
 constrained to produce designs which are copies of 
 the communication structures of these organizations. 
 (209) 
+
+--------------------------------------------------
+
+Manager vs Individual Contributor
+
+When transitioning into software engineering management, it's important
+to realize that you're really switching career tracks (and that's okay). 
+
+1.) Do I like working independently or helping others solve problems?
+2.) Am I able to switch between various taks easily and productively?
+3.) Can I be tough and empathetic?
+4.) Do I want to lead?
+
+A good software engineering manager is: trusting; 
+empathetic; supportive; motivating; collaborative; clear communication;
+autonomous and responsible; fostering a safe culture 
+
+Every person, no matter who they are, is bound to face various challenges
+at different points in their lives. When we experience a hurdle, the 
+most important thing is to be resilient and learn from those situations. 
+You should always aim to keep moving forward and to be a problem solver. 
