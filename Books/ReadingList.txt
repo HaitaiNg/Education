@@ -181,3 +181,4 @@ Effective Python: 90 Specific Ways To Write Better Python
 Liar's Poker 
 The Blindside: Evolution Of A Game
 Two Scoops Of Django
+American Psycho
