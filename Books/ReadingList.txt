@@ -1,5 +1,3 @@
-
-
 “Why Should I Trust You” Explaining The Predictions of Any Classifier
 15 mInutes To A Better Interview: What I Wish Every Job Candidate Knew
 1984
@@ -196,3 +194,4 @@ Norse Mythology
 Trident K9 Warriors
 The Slaughter Mass Killings, Organ Harvesting, And China’s Secret Solution To Its Dissident Problem  
 Manage a property like an engineer
+Digital Minimalism: Choosing a focused life in a noisy world
