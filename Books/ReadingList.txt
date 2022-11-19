@@ -181,7 +181,6 @@ The Blindside: Evolution Of A Game
 Two Scoops Of Django
 American Psycho
 Black Hawk Down 
-
 Human
 The Glass Castle 
 In Order To Live A North Korean Girl's Journey To Freedom 
@@ -195,3 +194,5 @@ Trident K9 Warriors
 The Slaughter Mass Killings, Organ Harvesting, And China’s Secret Solution To Its Dissident Problem  
 Manage a property like an engineer
 Digital Minimalism: Choosing a focused life in a noisy world
+Calvin & Hobbes
+System Design Interview 

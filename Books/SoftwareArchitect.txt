@@ -70,7 +70,7 @@ is difficult at best, even for an all-knowing architect
 
 Martin Fowler concluded some time ago that the opposite 
 is actually true: “one of an architect’s most important 
-tasks is to eliminate irreversibility in software designs.”1 
+tasks is to eliminate irreversibility in software designs. 
 So, instead of entrusting all crucial decisions to 
 one person, a project can be better off by minimizing 
 the number of early and irreversible decisions. For 
@@ -194,7 +194,7 @@ It may be more beneficial to standardize connecting
 elements, such as monitoring or source control than 
 endpoints such as laptops and IDEs 
 
-the biggest enemy of change is complacency: if things 
+The biggest enemy of change is complacency: if things 
 are not so bad, the motivation to change is low. Organizations 
 can artificially increase the pain of not changing, 
 by creating fear or conjuring a (fake) crisis before 
@@ -307,7 +307,7 @@ predictive of future performance and should not be
 used to gauge readiness for a future role or qualify 
 an internal candidate for a different team. (They can, 
 however, be used to evaluate whether an employee is 
-properly or improperly splotted on their current team. 
+properly or improperly slotted on their current team. 
 They can provide an opportunity to evaluate how to 
 better support an internal candidate moving forward) 
 
@@ -332,26 +332,3 @@ A set of action items (with owners) to fix the production
 immediately 
 A set of action items to prevent the event from happening 
 again 
-Lessons learned 
-
-Map Reduce is a framework that is used to process large data sets 
-across a number of clusters (many machines)
-Worker Nodes (computations) and master node which delegates tasks
-for each worker node.
-Map Step: Each worker node applies a specific map operation on 
-input data 
-Data is redistributed based on the output keys from prior step's map
-function, such that for any given key, it is located on the same 
-worker node. 
-Each worker node processes each key in parallel using specific 
-reduce operations to get the output result 
-
-UTF-8 is the new standard for data encryption
-It's the right choice and is backwards compatible with ASCII 
-All valid ASCII is Valid UTF-8
-
-Private key is used to both encrypt and decrypt the data. The 
-Key is shared between the sender and receiver of the encrypted sensitive 
-Information. The private key is also called symmetric being common 
-For both parties. Private key cryptography is faster than 
-Public-key cryptography
