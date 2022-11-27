@@ -4,7 +4,7 @@ Effective Python
 -Continuation of long expressions onto additional lines 
 should be indented by four extra spaces from their 
 -In a file, function and classes should be separated 
--In a class, methods should be separated bye one blank 
+-In a class, methods should be separated by one blank 
 -In a dictionary, put no whitespace between each key 
 -Put a single space before the corresponding value 
 -Functions, variables, and attributes should be in 
@@ -27,7 +27,7 @@ and bytes instances do not have an associated text
 -You can explicitly specify the encoding you want to 
 use for these methods, or accept the system default, 
 
-Python 3.6 introduced f strings: F-strings allow you 
+Python 3.6 introduced f strings: f-strings allow you 
 to prefix format strings with an f character, which 
 is similar to how byte strings are prefixed with a 
 b character and row (unescaped) strings are prefixed 
@@ -102,9 +102,7 @@ if(names := votes.get(key) is None):
 	votes[key] = names = [] 
 names.append(who) 
 
-———
-Utilize itertools if possible, especially if you are 
-
+——— 
 Define new class interfaces using simple public attributes 
 Use @property to define special behavior when attributes 
 

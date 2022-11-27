@@ -15,11 +15,6 @@ an overall balance and harmony in the garden
 Automated tests breed confidence. It allows teams to 
 change code confidently.
 
-SKILL: requires knowledge and ability to apply it to 
-solve real problems taking a course, 
-reading a book, online material. Skill 
-implies what tool to use 
-
 Impact: measure of how well an architect applies his 
 or her skill to benefit the company 
 	Usually measured by revenue or reduced cost. 
@@ -331,4 +326,4 @@ Impact and damage assessment
 A set of action items (with owners) to fix the production 
 immediately 
 A set of action items to prevent the event from happening 
-again 
+again
