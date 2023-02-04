@@ -37,10 +37,7 @@ Can I use random sampling to select which object to
 pick next? 
 What about constructing many random configurations 
 and picking the best one? 
-Can I use some kind of directed randomness like simulated 
-anneal- ing to zoom in on the best solution? 
-Can I formulate my problem as a linear program? How 
-about an integer program? 
+
 --------------------------------------------------------------------------------------------------- 
 Competitive Programming C++ 
 --------------------------------------------------------------------------------------------------- 
@@ -163,51 +160,6 @@ Class templates differ from function
 templates in that the compiler cannot deduce the template 
 parameter types(s) for a class template 
 
-C++ Sequential Container Types
-Vector: flexible sized array. Supports fast random 
-access. 
-Inserting or deleting elements other than at the back 
-may be slow 
-Deque: double-ended queue. Supports fast random access. 
-Fast insert / delete at front or back 
-List: doubly linked list. Supports only bidirectional 
-sequential access. Fast insert / delete at any point 
-in the list 
-Foward_List: singly linked list. Supports only sequential 
-access in one direction. 
-ast insert / delete at any point in the list
-Array: fixed size array. Supports fast random access. 
-Cannot add or remove elements 
-
-The list and forward-list containers are designed to 
-make it fast to add or remove an element anywhere 
-in the container. These types do not support random 
-access. 
-Therefore you have to iterate through the container. 
-
-Deque: adding or removing an element in the middle 
-can be expensive. 
-However adding to the beginning or end is quick 
-
-Most of the time a vector a good container to use 
-If your program has a lot of small elements and space 
-overhead matters, don’t use list or forward_list. 
-If the program requires random access to elements, 
-use vector or a deque 
-If the program needs to insert or delete elements in 
-the middle of the container, use a list or foward_list. 
-If the program needs to insert or delete elements at 
-the front and the back, but not in the middle use a 
-deque 
-If the program needs to insert elements in the middle 
-of the container only while reading input, and subsequently 
-needs random access to the elements 
-
-If you’re unsure of what container to use, write 
-your code so that it uses only common operations 
-that are common to both vector and list. Using iterators 
-not subscripts, and avoid random access to elements. 
-
 Associative and sequential contains differ from one 
 another in a fundamental way. Elements in an 
 associative container are stored and retrieved by a 
@@ -300,8 +252,7 @@ int fib(int n )
 
 What does the "static" mean in main's signature?
 The keyword static, when applied to a method or a member 
-variable, 
-simply means that this method 
+variable, simply means that this method 
 (or member variable) is defined for the class, but 
 not for particular 
 objects in the class. 
@@ -326,11 +277,6 @@ When can you overload? The two parts of a method signature
 are the method name and the 
 parameter list (number, type, and order of parameters). 
 As long as the parameter list differs, 
-Java allows you to overload the method, and even change 
-the 
-return type because the return type 
-is not part of the method signature (it is ignored). 
-
 
 public SimpleCoordinates()
 {
@@ -348,11 +294,14 @@ Binary search assumes that the items are sorted. We
 first look at the middle item (median) and 
 check if the v < first half of elements or else we 
 look at the second half of elements 
+
 Inheritance: sharing of attributes and operations (factors 
 out common features, reduces 
 repetition within programs, ability to form new classes 
 that extend capabilities of existing 
-classes). Polymorphism: Some classes may behave differently 
+classes). 
+
+Polymorphism: Some classes may behave differently 
 for different classes. The ability of one 
 type to appear and be used as another type. Encapsulation 
 hides something that is not visible to the user. 
@@ -502,12 +451,6 @@ do your job?” helps build trust and establishes a
 basis for communication with your users. Just remember 
 not to get in the way! 
 
-Pragmatic Teams: no broken windows: Teams should not 
-tolerate broken windows. 
-Teams must take responsibility 
-for the quality of the product, supporting developers 
-who understand the no broken windows. 
-
 Communicate clearly with others. Great teams have a 
 distinct personality. 
 People look forward to 
@@ -560,7 +503,7 @@ find problems before they find you.
 
 Keep classes focused and components small. Avoid the 
 temptation to build large classes 
-or components or miscellaneous catchall classes. Treat 
+or components or miscellaneous catch-all classes. Treat 
 warnings as errors. 
 Checking in code with warnings is just as bad as checking 
 in code with errors or code that 
@@ -609,11 +552,13 @@ use a factory pattern.
 Structural: organizing different classes and objects 
 to form larger structures and provide 
 new functionality 
+
 Adapter pattern converts the interface into another 
 interface of classes that the client 
 expects, that is the adapter lets classes work together 
 that may not not otherwise 
 be compatible with. 
+
 Behavioral: identifying common communication patterns 
 between objects and realize these 
 patterns. 
@@ -631,28 +576,28 @@ Use this pattern when multiple objects are dependent
 on the state of an object. 
 
 --------------------------------------------------------------------------------------------------- 
-Two Scoopts of Django 3.x 
+Two Scoops of Django 3.x 
 --------------------------------------------------------------------------------------------------- 
 Not all non-relational databases are ACID compliant 
 ATOMICITY: transactions work or it fails, there is no in between. This prevents data corruption
-CONSISTENCT: Transactions will keep data in a valid state. This prevents data corruption
+CONSISTENT: Transactions will keep data in a valid state. This prevents data corruption
 ISOLATION: Concurrent execution of data within a transaction will not collide or leak into another transaction.
  This prevents data corruption 
 DURABILITY: Once a transaction is committed, it will remain so even if the database server is down 
 
-Add Git Tags to th repo.
-Git Tags: This is a snapshot of the code at the time the relaese was submitted PyPI. 
+Add Git Tags to the repo.
+Git Tags: This is a snapshot of the code at the time the release was submitted PyPI. 
 
 A test method must be extremely narrow in what it tests. A single unit test should never assert 
-the bahavior of multiple views, models,
+the behavior of multiple views, models,
 forms, or even multiple methods within a class. A single test should assert 
 the behavior of a single view, model, form, method,
 or function.
 
 Use mock to keep unit tests from touching the world. Unit tests are not supposed to
  test things external to the function or method they are calling.
- Unit tests should not access external APis, receive emails, 
- or webhooks or anything that is not part 
+ Unit tests should not access external APIs, receive emails, 
+ or web-hooks or anything that is not part 
 of the tested action. (24.3.8) 
 
 If undocumented code makes a project somewhat harder to maintain, 

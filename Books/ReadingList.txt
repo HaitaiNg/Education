@@ -195,5 +195,6 @@ The Slaughter Mass Killings, Organ Harvesting, And China’s Secret Solution To 
 Manage a property like an engineer
 Digital Minimalism: Choosing a focused life in a noisy world
 Calvin & Hobbes
-System Design Interview - Alex XU 
+System Design Interview - Alex Xu
 The Missing README_ A Guide for the New Software Engineer 
+Two Scoops Of Django

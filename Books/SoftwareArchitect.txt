@@ -163,7 +163,7 @@ have a black market
 
 Automated tests are your safety belt—how else would 
 you be able to deploy code into production at a moment’s 
-notice, e.g., in case of a serious problem? 
+notice, e.g. in case of a serious problem? 
 
 Fast Software Development & Deployment
 Velocity: Assures you can make code changes quickly. 
@@ -195,7 +195,7 @@ can artificially increase the pain of not changing,
 by creating fear or conjuring a (fake) crisis before 
 the real crisis occurs. 
 
-Google is infamous for dogfooding its own products, 
+Google is infamous for dog fooding its own products, 
 meaning its own employees get to try alpha or beta 
 versions of new products. 
 

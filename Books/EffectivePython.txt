@@ -11,7 +11,7 @@ should be indented by four extra spaces from their
 -Protected instance attributes should be in _leading_underscore 
 -Private instance attributes should be __double_leading 
 -Instance methods in class should use self, which refers 
--Class methods should use cos, which refers to the 
+-Class methods should use cls, which refers to the 
 -Functions should not return more than 3 values 
 -The rule of thumb is to avoid using more than two 
 control subexpressions in a comprehension. This could 
@@ -26,24 +26,6 @@ and bytes instances do not have an associated text
 -To convert binary data into unicode data, you must 
 -You can explicitly specify the encoding you want to 
 use for these methods, or accept the system default, 
-
-Python 3.6 introduced f strings: f-strings allow you 
-to prefix format strings with an f character, which 
-is similar to how byte strings are prefixed with a 
-b character and row (unescaped) strings are prefixed 
-
-Sexy Bubble Sort 
-def bubble_sort(a):
-	for _ in range(len(a)): 
-		for i in range(1, len(a)): 
-			if a[I] < a[I-1]: 
-				a[I-1], a[I] = a[I], a[i-1] 
-
-Use enumerate over range. Enumerate wraps any iterator 
-with a lazy generator. Enumerate yields pairs of the 
-loop index and the next value from the given iterator. 
-Enumerate provides concise syntax for looping over 
-an iterator and getting the index of each item from 
 
 Zip wraps two or more iterators with a lazy generator. 
 The Zip generator yields tuples contains the next value 
@@ -71,14 +53,6 @@ For name, count in zip(names, counts):
 Walrus Operator: Assignment expressions using the walrus 
 operator ( := ) to assign and evaluate variable names 
 
-Starting in Python 3.6, dictionaries will preserve 
-insertion order. OrderedDict and standard python dictionary 
-are very similar now that the ordering is preserved. 
-When would you use an OrderedDict vs a standard dictionary 
-now that both preserve order? If you handle a high 
-rate of insertions and “pop item calls” such as 
-a LRU cache. An ordered dict may be a better fit than 
-
 Naive approach: 
 	key = “wheat” 
 	if key in counters:
@@ -103,9 +77,6 @@ if(names := votes.get(key) is None):
 names.append(who) 
 
 ——— 
-Define new class interfaces using simple public attributes 
-Use @property to define special behavior when attributes 
-
 The built in @property decorator makes it easy for 
 simple accesses of an instance’s attributes to act 
 smarter. One advanced but common use of @property is 

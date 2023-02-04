@@ -1,11 +1,11 @@
 1. Ask Requirements Clarifications 
-2. Estimate the scale of the system ( scaling, partitioning, 
+2. Estimate the scale of the system (scaling, partitioning, 
 load balancing, caching) 
 How much storage will we need? We may have different 
 storage requirements 
 for users if they can have photos / videos (Content 
 Manager System) 
-3. Systerm interface definition: Define what APIs are 
+3. System interface definition: Define what APIs are 
 expected from the system 
 (postTweet, generateTimeline, markFavoriteTwee) 
 4. Define the data model. The candidate should be able 
@@ -22,14 +22,8 @@ do not need a relationship between objects
 a NoSQL store like DynamoDB, Cassandra, RISK is the 
 better choice. 
 
-Question for facebook: If we activate notifications 
-on our phones, does this create 
-the pull model for messenging where the user will periodically 
-ping the server if there 
-are any new messages for them 
-
 How to maintain an open connection with the server? 
-HttpLongPolling or Websockets 
+HttpLongPolling or Web sockets 
 
 Facebook uses HBase. Hbase is a column oriented key-value 
 NoSQL database that can 
@@ -70,7 +64,7 @@ When it reaches the end of the list it starts over
 at the beginning. It is the most useful when the servers 
 are of equal specification and there are not many persistent 
 connections 
-Weghted Round robin: designed to better handle servers 
+Weighted Round robin: designed to better handle servers 
 with different processing capabilities 
 Each server is assigned a weight (an integer value 
 that indicates the processing capacity) 
@@ -81,7 +75,7 @@ with less weights
 
 Redundant load balancers: load balancer can be a single 
 point of failure, a second load balancer can be 
-connecte to the first to form a cluster. Each LB monitors 
+connected to the first to form a cluster. Each LB monitors 
 the health of the other and both of them 
 are equally capable of serving traffic and failure 
 detection 
@@ -100,30 +94,18 @@ does not result in a failure of the entire network
 Data is replicated across combinations of nodes and 
 networks to keep the system up 
 
-Caching (Locality Of Referene Principle): Recently 
+Caching (Locality Of Reference Principle): Recently 
 requested data is likely to be requested again 
 Cache is short term memory 
-Data partitioning: break up a big datbase into smaller 
-parts ( split up database / table across multiple machines 
-to improve maneageability, performance, availability, 
+Data partitioning: break up a big database into smaller 
+parts (split up database / table across multiple machines 
+to improve manageability, performance, availability, 
 and load balancing of an application). 
 After a certain point it may be cheaper and more feasible 
 to scale horizontally 
 by adding more machines than to grow vertically 
 (horizontal partitioning, vertical partitioning, directory 
-basec partitioning) 
-Keym hash-based partitioning, round-robin partitioning, 
-compositie partitioning 
-Common problems in data partioninig: SQL joins may 
-be performance efficient. 
-Data has to compiled from multiple servers
-  
-Indexing: make it faster to search through the table 
-and find the row / rows that we want 
-Indexes can be created using one or more columns of 
-a database table, providing the basis 
-for random looksups and efficient access of ordered 
-records 
+base partitioning) 
 
 Indexing can speed up data retrieval but may be large 
 due to additional keys, which can slow down 
@@ -163,44 +145,35 @@ the required network transaction. This simplifies /
 control complexity of the request 
 Redundancy and replication: extra memory, files, processes 
 (structural redundancy) 
-Redundancy akkiws us to duplicate components of our 
+Redundancy allows us to duplicate components of our 
 system. 
 Replication is what makes those duplicated values actually 
 useful to us 
 Replication creates reliability and fault tolerance 
-Perfomant: more likely to respond quickly and handle 
-higher throughoutputs 
-Easy to scale: much easier to handle a higher workload 
-and serve more locations 
 
 Relational SQL: Pre-defined schema, All of the data 
 must follow the same structure, therefore 
 SQL has an up-front preparation. Changes in the structure 
-can be distruptive to the system 
+can be disruptive to the system 
 Vertical scalability: increase the load on a single 
 server by increasing RAM, CPU, SSD 
-ACId: Atomicity, Consistency, Isolation, Durability 
+ACID: Atomicity, Consistency, Isolation, Durability 
 
 NoSQL: Dynamic schema and unstructured data
-Document-oriented, column oriented, graph based, keyValue 
-store. 
-No defined structure. Horizontal scalability:
-You can handle more traffic by sharding or adding more 
-servers in your NoSQL database 
-CAP Thereom: Consistency, Availability, Partition Tolerance 
+Document-oriented, column oriented, graph based, 
+KeyValue store. 
 
 SQL: relational database management system: Phone book 
-(fixed Schema) 
-Fixed, static, pre-defined schema 
+(fixed Schema): Fixed, static, pre-defined schema 
 Not suited for hierarchical data. Best data for complex 
 queries. Vertically scalable 
 NoSQL: Suitable for big data 
 Non-relational distributed database system. Best suited 
 for hierarchical data. 
-Not so good for complex queries. Horizontall scalable 
-KeyValueStore: dynamo, voldemort, redis 
+Not so good for complex queries. Horizontal scalable 
+KeyValueStore: dynamo, Voldemort, redis 
 Document databases: MongoDB. 
-WIde Column Databases; column famalies, containers 
+Wide column databases; column families, containers 
 for rows, large data sets 
 
 Schema: blue print of the database, how the data is 
@@ -208,10 +181,11 @@ organized
 The speed of each of these platforms is dependent on 
 the context and information being 
 retrieved. 
+
 NoSQL databases are specifically designed for unstructured 
 data which can be 
 document-oriented, column oriented, graph based.
-Consistent hashing : distributed hashing sceheme that 
+Consistent hashing : distributed hashing scheme that 
 operates independently of the number 
 of servers or objects in a distributed hash table by 
 assigning them a position 
