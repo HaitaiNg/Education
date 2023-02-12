@@ -198,3 +198,4 @@ Calvin & Hobbes
 System Design Interview - Alex Xu
 The Missing README_ A Guide for the New Software Engineer 
 Two Scoops Of Django
+Staff Engineer: Leadership behind the management track

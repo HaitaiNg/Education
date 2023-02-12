@@ -1,0 +1,48 @@
+To write an engineering strategy, write five design 
+That's your engineering strategy. 
+To write an engineering vision, write five engineering 
+
+Vision: Write two to three years out. 
+Ground in your business and your users. 
+Keep documents one to two pages long. (Anything longer 
+Extrapolate five strategies into a vision; list out 
+the pros and cons and identify the tradeoffs for the 
+
+Accelerate best practices: version control; trunk-baesd 
+development; CI/CD; and production observability (including 
+
+Interfaces are contracts between systems. Effective 
+interfaces decouple clients from the encapsulated implementation. 
+essential complexity and none of the underlying accidental 
+
+Data models are the interesection of the interfaces 
+and state, constraining your stateful system's capabilities, 
+A good data model is rigid: it only exposes what it 
+genuinely supports and prevents invalid state's expressions. 
+
+~ Never suprise your manager. 
+~ Don't let the sponsor surprise you. 
+
+Your promotion packet is your foundational tool to 
+demystify the Staff promotion, prioritize the right 
+personal development to ensure you get there and actiev 
+
+"One of things that I tell them is to be super open 
+and honest with their manager about what you want from 
+was telling my manager what I thought they wanted to 
+
+Write the promotion packet. 
+Edit the promotion packet. 
+Edit the promotion packet with peers. 
+Edit the promotion packet with your manager. 
+
+If I don't get promoted this cycle, what are some of 
+Whats the most effective thing I can do to make myself 
+
+Senior Engineer: Refresh your resume; crack the coding 
+interview; do some research on the company to prepare 
+Getting comfortable navigating ambiguity is a core 
+part of the Staff-plus role, so a particularly optimistic 
+Staff plus interviewing as a good opportunity to demonstrate 
+
+
