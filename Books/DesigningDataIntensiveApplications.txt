@@ -1,0 +1,636 @@
+# Designing Data Intensive Applications
+
+## Chapter One : Reliable, Scalable, and Maintainable 
+
+Reliability: The system should continue to work correctly 
+(performing the correct function at the desired level 
+
+Scalability: As the system grows (e.g volume, traffic), 
+
+A fault is defined as one component of the system deviating 
+A failure is when the system as a whole stops providing 
+the required service to the user. Hardware faults add 
+
+How to design around human errors: 
+Design systems in a way that minimizes opportunities 
+Well designed abstractions, APIs, and admin interfaces 
+make it easy to do the "write, write" and discourage 
+Decouple places where people make the most mistakes 
+from a place where they can cause failures (non-production 
+ Test thoroughly at all levels. 
+Enable rollback configuration changes, ability to recompute 
+Telemetry: set up detailed and clear monitoring, such 
+
+Batch processing (e.g Hadoop). We care about throughput 
+(total number of records we can process per second; 
+or the total time it takes to run a job on a data set 
+In an online system what's usually more important is 
+the service's response time - the time between a client 
+
+Horizontal vs Vertical Scalability
+
+Elastic systems: they can automatically add more resources 
+
+Maintainability
+Operability: Make it easy for operations to keep the 
+Good operations can often work around limitations of 
+bad (or incomplete) software, but good software cannot 
+Operationa teams are vital. A good team monitors the 
+health of the system and can quickly restore service 
+Track down the cause of the problem.
+Keep software and platform up to date. 
+Anticipate future problems, and solve them before they 
+Focus on high value activities. 
+Provide visibility into the run time behavior and internals 
+Avoid dependency on individual machines. 
+Good documentation (e.g if x do y). 
+Self healing when appropriate. 
+
+Simplicity: Make it easy for new engineers to understand 
+the system, by removing as much complexity as possible 
+from the system. In complex software, there is a greater 
+risk of introducing bugs when making a change, when 
+the system is harder for developers to understand and 
+reason about, hidden assumptions, unintended consequences, 
+and unexpected interactions are more easily overlooked. 
+Conversely, reducing complexity greatly improves the 
+maintainability of software and thus simplicity should 
+
+Abstraction: A good abstraction can hide a great deal 
+of implementation detail behind a clean, simple, to 
+understand facade. A good abstraction can also be used 
+
+Evolvability: Make it easy for engineers to make changes 
+to the system in the future, adopting it for unanticipated 
+use cases as requirements change (in other words, extensibility, 
+
+Agile working patterns provide a framework for adopting 
+change. An application has to meet various requirements 
+
+There are functional requirements what it should do, 
+such as allowing data to be stored, retrieved, searched, 
+There are non functional requirements (general properties 
+like security, reliability, compliance, compatibility, 
+
+## Chapter Two : Data Models and Query Languages 
+
+Relational model: data is organized into relations 
+(called tables in SQL) where each relation is an unordered 
+
+NoSQL was born in 2010. It was built to: satisfy the 
+need for greater scalability compared to relational 
+databases; achieve higher throughput; widespread preference 
+for free and open source software over commercial database 
+products; specialized query operations are not well 
+supported in relational databases (e.g time series 
+changes); frustration with the restrictiveness of relational 
+schemas, and a desire for more dynamic and expressive 
+
+- schema flexibility; better performance for locality; 
+The relational model counters by providing better support 
+
+What if the data model leads to simpler application 
+- If the data in your application has document like 
+where the tree is loaded once then it’s probably 
+- The relational technique of shredding: splitting 
+tables can lead to cumbersome schemas and unnecessary 
+- Document databases are poor candidates if your data 
+relationships are not ideal in this situation. To fix 
+
+## Chapter Three : Storage & Retrieval 
+Document databases target use cases where data comes 
+between one document and another are rare. 
+Graph databases go in the opposite direction, targeting 
+use cases where anything is potentially related to 
+
+Partially written records is dangerous. Bit-mask files 
+to determine whether there are corrupted parts in the 
+
+A bloom filter is a memory efficient data structure 
+Trees are faster for reads, LM trees are faster for 
+The data model of a data warehouse is most commonly 
+relational because SQL is a good fit for analytical 
+
+Storage engines call into two categories: OLTP (optimized 
+OLA (optimized for analytics). 
+
+OLTP: user facing which means that they see a huge 
+volume of requests. In order to handle the load, applications 
+usually only touch a small number of records in each 
+query. The application requests records using some 
+kind of key, and the storage engine uses an index to 
+find the data for the requested key. Disk seek time 
+
+Data warehouses: They handle a much lower volume of 
+queries than OLTP systems but each query is typically 
+very demanding, requiring many millions of records 
+to be scanned in a short time. Disk bandwidth (not 
+seek time) is often the bottleneck here and column 
+oriented software is an increasingly population solution 
+
+## Chapter Four : Encoding and Evolution  
+The translation from the in-memory representation to 
+a byte sequence is called encoding (aka serialization 
+The reverse is called decoding (parsing, deserialization, 
+
+## Part II : Distributed Data 
+
+Horizontal scaling : Each machine or virtual machine 
+Each node has its own CPU, RAM, and disks and operates 
+
+## Chapter Five : Replication 
+
+Partitioning: splitting a big database into smaller 
+can be assigned different nodes (sharing). 
+
+Synchronous: The leader waits until the follower sends 
+has been replicated. The leader will then forward the 
+Pro: Follower is guaranteed to have an up to date copy 
+(Strong accuracy). If the leader suddenly fails, we 
+Con: Synchronous systems are subject to downed systems. 
+respond (because it crashed or there is a network fault) 
+When this situation happens, the leader will block 
+is available again. 
+
+Asynchronous: The leader sends a message back to the 
+the follower node. 
+
+The ideal design: semi-synchronous. Enable one synchronous 
+replica on the database, one of the followers is synchronous 
+and the others are asynchronous. If the synchronous 
+follower becomes unavailable or slow, one of the other 
+asynchronous followers is made synchronous. This guarantees 
+that you have an up-to-date copy of the data on at 
+
+Most of the time, for leader-based replication. The 
+leader is asynchronous. This weakens durability because 
+clients assume that all writes are processed but that’s 
+
+Handling Node outages: 
+- Follower failure: Catch up recovery. Each node has 
+a local disk that has a log. If a follower crashes 
+and is restarted it can request all changes from the 
+- Leader failure: fail over. One of the followers needs 
+to be prompted to be the new leader, clients need to 
+be reconfigured to send their writes to the new leader, 
+and the other followers need to start consuming data 
+- Determine the new leader has failed. Most of the 
+    - Choosing a new leader 
+- If the old leader is asynchronous, the new leader 
+might not have all the write updates from the new old 
+leader. The new leader may receive conflicting writes 
+in the mean time. The most common solution is for the 
+old leader’s un-replicated writes to simply be discarded 
+which results in data loss. (Discarding writes is very, 
+- If two leaders exist, this could cause a split brain. 
+Writes are happening and there is no way to resolve 
+
+Multi-Leader Configuration (Master as active / active 
+If you want to guarantee that there will be no editing 
+conflict in a shared asynchronous Google Doc, the application 
+must obtain a local on the document before a user can 
+edit it. If another user wants to edit the same document, 
+they first have to wait until the first user has committed 
+their changes and released the lock. (Another example 
+is booking a seat on an airline website. The seat is 
+
+In a single leader database, the writer will either 
+block and wait for the first write to complete or abort 
+the second write transaction, forcing the user to rely 
+In a multi leader setup both writes are successful 
+and the conflict is only detected asynchronously at 
+How to make conflict detection asynchronous - wait 
+for the write to be replicated to all replicas before 
+was successful. By doing so, you will lose the main 
+advantage of multi-leader replication allowing each 
+to accept writes independently. If you want synchronous 
+conflict resolution you should use a single leader 
+
+Converging towards a consistent state:
+- In a single leader database, the last write determines 
+- Version vectors. Version vectors are sent from the 
+database replica to clients when values are ready, 
+and need to be sent back to the database when a value 
+- In a multi leader database, there is no defined ordering 
+of the writes, so its not clear what the final value 
+Ways of achieving convergent conflict resolution:
+- Unique IDs (timestamp, long random number, UUID, 
+- Newest time stamp wins; last write wins. (This could 
+- Django models use IDs. Grab the highest ID. 
+Database topologies: circular topology; star topology; 
+
+Circular topology: If one node fails it can interrupt 
+All to All topology has a strong fault tolerance. Messages 
+can travel along different paths, avoiding a single 
+
+Leader based replication is the old, leaderless is 
+
+Pros of leaderless replication
+- Failover does not exist. If a write is made to a 
+node that is dead, then all nodes get restored. If 
+someone calls a read, all nodes and their corresponding 
+values are compared, the one with the highest version 
+- Read repair: clients read from multiple nodes, compare 
+values, and writes the newest value back to the stale 
+- Anti-entropy process: background process that does 
+- Dynamo style databases are generally optimized for 
+- With leaderless replication, there is not fixed order 
+in which writes are applied, which makes monitoring 
+
+Single leader replication: clients send all writes 
+to the single node (the leader) which sends a stream 
+of data change events to other replicas (followers). 
+Reads can be performed on any replica, but reads from 
+Multi leader replication: clients send each write to 
+one of several leader nodes, any of which can accept 
+writes. The leader sends streams of data change events 
+Leaderless replication : clients send each write to 
+several nodes, and read from several nodes in parallel 
+
+Replication purposes:
+- High availability: keeping the system running, when 
+when one machine (or several machines or an entire 
+- Disconnected operation: allowing an application to 
+- Latency: placing data geographically close to users 
+- Scalability: being able to handle higher volume of 
+
+## Chapter Six : Partitioning 
+
+Define partitioning: breaking up data into partitions 
+(smaller sets). This helps with scalability because 
+Objective: Spread data evenly; query load evenly across 
+multiple nodes. 10 nodes should be able to 10x the 
+data (storage) and be 10x faster (read and write) compared 
+
+If partitioning is unfair and some nodes have more 
+data or volume than others, this is called "skewed". 
+A partition with a high load is called a hot spot (e.g 
+
+Ways to partition: 
+- Partition of key-value data. 
+- Partition by key range (Sorting can be efficient 
+but there is high risk of hot spots). One remediation 
+action is to rebalance dynamically by splitting the 
+range into two subranges when a partition gets too 
+- Partition by hash key (Use a hash function. This 
+destroys the order but may distribute the data more 
+evenly. When partitioning by hash, you can create a 
+fixed number of partitions in advance; assign partitions 
+to each node; and move partitions from one node to 
+
+Re-balancing: moving partitions from one node to another 
+node. Ideally when you rebalance, the load (data storage, 
+read & write requests) should be shared fairly between 
+Do not use a "hash mod N" algorithm for re-balancing 
+(where N is the number of nodes). If N changes, everything 
+
+Dynamic partitioning: the number of partitions is proportional 
+
+Request routing: As partitions are re-balanced, the 
+assignment of partitions to nodes change (e.g If I 
+want to read or write the key "foo" which IP address 
+and port number do I connect to? Many distributed data 
+systems rely on a separate coordination service such 
+
+## Chapter Seven : Transactions 
+ACID 
+
+Atomicity: task is executed fully or not. If one thread 
+operates an atomic operation, there is no way another 
+thread can use its "partially finished state". If there 
+is a failover during the transaction, everything is 
+rolled back. If a transaction is aborted, the application 
+can be sure that it didn't change anything so that 
+
+Consistency: Queries return the same data .
+
+Isolation: Concurrently executing transactions are 
+
+Durability: Once all CRUD operations are committed, 
+if the hardware dies none of the data is lost. Durable 
+systems write data to the hard drive or solid state 
+
+If two operations do not touch the same data, then 
+they can be safely run in parallel because neither 
+depends on the other. Concurrency issues (race conditions) 
+occur when operations touch the same set of data simultaneously. 
+Race conditions can cause dirty reads, dirty writes, 
+
+Dirty reads: 1 clients reads another client's writes 
+Dirty writes: 1 client overwrites what another client 
+Read skew : A client sees different parts of the database 
+at different points in time. This issue can be avoided 
+Last updates: 2 clients concurrently perform a read-modify-write 
+cycle. One overwrites the other's write without incorporating 
+Write skew: A transaction reads something, makes a 
+decision based on that value, write a decision to the 
+database. The decision based on that value is no longer 
+Phantom reads: Client executes a query with multiple 
+where clauses, multiple values are returned. Another 
+client executes an update and modifies a lot of records 
+
+Snapshot isolation: readers never block writers; writers 
+never block readers. Snapshot isolation enables systems 
+to handle long running queries on a consistent snapshot 
+at the same time as processing writes normally, without 
+any lock contention between the two. (e.g All transactions 
+
+Serializable isolation: Guarantees that when transactions 
+are executed in parallel, the end result is the same 
+as if they had executed one at a time, serially without 
+
+Actual Serial execution: 
+- Application executes query
+- Applications reads results.
+- Queries and results are exchanged between application 
+- Network communication between application and database 
+- For single threaded applications: All data is required 
+for a transaction. All data is stored in memory called 
+a store procedure. The database can execute this quickly 
+without waiting for any network or disk I/O. This is 
+
+There are three approaches for implementing serialization 
+- Literally executing transactions in serial order: 
+If you can make each transaction very fast to execute, 
+and the transaction throughput is low enough to process 
+- Two phase locking: For decades this has been the 
+way of implementing serializability, but many applications 
+- Serialization snapshot isolation (SSI): Allows transactions 
+to proceed without blocking. When a transaction wants 
+to commit, its checked, and it is aborted if the execution 
+
+
+Power distribution unit failures 
+Switch failures 
+Accidental power cycle of whole racks 
+Whole DC backbone failure 
+
+Partial failures are non-deterministic. With multiple 
+nodes and networks, sometimes things can be unpredictable. 
+It takes time for updates, and processes to execute 
+
+IP (the internet protocol) is unreliable. Packets can 
+TCP (transmission control protocol) is more reliable. 
+It ensures that missing packets are re-transmitted, 
+duplicates are eliminated, and packets are reassembled 
+
+Shared nothing systems: Nodes are connected via a network. 
+Each machine has its own memory and disk, and one machine 
+cannot access another machine's memory or disk (except 
+
+Shared nothing is cheap. You can use commoditized cloud 
+computing services, and it can achieve high reliability 
+through redundancy across multiple geographically distributed 
+
+Asynchronous packet networks: 1 node can send a message 
+(a packet) to another node, but the network does not 
+
+Detecting faults: Distributed systems need to be able 
+- If a fault occurs the load balancer should stop sending 
+- In a single leader replication arrangement, one of 
+
+(UDP) User Datagram Protocol
+
+For single machines, there are strong tools for making 
+it thread-safe: mutexes, semaphores, counters, lock 
+
+Distributed nodes do not rely on a single node, rather 
+they use a quorum where the nodes vote amongst each 
+
+The leader of the lock: 
+- Only one node is allowed to be the leader for a database 
+partition. This prevents split brain where two nodes 
+- Only one transaction is allowed to hold the lock 
+
+Fencing: Every time the lock server grants a lock or 
+lease, it returns a fencing token. A fencing token 
+is a number that increases every time a lock is granted 
+(e.g incremented by the lock server). Every time a 
+client wants to send a write request, it must provide 
+
+Byzantine fault: Dishonest nodes. A node claims it 
+received a message but it didn't. A system is byzantine 
+fault tolerant if it continues to operate correctly 
+even if some of the nodes are malfunctioning and not 
+obeying the protocol or if malicious attackers are 
+
+System models
+Synchronous model: Assumes bounded network delay, bounded 
+process pauses, bounded clock error. Network delays, 
+pauses, and clock drift will never exceed some fixed 
+upper bound. (This is not realistic because pauses 
+and clocks always happen). In an ideal world, all systems 
+
+Partially synchronous model: Most of the time distributed 
+
+Asynchronous: Some of the systems don't even have a 
+
+Three most common modes for nodes are:
+- Crash recovery fault: Nodes that die have nonvolatile 
+storage therefore it can eventually be restored and 
+- Byzantine (arbitrary faults) : Nodes can be deceptive 
+and try to trick other nodes by saying "I'm ok, but 
+
+## Chapter Eight: Consistency & Consensus
+
+What is eventual consistency? If you stop writing to 
+the database, and wait a while, eventually all read 
+
+Linearization (aka atomic consistency; strong consistency; 
+immediate consistency; external consistency). Make 
+a system appear as if there were only one copy of the 
+
+In a linearizable system, as soon as 1 client successfully 
+completes a write. All clients reading from the database 
+will be able see the new value. (This works with snapshot 
+
+
+Consensus algorithms (linearizable) 
+Multi-leader replication (not linearizable). 
+
+CAP Theorem:
+- Consistency 
+- Availability
+- Partition Tolerance
+
+You can only have 2 out of 3. (In real life situations, 
+availability is never guaranteed). CAP theorem has 
+been historically influential but has little practical 
+
+Most systems are not linearizable (e.g a CPU). If a 
+thread running on 1 CPU writes to a memory address, 
+and another thread on another CPU reads the same address 
+shortly afterward, it is not guaranteed that the CPU 
+reads the new value (unless you create a memory barrier 
+or fence). Each CPU has its own memory cache and store 
+buffer. Memory access hits the cache by default, and 
+any changes are asynchronously written to the main 
+
+Linearizable systems preserve causality. How to ensure 
+You can use sequence numbers or timestamps (e.g Lamport 
+
+Lamport timestamp: Each node has unique identifier 
+& each node keeps a counter of the number of operations 
+it has processed. Lamport timestamp = (# of operations, 
+ID) tuple. Every client keeps track of the maximum 
+counter value it has seen so far, and includes that 
+
+Reliable delivery: no messages are lost. All messages 
+Totally ordered delivery: Messages are delivered to 
+
+Atomic commit (Two phase commit): atomic operations 
+Steps
+- applications reads and writes data to multiple database 
+- when the application is ready to commit, the coordinator 
+- Phase 1: send a prepare request to all nodes and 
+- coordinator tracks all responses and sends a commit 
+- If a node says "No", an abort request is sent to 
+
+
+Linearizable compare-and-set registers: The register 
+needs to atomically decide whether to set its value, 
+based on whether its current value equals the parameter 
+Atomic transaction commit : A database must decide 
+Total order broadcast : The messaging system must decide 
+Locks and leases: When several clients are racing to 
+grab a lock or lease, the lock decides which one successfully 
+Membership/coordination service: Given a failure detector 
+(e.g., timeouts), the system must decide which nodes 
+are alive, and which should be considered dead because 
+Uniqueness constraint 
+When several transactions concurrently try to create 
+conflicting records with the same key, the constraint 
+must decide which one to allow and which should fail 
+
+## Chapter Ten: Batch Processing 
+
+Online system service : Service waits for requests 
+from clients. Once a request is received, it handles 
+it as quick as possible. The response time equals performance 
+
+Batch processing systems (offline systems) : Take all 
+the input data, run a job to process it. For MapReduce, 
+computation should be local to one machine. Random 
+- access requests over the network for every record 
+
+MapReduce provides a clean all or nothing guarantee. 
+If the job succeeds the result is the output of all 
+jobs. If the job fails, no output is produced. MapReduce 
+outputs data into directories that can be parsed and 
+iterated at a later time. These output directories 
+are immutable and can be loaded in bulk into servers 
+
+Stream processing systems (near real time systems) 
+: Somewhere between online and offline / batch processing. 
+Stream processor consumes inputs and produces outputs 
+(rather than responding to requests). A stream job 
+operates on events shortly after they happen, whereas 
+a batch job operates on a fixed set of input data. 
+This difference means stream processing systems have 
+
+Hadoop is like a distributed of unix where HDFS is 
+the file system and MapReduce is an implementation 
+
+Files in a distributed filesystem are just byte sequences 
+which can be written using any data model and encoding. 
+They can be a collection of records, text, images, 
+videos, sensor reading, feature vectors, genome sequences, 
+etc. Hadoop opened up the possibility of dumping data 
+into HDFS and figuring out how to process it later 
+
+MapReduce gave engineers the power to run code over 
+large data sets. If you have HDFS and MapReduce you 
+
+MapReduce partitioning : mappers are partitioned according 
+to input file blocks. The output of mappers is repartitioned, 
+sorted, and merged into a configurable number of reducer 
+
+MapReduce Fault Tolerance : MapReduce frequently writes 
+
+Massive parallel processing databases require up front 
+modeling of the data, and query patterns before the 
+data into the database proprietary storage format. 
+MPP is slower because engineers have to build the schemas, 
+
+## Chapter Eleven : Stream Processing 
+
+A "data stream" refers to data that is incrementally 
+
+Event streams: data management mechanism: the unbounded, 
+
+In a stream processing context, a record is an event 
+(a small self contained immutable object that contains 
+data). An event is created by a producer (aka a publisher 
+or sender) and then processed by multiple consumers 
+
+In batch processing, a file is written once and then 
+
+Web hooks: a pattern in which a call back URL of one 
+service is connected to another service. It makes a 
+
+A message broker (aka message queue) is a database 
+optimized for handling message streams. It runs as 
+a server with producers and consumers connecting to 
+it as clients. Producers write messages to the broker 
+and consumers receive them by reading them from the 
+
+Consumers are usually asynchronous: when a producer 
+sends a message, it waits for broker to confirm that 
+it has buffered the message and does not wait for the 
+
+Publish and subscribe. 
+
+Load balancing: A message is delivered to one of the 
+consumers, the consumer then shares the work by processing 
+the message in that topic. The broker my assign message 
+
+Message brokers use acknowledgements: a client explicitly 
+tells the broker it has finished processing a message 
+If the connection to a client is closed or times out 
+and the broker did not receive an acknowledgement, 
+it assumes that the message was not processed, and 
+
+Logs for message storage. Producers can append messages 
+to the end of logs, and a consumer can read the logs 
+
+Streams can come from user activity, events, sensors, 
+The big difference between a batch system and a stream 
+Examples: fraud detection systems are always on; trading 
+systems; manufacturing systems need to monitor the 
+
+Stream analytic systems use probabilistic algorithms 
+and data structures such as bloom filters to determine 
+
+Batch processing frameworks can tolerant faults easily. 
+If a MapReduce job fails, the job can be restarted 
+on another machine. The transparent retry is possible 
+because the input is immutable, and each task within 
+
+Microbatching: break the stream up into small blocks 
+
+Idempotent operations: one that you can perform multiple 
+times and it has the same effect as if you performed 
+
+Lambda architecture: run 2 different systems in parallel 
+: batch processing such as Hadoop MapReduce and stream 
+
+## Chapter Twelve : The Future Of Data Systems 
+
+Try replacing the word "data" with surveillance and 
+observe if common phrases still sound good. "Our surveillance 
+scientists use advanced analytics and surveillance 
+
+Data is invaluable. Data is the pollution problem of 
+
+Data is the pollution problem of the information age, 
+and protecting privacy is the environmental challenge. 
+Almost all computers produce information. It stays 
+around, festering. How we deal with it and how we contain 
+it and how we dispose of it is central to the health 
+of our information economy. Just as we look back today 
+at the early decades of the industrial age and wonder 
+how our ancestors could have ignored pollution in their 
+rush to build an industrial world, our grandchildren 
+will look back at us during these early decades of 
+the information age and judge us on how we addressed 
+the challenge of data collection and misuse. We should 
