@@ -111,7 +111,6 @@ to you?
 ---------------------------------
 Grokking The Behavioral Interview
 ---------------------------------
-
 I just heard my own response and it sounds a bit rehearsed. 
 I really prepared for this interview because it is 
 important to me. You can 
@@ -314,6 +313,8 @@ thank me, my work suffers.
 The Triathlete's Training Bible: The World's Most Comprehensive 
 Training Guide 4th Edition 
 -------------------------------------------------------------------------------- 
+Something that is difficult means most people will not do it. For every day you kept on going, many quit.
+
 Successful Olympians (8) 
 -Paid meticulous attention to their goals
 -Had a strong inner drive to stay ahead of their competition 
@@ -377,7 +378,6 @@ MLE : cannot be a pure data scientist; entrepreneurship;
 Venture / curious in the unknown; systems engineering; 
 
 Kaggle / Jupiter notebooks; Build, create, innovate 
-
 
 -------------------------------------------------------------------------------- 
 Born to Run: A Hidden Tribe, Superathletes, and the 
@@ -650,3 +650,11 @@ but generally may be recycled for use in toilets, car
 washes, evaporative cooling systems, plant irrigation, 
 
 
+-------------------------------------------------------------------------------- 
+A Mathematician's Survival Guide: Graduate School and Early Career Development
+-------------------------------------------------------------------------------- 
+It would be easy to talk yourself into the pits if you sit around comparing yourself to others. 
+Best is not to compare yourself to anyone at all. 
+You were admitted by the faculty to the program you are now in, 
+so you are definitely qualified. For this program, 
+the powers that be have every expectation that you will succeed.
