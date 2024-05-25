@@ -199,3 +199,15 @@ System Design Interview - Alex Xu
 The Missing README_ A Guide for the New Software Engineer 
 Two Scoops Of Django
 Staff Engineer: Leadership behind the management track
+Eminem : The Way I Am 
+Staff Engineer’s Path 
+Business Of The 21st Century 
+Operating Systems : Three Easy Pieces 
+Mythical Man Month 
+Designing Data Intensive Applications 
+On Writing Well 
+A Mathematician’s Survival Guide 
+ The Circle - Incomplete 
+Coach by Michael Lewis 
+Algorithms 
+HL7 For Busy Professionals: Your No Sweat Guide to Understanding HL7
