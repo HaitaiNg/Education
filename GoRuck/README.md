@@ -29,10 +29,7 @@ This flag was designed and built by Haitai Ng for GoRuck events. Constructed usi
 #### Tools for Assembly: Drill; Measuring Tape; Phillips screwdriver 
 
 #### Assembly
-1. Drill four holes in one of the EMT conduit pipes (2 holes in the top, 2 holes below it). The holes at the top and bottom must directly  align with each 
-other such that the steel eye bolts can pierce completely thru the EMT conduit 
-and you can install the washer on the opposite end. There should be a 
-34.8inch+ distance (max limit is 3ft (36inches)) between the top 2 holes and the bottom 2 holes.
+1. Drill four holes in one of the EMT conduit pipes (two holes at the top, two holes at the bottom). The holes at the top and bottom must directly align with each other so that the steel eye bolts can pass completely through the EMT conduit, allowing you to install the washer on the opposite end. The distance between the top two holes and the bottom two holes should be at least 34.8 inches, with a maximum limit of 36 inches (3 feet).
 
 <img src="Photos/pole2.jpg" width=“376” height="869">
 
@@ -53,17 +50,9 @@ serve as the connector to additional EMT conduit pipes.
 
 #### Substitutions and Tips
 - EMT conduit is one of the lightest forms of steel conduit. It is used to protect and route electrical wiring in houses and commercial buildings. You can substitute the EMT conduit with PVC or copper pipes.
-- I designed this flag such that the length can be easily extended or reduced. To 
-add length, attach EMT additional conduit pipes.
-- I add an Electric Metallic set screw to the bottom of the EMT conduit pipe, and wrap it with 
-medical tape, so I have a lower probability of scratching
-or denting whatever hits this pole. 
-- The Stainless Steel Spring Lake can be replaced by any standard carabiner that can
-fit thru the holes of the flag. Most flags have the two holes on the left side of the flag,
-thus making it easy to swap out flags if needed. 
-- If you are unable to find a drill & drill bit to pierce the EMT conduit pipe,
-you can try using bungie cable and wrap the flag around the EMT
-conduit pipe. When I originally built this I had less than 36 hours to find
-a drill. This was my back up plan if I was unable to find a drill and commit to my original design.
+- I designed this flag so that the length can be easily extended or reduced. To add length, attach additional EMT conduit pipes.
+- I added an Electric Metallic set screw to the bottom of the EMT conduit pipe and wrapped it with medical tape so that I have a lower probability of scratching or denting whatever hits this pole.
+- The Stainless Steel Spring Link can be replaced by any standard carabiner that can fit through the holes of the flag. Most flags have two holes on the left side, making it easy to swap out flags if needed.
+- If you are unable to find a drill and drill bit to pierce the EMT conduit pipe, you can try using a bungee cable and wrapping the flag around the EMT conduit pipe. When I originally built this, I had less than 36 hours to find a drill. This was my backup plan if I was unable to find a drill and commit to my original design.
 
 <img src="Photos/flagWTC.jpg" width=“376” height="869">

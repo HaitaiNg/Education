@@ -1,3 +1,5 @@
+## Reading List 
+
 “Why Should I Trust You” Explaining The Predictions of Any Classifier
 15 mInutes To A Better Interview: What I Wish Every Job Candidate Knew
 1984
@@ -90,7 +92,6 @@ Korean From Zero
 Last Man Standing : The Ascent of Jamie Dimon and JP Morgan
 Legend of Zelda Majora's Mask Manga
 Legend of Zelda Ocarina Of Time Manga
-LOTR : One Volume
 Machine Learning With Random Forests And Decision Trees: A Visual Guide For Beginners
 Make Electronics
 Man's Search For Meaning
@@ -207,7 +208,41 @@ Mythical Man Month
 Designing Data Intensive Applications 
 On Writing Well 
 A Mathematician’s Survival Guide 
- The Circle - Incomplete 
+The Circle - Incomplete 
 Coach by Michael Lewis 
 Algorithms 
+The Software Engineer’s Guidebook 
+Elements of Programming Interviews In Python
+System Design Volume II 
+The Road 
+Blood Meridian 
+Kitchen Confidential: Adventures in the Culinary Underbelly
 HL7 For Busy Professionals: Your No Sweat Guide to Understanding HL7
+The Nasty Bits: Collected Varietal Cuts, Usable Trim, Scraps, and Bones
+Going Infinite 
+Korean for Kids - Colors Story - book 
+Berklee Online Guitar Handbook 
+Masters Of DOOM
+Blood, Sweat, and Pixels. 
+Confession by Liara Roux 
+97 Orchard 
+The Apple II Age 
+The Science Of Stress 
+97 Things Every Data Engineer Should Know
+Probably Approximately Correct 
+Remember The Ramrods: An Army Brotherhood In War And Peace
+Diary Of An Invasion
+FPGAs For Dummies (Altera edition)
+Child Of God 
+Outer Dark 
+Jony Ive: The Genius Behind Apple’s Greatest Products 
+The Upstairs Delicatessen 
+Body by Science: A Research Based Program for Strength Training, Bodybuilding, and Complete Fitness in 12 Minutes a Week
+Real Life Math: Everyday use of Mathematical Concepts 
+Becoming The Parent Your Kid Deserves 
+Shake Shack Recipes & Stories 
+Symmetry: The Ordering Principle 
+Manga For Success - Leading Meetings & Teams 
+Learning Web Development 
+Xoogler’s blog 
+DOOMGuy Life In First Person 

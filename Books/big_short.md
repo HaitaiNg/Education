@@ -1,6 +1,6 @@
 # Notes from: The Big Short: Inside The Doomsday Machine
 
-**Refresh Date:** 03.09.25
+
 
 ## Mortgage Bonds
 The mortgage bond was different from traditional corporate and government bonds:
