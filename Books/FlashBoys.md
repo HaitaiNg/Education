@@ -1,14 +1,16 @@
-Notes From: Flash Boys: A Wall Street Revolt 
+# Notes From: Flash Boys: A Wall Street Revolt 
 Refresh Date: 01.31.2021
 
-Spread Networks
-Every second counts in HFT. 
-The whole point of the fiber optic line was to create 
+
+Every second counts in HFT. The whole point of the fiber optic line was to create 
 public markets a private space accessible only to those 
 willing to pay millions of dollars in entry fees. 
 
-Important people: Brad Katsuyama : IEX // Ronan Ryan 
-// Sergey Aleynikov 
+Important people: 
+Brad Katsuyama : IEX
+Ronan Ryan 
+Sergey Aleynikov 
+
 The best way to manage people, he thought, was to convince 
 them that you were good for their careers. He further 
 believed that the only way to get people to believe 
@@ -32,7 +34,7 @@ customers and then bet against them, and so on—his
 mind hit some kind of wall. For the first time in his 
 career, he felt that he could only win if someone else 
 lost, or, more likely, that someone else could only 
-win if he lost. He was not by nature a zero- sum person, 
+win if he lost. He was not by nature a zero-sum person, 
 but he had somehow wound up in the middle of a zero-sum 
 business. (196) 
 
@@ -43,7 +45,9 @@ which executed the orders on their behalf. Why was
 Citadel willing to pay so much to see the flow? No 
 one could say with certainty. (266) 
 
-REAL estate for HFT. You need to be closer to the HUB 
+High Frequency Trading firms will pay large 
+amounts of money for real estate.
+They need to be closer to the HUB 
 in order to reduce propagation delay. 
 
 After the meeting, RBC conducted a study, never released 
@@ -52,7 +56,7 @@ hundred SEC staffers since 2007 had left their government
 jobs to work for high-frequency trading firms or the 
 firms that lobbied Washington on their behalf. Some 
 of these people had played central roles in deciding 
-how, or even whether, to regulate high- frequency trading. 
+how, or even whether, to regulate high-frequency trading. 
 For instance, in June 2010, the associate director 
 of the 
 SEC’s Division of Trading and Markets, Elizabeth 
@@ -68,7 +72,7 @@ The funny thing was that Serge actually liked Adam
 Schles-inger, and most of the other people he worked 
 with at Goldman. He liked less the 
 environment the firm created for them to work in. “Everyone 
-lived for the year- end number,” he said. “You 
+lived for the year-end number,” he said. “You 
 get satisfied when the bonus is sizable and you get 
 not satisfied when the number is not. Everything there 
 is very possessive.” It made no sense to him the 

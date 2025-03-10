@@ -1,5 +1,3 @@
-# Designing Data Intensive Applications
-
 ## Chapter One : Reliable, Scalable, and Maintainable 
 
 Reliability: The system should continue to work correctly 
