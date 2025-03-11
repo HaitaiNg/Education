@@ -1,25 +1,5 @@
-Notes From: The Manager's Path A Guide For Tech Leaders 
-Navigating Growth & Change 
-Refresh Date: 02.06.2021
-
-If you are interested in proving on purely the people 
-management side of leadership, 
-books like First, Break All The Rules are excellent 
-references (xii) 
-
-** REFERENCE:  
-**Page 40 - 44 : 
-**Life of an individual contributor
-**Life of a manager (43) 
-**What's A CTO : (166) 
-**What's A VP : (164)
-
-
-Another reference: Programming Pearl
-
-What to expect from a manager?
-Some like the begin neglect.
-"Benign neglect isn’t so bad when you consider some 
+# Quotes from: The Manager's Path
+Benign neglect isn’t so bad when you consider some 
 of the alternatives. There are the neglectful managers 
 who ignore you when you need help and brush your concerns 
 aside, who avoid meeting with you and who never give 
@@ -34,7 +14,7 @@ characters are walking around our companies, wreaking
 havoc on the mental health of their teams. When you 
 believe that these are the only alternatives, a manager 
 who leaves you alone most of the time unless you specifically 
-ask for help doesn’t seem so bad at all." (2) 
+ask for help doesn’t seem so bad at all. (2) 
 
 There are, however, other options. Managers who care 
 about you as a person, and who actively work to help 
@@ -44,11 +24,12 @@ help you navigate difficult situations, who help you
 figure out what you need to learn. Managers who want 
 you to take their job someday. And most importantly, 
 managers who help you understand what is important 
-to focus on, and enable you to have that focus" (2) 
+to focus on, and enable you to have that focus (2) 
 
-1:1s: Purpose: create a human conenction between you 
-and your manager. 
-1.) Let you manager into your life a little bit, because 
+---
+### Individual Contributor & Manager
+
+Let you manager into your life a little bit, because 
 when there are stressful things happening (a death 
 in the family, a new child, breakup, housing woes) 
 it will be much easier to ask your manager for time 
@@ -57,19 +38,20 @@ you as a person.
 Great managers notice when your normal energy level 
 changes, and will hopefully care enough to ask you 
 about it. 
-"The bedrock of strong teams is human connection which 
-leads to trust." To establish trust, this requires 
+The bedrock of strong teams is human connection which 
+leads to trust. To establish trust, this requires 
 the willingness to be vulnerable in front of each other. 
-2.) Speak with your manager regarding matters that 
+
+Speak with your manager regarding matters that 
 need to be discussed. Sometimes plan ahead of time, 
 what you want 
 to discuss with your manager. Do not eliminate 1:1s 
-completely. Bi-weekly ones are ok, or every week. "Use 
+completely. Bi-weekly ones are ok, or every week. Use 
 them as 
 you need them, and if you find that you want to meet 
-more frequently, ask your manager for that" (3) 
+more frequently, ask your manager for that (3) 
 
-Good 1:1s are not status meetings. "If you are a manager 
+Good 1:1s are not status meetings. If you are a manager 
 reporting to senior management, you can use 1:1s to 
 discuss status 
 of critical projects, or projects that are still in 
@@ -77,11 +59,9 @@ the nascent stage. If you're an individual contributor,
 though, a 
 1:1 as a status meeting is repetitive and probably 
 boring. If your 1:1 is a dreadful obligation for delivering 
-a 
-boring status report, try using email or chat for that 
+a boring status report, try using email or chat for that 
 purpose instead to free up time, and bringing some 
-topics of your 
-own to the 1:1
+topics of your own to the 1:1.
 
 I encourage you to share the responsibility of having 
 good 1-1s with your manager. Come with an agenda of 
@@ -92,32 +72,28 @@ this isn’t possible, verify the day before (or that
 morning, for an afternoon meeting) that you will be 
 meeting and share with him anything you are interested 
 in discussing so he knows you want to meet. 
-" (3) 
+(3) 
 
 Good managers provide feedback. Ideally they provide 
 feedback as soon as you screw up. Feedback is data 
 points that 
-can help you improve and grow. "The sooner you know 
-about your bad habits, the easier they are to correct". 
-"A great manager will notice some of the little things 
+can help you improve and grow. The sooner you know 
+about your bad habits, the easier they are to correct. 
+A great manager will notice some of the little things 
 you're doing well in your day-to-day, and recognize 
-you for them. Keep trakc of this feedback, good and 
+you for them. Keep track of this feedback, good and 
 bad, and use it when you write your self-review for 
-the year". 
+the year. 
 
-Sometimes praise -> public, criticism -> private 
+Praise in public, criticize in private.
+
 For presentations, get feedback on the content (second 
-per review). Asking your manager for advice is also 
-a good way 
-to show that you respect them. "People like to feel 
+peer review). Asking your manager for advice is also 
+a good way to show that you respect them. People like to feel 
 helpful, and managers are not immune to this sort of 
-flattery". 
+flattery. 
 
-Managers: 
-->Training and career growth progression; feedback; 
-promotions; resolving issues (internally) 
-
-*Ask your manager for specific areas to focus on in 
+Ask your manager for specific areas to focus on in 
 order to get that promotion. Good managers know what 
 the system is looking for and can help you build those 
 achievements and skills. 
@@ -130,220 +106,176 @@ However, you also want to spend a lot of time writing
 code, and getting really good at understanding how 
 high-quality code is written. (22) 
 
-How to be managed.
+--- 
+### How to be managed.
+
 Know what you want. The onus of figuring out what you 
 want to do, what you want to learn, and what will make 
 you happy rests on your shoulders.(22) 
-"It's a pretty universal truth that once you get the 
+
+It's a pretty universal truth that once you get the 
 job you thought you wanted, the enjoyment eventually 
-fades and you find yourself looking for something else". 
+fades and you find yourself looking for something else. 
 (23) 
+
 You are responsible for yourself. Ask, and chase to 
-reach your goals. 
-Give your manager a break. Managers job is to do what 
-is best for the company and team. 
+reach your goals. Give your manager a break. 
+The managers job is to do what is best for the company and team. 
 When you have a problem, instead of demanding that 
 your manager solve it for you, try asking her for advice 
 on how she might approach the problem. Asking for advice 
 is always a good way to show respect and trust. (25) 
 
-How to be a good mentor.
-Patient, Hand Holding, Collaborative
+---
+### How to be a good mentor 
+- Patient, Hand Holding, Collaborative
+- Be curious and open-minded
 
-How to mentor an intern.
+---
+### How to mentor an intern
 Even if you company does not love him, you want him 
-to love 
-you, because they will go back and tell all their colleagues 
+to love you, because they will go back and tell all their colleagues 
 about their experience. 
 This can have a major impact on your ability to hire 
 full-time from the graduating class. 
 Somtimes they can feel intimidated because they do 
 not want to look stupid. They are probably nervous 
-abnout screwing this opportunity up. 
+about screwing this opportunity up. 
 Check in frequency. (minimum is once a week, sometimes 
 even once a day). 
 Ideally the intern leaves on good terms. (12) 
 
-Mentoring a new hire. 
-Good hires will ask questions. Do pair programming. 
-New hire mentors are responsible for smooth onboarding, 
-helping this person adjust to life in the company effectively, 
-and building your and her network of contacts in the 
-company. 
-How does work get done?
-What are the rules, spoken, unspoken?
-Good times have good onboarding documentation. These 
-documents should gradually evolve to meet the changes 
-of the workplace 
-"Mentoring a new hire by helping her work through the 
-documents, and having her modify those documents 
-with any surprises she encounters during onboarding, 
-provides a powerful message of commitment to her. It 
-shows her that she has the power and obligation to 
-learn, and to share what she’s learned for the benefit 
-of your whole team." (17) 
+---
+### How to mentor a new hire
+Good hires will ask questions. Its encouraged to do pair programming. 
 
-When you are a mentee.
+Mentors are responsible for smooth onboarding, 
+helping this person adjust to life in the company effectively, 
+and building your and their network of contacts in the 
+company. 
+
+- What are the rules, spoken, unspoken?
+- Good onboarding documentation is critical. These 
+documents should gradually evolve to meet the changes 
+of the workplace. Encourage new hires to modify those documents 
+with any surprises they encounter during onboarding. (17) 
+
+--- 
+### How to be a mentee
 Figure out what you want from this relationship, and 
 come prepared to your sessions. 
 
-Key Takeaways for the mentor
-Be curious and open-minded
-"When faced with a mentee's questions, you can start 
-to observe what about your organization is not so obvious 
-to a new person" (25) 
-Listen and speak their language
-Make connections
-Accessing your experience
-
-30/60/90
-Set realistic goals
-Contributing to the team's onboarding documentation 
-Would you like a weekly summary of my progress via 
-email? 
-How long should I work alone trying to solve a problem 
+- 30/60/90 day goals
+- Contribute to the team's onboarding documentation 
+- Ask would you like a weekly summary of my progress via email? 
+- How long should I work alone trying to solve a problem 
 before reaching out for help? (33)
-Mondays and Fridays are bad for 1:1s 
-Adjusting 1:1s
 
-How often do you interact with this person offhand 
-during the week? If we interact frequently, we may 
-not need a weekly 
-How much coaching does this person need? (Juniors prefer 
-a little more time vs seniors who are in the groove) 
-How much does this person push information to you? 
-How good is your relationship with this person?
-How stable or unstable are things in the team or the 
-company? 
-
-1:1 styles
--The to-do list meeting
--The catch up
--The feedback meeting (good for performance isues) 
--Progress Report (Getting progress reports from people 
+---
+### 1:1 styles
+- The to-do list meeting
+- The catch up / getting to know you
+- The feedback meeting (good for performance isues) 
+- Progress Report (Getting progress reports from people 
 you’re already working closely with is a waste of 
 time because all you’re hearing about is the delta 
 of work between now and the last standup or project 
 review) (72) 
--Getting to know you
--Mix it up 
 
-72 - 73 micromanagement
-Micromanagement is bad. Effective delgator is better, 
-trust and control are subtle messages that revolve 
-around micromanagement 
-Micromanagment means a lack of trust 
+--
+### Delegation
+Micromanagement is a lack of trust. 
 Autonomy: ability to control over some part of your 
 work 
 
-Delgating effectively 
--Use the team's goals to understand which details you 
+- Use the team's goals to understand which details you 
 should dig into 
--Gather information from the systems before going to 
+- Gather information from the systems before going to 
 the people (source control, Git History) 
--Adjust your focus depending on the stage of projects 
--Treat the open sharing of information, good or bad, 
+-A djust your focus depending on the stage of projects 
+- Treat the open sharing of information, good or bad, 
 in a neutral to positive way 
--Create a culture of continous feedback 
+- Create a culture of continous feedback 
 
-How to give feedback?
--Know your people
--Observe your people
--Provide lightweight, regular Feedback
--Bonus: Provide coaching
+### How to give feedback?
+- Know your people
+- Observe your people
+- Provide lightweight, regular Feedback
 
-Writing and delivering a performance review 
--Give yourself enough time, and start early 
--Try to account for the whole year, not just the past 
+### Writing and delivering a performance review 
+- Give yourself enough time, and start early 
+- Try to account for the whole year, not just the past 
 couple of months (Create a work log) 
--Use concrete examples, and excerpts from peer reviews 
--Spend plenty of time on accomplishments and strengths 
--When it comes to areas of improvement, keep it focused 
--Avoid big surprises
--Schedule enough time to discuss the review 
+- Use concrete examples, and excerpts from peer reviews 
+- Spend plenty of time on accomplishments and strengths 
+- When it comes to areas of improvement, keep it focused 
+- Avoid big surprises
+- Schedule enough time to discuss the review 
 
-Managers job is to help their engineers get promoted. 
-Their job is to make sure you are learning how to estimate 
-their own work, and learn from their mistakes. 
-Participation, features added to projects independently, 
-on-call rotations / support, team engagement, team 
-planning 
-The Peter Principle: people are pormoted to their level 
-of incompetence. 
 
-Firing underperformers (70)
-What is Performance Improvement Plan? (A set of clearly 
+### Firing underperformers (70)
+- What is Performance Improvement Plan? (A set of clearly 
 defined objectives that this person must achieve within 
 a fixed period of time. If they meet all the objectives, 
 they are removed from the plan, otherwise they are 
 fired) 
-Managers need a record of negative feedback to fire 
+- Managers need a record of negative feedback to fire 
 someone in any environment where HR is active and a 
 standard performance 
 improvement plan is required. If you have no HR, send 
 a PiP in writing (email). This protects you legally. 
-Do NOT put employees you wouldn't be to lose. Most 
+- Do NOT put employees you wouldn't be want to lose. Most 
 smart employees will start looking for opportunities 
-once they 
-are informed they are on PiP 
+once they are informed they are on PiP. 
 
 
-TECH LEAD 
-System architect and business analyst. 
-Good communication and interpersonal skills / excellent 
+### The Tech Lead  
+- Good communication and interpersonal skills / excellent 
 technical skills 
-A good sense of the overall architecture of your systems 
+- A good sense of the overall architecture of your systems 
 and a solid understanding of how to design complex 
 software. 
-It probably also requires you to be able to understand 
-business requirements and translate them into software 
-Project planning 
-Software Developer and team leadership
-"As you can see from these descriptions, in the process 
-of being a tech lead, you have to act as a software 
+- You have to act as a software 
 developer, a systems architect, a business analyst, 
 and a team leader who knows when to do something single-handedly, 
-and when to delegate the work to others. (49)" 
+and when to delegate the work to others. (49) 
+
+
+### Managing a project (38) 
+- Break down the work 
+- Push through the details and the unknowns 
+- Run the project and adjust the plan as you go
+- Use insights gained in the planning process to manage 
+requirements changes 
+- Revisit the details as you get close to completion 
 
 Agile development is great way to think about work 
 because it forces you to focus on breaking tasks down 
 into smaller chunks, planning those smaller chunks 
 out, delivering value incrementally instead of all 
 at once (51) 
+
 Infrastructure, Platform, or System projects usually 
 do not conform to agile methodlogies do to scope 
-Project managers sometimes cause waterfall development 
-Project planning: "enforce the self discipline to think 
-about the project in some depth before diving in and 
-seeing what happens" (52) 
 
-Managing a project (38 
--Break down the work 
--Push through the details and the unknowns 
--Run the project and adjust the plan as you go
--Use insights gained in the planning process to manage 
-requirements changes 
--Revisit the details as you get close to completion 
+Project managers sometimes cause waterfall development 
+Project planning: enforce the self discipline to think 
+about the project in some depth before diving in and 
+seeing what happens (52) 
 
 Agile Manifesto
--Individuals and interactions over processes and tools 
--Working software over comprehensive documentation 
--Customer collaboration over contract negotiation 
--responding to change over following a plan 
+- Individuals and interactions over processes and tools 
+- Working software over comprehensive documentation 
+- Customer collaboration over contract negotiation 
+- Responding to change over following a plan 
 
-How to be a good tech lead
--understand your fucking architecture. 
--be a team player (work on some uninteresting parts 
-and identify some of the broken parts) 
--Lead technical decisions (get you teams feedback too) 
--communicate 
 
-Creating a strong team
--resilient to loss of individuals 
--driven to find better ways to achieve their purpose 
--first team focused 
--open to changes that serve their purpose
-Faster is about the same value to the company in less 
+### Creating a strong team
+- resilient to loss of individuals 
+- driven to find better ways to achieve their purpose 
+- first team focused 
+- open to changes that serve their purpose
+- Faster is about the same value to the company in less 
 total time (120) 
 
 Open door policy does not always work. Only brave engineers 
@@ -366,17 +298,17 @@ How happy (or not) are you working at the company?
 What could we do to make working at the company more 
 fun? 
 
-A manager's manager: 
+### A manager's manager: 
 What can I, your manager’s manager, provide for you 
-or your team? Any- thing I should be helping with? 
+or your team? Anything I should be helping with? 
 Is this team working poorly with any other teams, from 
 your perspective? • Are there any questions about 
 the larger organization that I can answer? 
 
 Manager's problem
--unstable product roadmap
--errant tech lead 
--full time firefighting methodlogies
+- unstable product roadmap
+- errant tech lead 
+- full time firefighting methodlogies
 
 It's incredibly hard for a manager to justify getting 
 rid of someone who produces great work, even though 
@@ -398,29 +330,23 @@ you need to get a message out to your whole organization,
 talk to your managers first, give them talking points, 
 and then let them share with their teams before bringing 
 the whole group together (175)
+
 Don't force yourself to deliver a message you can't 
 stand behind 
 Do be honest about the likely outcomes 
 Do think about how you would like to be told (175) 
 
 What to do if I have a non-technical boss: 
--Don't hide information behind jargon, and be careful 
+- Don't hide information behind jargon, and be careful 
 with details 
--You may need to run the 1:1s with your new boss, so 
+- You may need to run the 1:1s with your new boss, so 
 be come prepared with a list of topics 
--Ask for advice 
--Don't be afraid to repeat yourself 
--Be supportive 
--Actively look for coaching and skill development in 
+- Ask for advice 
+- Don't be afraid to repeat yourself 
+- Be supportive 
+- Actively look for coaching and skill development in 
 other places ( You no longer have a manager, you have 
 a boss) 
-
-“I’m sorry, I should not have yelled at you and 
-I have no excuse for my bad behavior.” 
-“I’m sorry, I did not listen to you and I know 
-I contributed to your frustration at this situation.” 
-“I’m sorry, I made a mistake when I neglected to 
-tell you about Bob.” (184)
 
 For a technical leader, True North means making sure 
 that you’ve done your job getting things ready to 
@@ -431,34 +357,18 @@ into production that you don’t believe is ready for
 your users to experience. It means you’re creating 
 software and systems you’re proud of. (185) 
 
-Arbinger Institute, Leadership and Self-Deception: 
-Getting Out of the Box (San Francisco: Berrett-Koehler, 
-2000). 
-• Brené Brown, Daring Greatly: How the Courage to 
-Be Vulnerable Transforms the Way We Live, Love, Parent, 
-and Lead (New York: Gotham Books, 2012). 
-• Peter F. Drucker, The Effective Executive (New 
-York: HarperBusiness Essen- tials, 2002). 
-• Marshall Goldsmith and Mark Reiter, What Got You 
-Here Won’t Get You There: How Successful People Become 
-Even More Successful (New York: Hyperion, 2007). 
-• Andrew S. Grove, High Output Management (New York: 
-Vintage Books, 1983). 
-• L. David Marquet, Turn the Ship Around! A True 
-Story of Turning Followers into Leaders (New York: 
-Portfolio, 2012). 
 Every new hire slows the team down for months because 
 there is no onboarding process, that is a failure due 
 to lack of structure. When people regularly leave 
 the company because they have no path to advancement 
 or career growth, that is a failure due to lack of 
-structure. The third time you have a pro- duction outage 
+structure. The third time you have a production outage 
 because someone logged directly into the database and 
-acciden- tally dropped a critical table, that is a 
+accidentally dropped a critical table, that is a 
 failure due to lack of structure. (188) 
 
 Humans form friendships with people who have significant 
-shared back- ground experiences, and these experiences 
+shared back-ground experiences, and these experiences 
 tend to closely correlate with things like schooling, 
 race, class, and gender. The shortcuts you get by hiring 
 friends are not usually the values you need to form 
@@ -483,15 +393,15 @@ the communication structures of these organizations.
 
 --------------------------------------------------
 
-Manager vs Individual Contributor
+### Manager vs Individual Contributor
 
 When transitioning into software engineering management, it's important
 to realize that you're really switching career tracks (and that's okay). 
 
-1.) Do I like working independently or helping others solve problems?
-2.) Am I able to switch between various taks easily and productively?
-3.) Can I be tough and empathetic?
-4.) Do I want to lead?
+- Do I like working independently or helping others solve problems?
+- Am I able to switch between various taks easily and productively?
+- Can I be tough and empathetic?
+- Do I want to lead?
 
 A good software engineering manager is: trusting; 
 empathetic; supportive; motivating; collaborative; clear communication;
