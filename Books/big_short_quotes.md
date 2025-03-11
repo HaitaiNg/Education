@@ -1,3 +1,5 @@
+# Quotes from the Big Short 
+
 The mortgage bond was different in important ways from 
  old-fashioned corporate and government bonds. A mortgage 
  bond wasn't a single giant loan for an explicit fixed 
@@ -66,18 +68,6 @@ The mortgage bond was different in important ways from
  "dumb money." He'd study up on them, too, but later. 
  (33) 
  
- Credit Default Swaps: Insurance policy, typically on 
- a corporate bond, with a semi annual premium payments 
- and a fixed term. 
- These were convenient because you knew exactly how 
- much you could lose, but your gains could be exponential 
- “if I bought a credit default swap, my downside was 
- defined and certain, and the upside was many multiples 
- on it” 
- 
- Dr Mike Burry -> neurology resident (investments on 
- the side) 
- 
  He used no leverage and avoided shorting stocks. He 
  was doing nothing more promising than buying common 
  stocks and nothing more complicated than sitting in 
@@ -96,24 +86,6 @@ The mortgage bond was different in important ways from
  of taking the risk of selling a stock short, as the 
  risk was, theoretically, unlimited. It could only fall 
  to zero, but it could rise to infinity. (46) 
- 
- *** How does a hedge fund compare to a potential ponzi 
- scheme? If there is a one year commitment to some hedge 
- funds before you can withdraw your funds, how does 
- this work? 
- 
- *** They would target lower income people, uneducated 
- and essentially screw them over 
- 
- FICO scores: measure the creditworthiness of individual 
- borrowers. 
- Highest is rated at 850, lowest was 300, Median is 
- 723 
- It can be rigged. Take out multiple credit card loans, 
- and immediately pay them back 
- FICO scores were mistreated. FiCO score of 550 was 
- certain to default and should never be lent money in 
- the first place 
  
  Moody's and S&P asked the loan packagers not for a 
  list of the FICO scores of all the borrowers but for 
@@ -135,15 +107,6 @@ The mortgage bond was different in important ways from
  with a FICO score of 680 could be found to offset the 
  deadbeat, and keep the average 
  at 615. (82) 
- 
- Cheating 
- Thin File FICO score : short credit history (Creditors 
- used this to their advantage) :: 
- Rating agency mistakes / bribing . Game the rating 
- agencies models 
- Thick Fil FICO score (80-83) 
- 
- Subprime Mortgage Bonds 
  
  The hunting license had a name: an ISDA. They were 
  the same agreements, dreamed up by the International 
@@ -458,11 +421,12 @@ The mortgage bond was different in important ways from
  it. (177) 
  
  
- * The "spread" on any bond is simply the difference 
+ The "spread" on any bond is simply the difference 
  between the interest rate it pays to the investor, 
  and some putatively risk-free rate--say, the rate paid 
  to investors in U.S. Treasury bonds. (200) 
- * A brief reminder: In thinking about these towers 
+ 
+ A brief reminder: In thinking about these towers 
  of debt, it's handy to simplify them into three floors: 
  a basement, called the "equity," which takes the very 
  first losses and is not an investment-grade security; 
