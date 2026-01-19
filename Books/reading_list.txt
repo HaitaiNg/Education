@@ -246,3 +246,22 @@ Manga For Success - Leading Meetings & Teams
 Learning Web Development 
 Xoogler’s blog 
 DOOMGuy Life In First Person 
+Practical Rust Projects 
+Accelerate : The Science Of Lean Software & DevOps: Building and Scaling High Performing Technology Organizations
+Attack On Titan : No Regrets 
+Empire of Imagination: Gary Gygax and the Birth of Dungeons & Dragon
+Bill Gates: Source Code 
+System Design Interview 
+Sid Meier’s Memoire (Audiobook) 
+Gears Of War Anvil Gate (Unfinished) 
+System Design Interview II 
+The Mutt : how to skateboard and not kill yourself 
+The survival of a mathematician from tenure to emeritus 
+AWS Data Engineering Book 
+Iron ambitions (audio book / incomplete) 
+The Rust Programming Language
+Accidentally On Purpose - Kristin Kish 
+Introduction to Compilers and Language Design 
+Generative AI System Design Interview 
+Latency 
+Sunset Limited 
