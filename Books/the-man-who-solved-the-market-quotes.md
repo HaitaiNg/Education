@@ -116,7 +116,7 @@
 
 > When you flip a coin, you have a 25 percent chance of getting heads twice in a row, but there is no correlation from one flip to the next. By contrast, Straus, Laufer, and Berlekamp determined the correlation of price moves in deutsche marks between any two consecutive time periods was as much as 20 percent, meaning that the sequence repeated more than half of the time.
 
-> search for repeating patterns and sequences in the various segments.. then they entered trades in teh morning, at noon, and at the end of the day.
+> search for repeating patterns and sequences in the various segments.. then they entered trades in the morning, at noon, and at the end of the day.
 
 > Humans are most predictable in times of high stress - they act instinctively and panic. Our entire premise was that human actors will react the way humans did in the past .. we learned to take advantage.
 
